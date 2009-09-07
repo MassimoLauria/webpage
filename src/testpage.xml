@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="uft8" ?>
+        <?xml-stylesheet type="text/xsl" href="xsl/base.xsl"?>
+        <page>
+    
+        <title>Massimo Lauria @ CS Department - Pubblications, papers, surveys...</title>
+        <meta name="description" content="List of publications of Massimo Lauria" />
+        <meta name="author" content="Massimo Lauria" />
+        <meta name="keywords" content="Publication Massimo Lauria" />
+    
+        <page_title>Test page...</page_title>
+<entry>
+<entry_title><a id="manuscript"/>Manuscripts</entry_title>
+
+<table style="border:0; width:100%;" cellspacing="3" cellpadding="0">
+<tr>
+<td style="width:20%;" valign="top" align="left" class="p">
+
+<a id="gl08a" />[gl08a]<br/>
+<span class="space"><br/></span>
+<a href="documents/gl08a.ps"><img src="images/ps.png" alt="Download Article (Postscript)" style="border:0;"/></a>
+<a href="documents/gl08a.ps.gz"><img src="images/ps_gz.png" alt="Download Article (Zipped PS)" style="border:0;"/></a>
+<a href="documents/gl08a.pdf"><img src="images/pdf.png" alt="Download Article (Pdf)" style="border:0;"/></a>
+
+</td>
+<td valign="baseline" align="left" class="p">
+
+Nicola Galesi and Massimo Lauria (2008).<br />
+<em>Degree Lower bounds for a Graph Ordering Principle</em>.<br />
+Submitted<br />
+</td></tr></table>
+
+<table style="border:0; width:100%;" cellspacing="3" cellpadding="0">
+<tr>
+<td style="width:20%;" valign="top" align="left" class="p">
+
+<a id="gl08b" />[gl08b]<br/>
+<span class="space"><br/></span>
+<a href="documents/gl08b.ps"><img src="images/ps.png" alt="Download Article (Postscript)" style="border:0;"/></a>
+<a href="documents/gl08b.ps.gz"><img src="images/ps_gz.png" alt="Download Article (Zipped PS)" style="border:0;"/></a>
+<a href="documents/gl08b.pdf"><img src="images/pdf.png" alt="Download Article (Pdf)" style="border:0;"/></a>
+
+</td>
+<td valign="baseline" align="left" class="p">
+
+Nicola Galesi and Massimo Lauria (2008).<br />
+<em>On the Automatizability of Polynomial Calculus</em>.<br />
+Submitted. Downloadable version<br />
+</td></tr></table>
+
+<table style="border:0; width:100%;" cellspacing="3" cellpadding="0">
+<tr>
+<td style="width:20%;" valign="top" align="left" class="p">
+
+<a id="gl07" />[gl07]<br/>
+<span class="space"><br/></span>
+<a href="documents/gl07.ps"><img src="images/ps.png" alt="Download Article (Postscript)" style="border:0;"/></a>
+<a href="documents/gl07.ps.gz"><img src="images/ps_gz.png" alt="Download Article (Zipped PS)" style="border:0;"/></a>
+<a href="documents/gl07.pdf"><img src="images/pdf.png" alt="Download Article (Pdf)" style="border:0;"/></a>
+
+</td>
+<td valign="baseline" align="left" class="p">
+
+Nicola Galesi and Massimo Lauria (2007).<br />
+<em>Extending Polynomial Calculus with $k$-DNF Resolution</em>.<br />
+Electronic Colloquium on Computational Complexity (ECCC). Report 041 of 2007.<br />
+
+</td></tr></table>
+</entry>
+<entry>
+<entry_title><a id="journal"/>Journal</entry_title>
+
+<table style="border:0; width:100%;" cellspacing="3" cellpadding="0">
+<tr>
+<td style="width:20%;" valign="top" align="left" class="p">
+
+<a id="ccilms08" />[ccilms08]<br/>
+<span class="space"><br/></span>
+
+</td>
+<td valign="baseline" align="left" class="p">
+
+Tiziana Calamoneri, Andrea E. F. Clementi, Miriam Di Ianni, Massimo Lauria, Angelo Monti and Riccardo Silvestri (2008).<br />
+<em>Minimum-Energy Broadcast and disk cover in grid wireless networks</em>.<br />
+In: Theor. Comput. Sci.. 399(1-2):38-53.<br />
+
+</td></tr></table>
+
+<table style="border:0; width:100%;" cellspacing="3" cellpadding="0">
+<tr>
+<td style="width:20%;" valign="top" align="left" class="p">
+
+<a id="cilmrs07" />[cilmrs07]<br/>
+<span class="space"><br/></span>
+
+</td>
+<td valign="baseline" align="left" class="p">
+
+Andrea E. F. Clementi, Miriam Di Ianni, Massimo Lauria, Angelo Monti, Gianluca Rossi and Riccardo Silvestri (2007).<br />
+<em>On the bounded-hop MST problem on random Euclidean instances</em>.<br />
+In: Theor. Comput. Sci.. 384(2-3):161-167.<br />
+
+</td></tr></table>
+</entry>
+<entry>
+<entry_title><a id="conference"/>Conference</entry_title>
+
+<table style="border:0; width:100%;" cellspacing="3" cellpadding="0">
+<tr>
+<td style="width:20%;" valign="top" align="left" class="p">
+
+<a id="ccilms06" />[ccilms06]<br/>
+<span class="space"><br/></span>
+
+</td>
+<td valign="baseline" align="left" class="p">
+
+Tiziana Calamoneri, Andrea E. F. Clementi, Miriam Di Ianni, Massimo Lauria, Angelo Monti and Riccardo Silvestri (2006).<br />
+<em>Minimum Energy Broadcast and Disk Cover in Grid Wireless Networks</em>.<br />
+In: SIROCCO. pp. 227-239.<br />
+
+</td></tr></table>
+
+<table style="border:0; width:100%;" cellspacing="3" cellpadding="0">
+<tr>
+<td style="width:20%;" valign="top" align="left" class="p">
+
+<a id="cilmrs06" />[cilmrs06]<br/>
+<span class="space"><br/></span>
+<a href="documents/2006adhocnow.ps"><img src="images/ps.png" alt="Download Article (Postscript)" style="border:0;"/></a>
+<a href="documents/2006adhocnow.ps.gz"><img src="images/ps_gz.png" alt="Download Article (Zipped PS)" style="border:0;"/></a>
+<a href="documents/2006adhocnow.pdf"><img src="images/pdf.png" alt="Download Article (Pdf)" style="border:0;"/></a>
+
+</td>
+<td valign="baseline" align="left" class="p">
+
+Andrea E. F. Clementi, Miriam Di Ianni, Massimo Lauria, Angelo Monti, Gianluca Rossi and Riccardo Silvestri (2006).<br />
+<em>A Distributed Protocol for the Bounded-Hops Converge-Cast in Ad-Hoc Networks</em>.<br />
+In: Ad-Hoc, Mobile, and Wireless Networks, 5th International Conference, ADHOC-NOW 2006, Ottawa, Canada, August 17-19, 2006, Proceedings. pp. 60-72.<br />
+
+</td></tr></table>
+
+<table style="border:0; width:100%;" cellspacing="3" cellpadding="0">
+<tr>
+<td style="width:20%;" valign="top" align="left" class="p">
+
+<a id="cilmrs05" />[cilmrs05]<br/>
+<span class="space"><br/></span>
+<a href="documents/2005sirocco.ps"><img src="images/ps.png" alt="Download Article (Postscript)" style="border:0;"/></a>
+<a href="documents/2005sirocco.ps.gz"><img src="images/ps_gz.png" alt="Download Article (Zipped PS)" style="border:0;"/></a>
+<a href="documents/2005sirocco.pdf"><img src="images/pdf.png" alt="Download Article (Pdf)" style="border:0;"/></a>
+
+</td>
+<td valign="baseline" align="left" class="p">
+
+Andrea E. F. Clementi, Miriam Di Ianni, Massimo Lauria, Angelo Monti, Gianluca Rossi and Riccardo Silvestri (2005).<br />
+<em>Divide and Conquer Is Almost Optimal for the Bounded-Hop MST Problem on Random Euclidean Instances</em>.<br />
+In: SIROCCO. pp. 89-98.<br />
+
+</td></tr></table>
+</entry>
+</page>

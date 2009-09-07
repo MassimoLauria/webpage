@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="iso-8859-15" ?>
+<?xml-stylesheet type="text/xsl" href="xsl/base.xsl"?>
+<page>
+    <title>Massimo Lauria @ CS Department - Teaching activities</title>
+    <page_title>Teaching activities</page_title>
+    <entry>
+      <entry_title>Tutoraggio per il corso Architettura 2</entry_title>
+      <p>
+        Qui potete trovare il codice sorgente legato alle sessioni di tutoraggio
+        per il corso di architettura 2. Se avete domande sul codice potete
+        contattarmi o farle durante le sessioni di tutoraggio. Alcuni di questi
+        programmi possono essere leggermente diversi da quelli visti in classe.
+        Vi prego di segnalare eventuali sviste ed errori nel codice!
+      </p>
+    
+        Trasposta di una matrice
+          - <a href="documents/asmex/transpose.s"><tt>transpose.s</tt></a><br/>
+        Fattoriale ricorsivo con gestione dello stack
+          - <a href="documents/asmex/factorial.s"><tt>factorial.s</tt></a><br/>
+        Test per la stringa palindroma
+          - <a href="documents/asmex/palindroma.s"><tt>palindroma.s</tt></a><br/>
+
+        Esempio di JAL e JR (progressioni aritmetiche)
+          - <a href="documents/asmex/jumpal.s"><tt>jumpal.s</tt></a><br/>
+        Esempio di eliminazione di JAL e JR (progressioni aritmetiche)
+          - <a href="documents/asmex/jumpbad.s"><tt>jumpbad.s</tt></a><br/>
+        Analisi dell'endianess della macchina
+          - <a href="documents/asmex/endian.s"><tt>endian.s</tt></a><br/>
+        Fusione di due vettori
+          - <a href="documents/asmex/merge.s"><tt>merge.s</tt></a><br/>
+        Radix sort con memoria di supporto
+          - <a href="documents/asmex/radix_sort.s"><tt>radix_sort.s</tt></a><br/>
+
+        Implementazione della funzione Mc Carty 91
+          - <a href="documents/asmex/mccarthy.s"><tt>mccarthy.s</tt></a><br/>
+        Rovesciatore dei bit di un registro
+          - <a href="documents/asmex/flipbits.s"><tt>flipbits.s</tt></a><br/>
+        Implementazione della funzione di Ackermann
+          - <a href="documents/asmex/ack.s"><tt>ack.s</tt></a><br/>
+        Esempio di due funzioni mutuamente ricorsive
+          - <a href="documents/asmex/mutualrec.s"><tt>mutualrec.s</tt></a><br/>
+
+</entry>
+</page>

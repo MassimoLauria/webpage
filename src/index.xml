@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="iso-8859-15" ?>
+<?xml-stylesheet type="text/xsl" href="xsl/base.xsl"?>
+
+<page>
+    <title>Massimo Lauria @ CS Department - Contact infos</title>
+    <page_title>Contact infos</page_title>
+    <entry>
+      <entry_title>Mail address</entry_title>
+      
+      
+      Massimo Lauria <br/>
+      Sapienza - Università di Roma <br/>
+      Dipartimento di Informatica <br/>
+      <br/>
+      Via Salaria, 113 <br/> 
+      00198 Rome <br/>
+      ITALY
+    </entry>
+            
+    <entry>
+      <entry_title>Telephone/E-Mail/Location</entry_title>
+      <table>
+        <tr>
+          <td>Tel:</td><td>+39 06 4991 8430 </td>
+        </tr>
+        <tr>
+          <td>Email:</td><td><tt>lauria[AT]di[DOT]uniroma1[DOT]it</tt> </td>
+        </tr>
+        <tr>
+          <td>Room:</td><td>333, in the 3<sup>rd</sup> floor of the building, north corridor.</td>
+        </tr>
+      </table>
+    </entry>
+</page>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="iso-8859-15" ?>
+<?xml-stylesheet type="text/xsl" href="xsl/base-light.xsl" ?>
+
+<div>
+    This site has been written with 
+    <a href="http://www.gnu.org/software/emacs/">Emacs</a>,
+	<a href="http://www.vim.org/">ViM</a> and is hosted by 
+	<a href="http://www.di.uniroma1.it/">Computer Science Department</a> of 
+	<a href="http://www.uniroma1.it/">Sapienza - Università di Roma</a>.<br />
+	
+	This page should be valid for <a href="http://validator.w3.org/check?uri=referer">XHTML 1.1</a> and
+	<a href="http://jigsaw.w3.org/css-validator/check/referer">CSS2</a> specification.
+</div>
