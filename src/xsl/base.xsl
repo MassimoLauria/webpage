@@ -71,7 +71,7 @@
 <!-- Load Javascript snippets -->
 <xsl:template name="load_javascript">
 	<xsl:for-each select="page/javascript">
-        <script language="javascript">
+        <script type="text/javascript">
             <xsl:value-of select="text()" disable-output-escaping="yes" />
         </script>
 	</xsl:for-each>
