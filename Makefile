@@ -2,7 +2,7 @@
 
 ########### CONFIGURATION ########################
 SITE="academic_page"
-TIME   = $(shell date +%Y.%m.%d)
+TIME   = $(shell date +%Y%m%d.%H%M)
 
 SITEMAP=index writings teaching research downloads
 DATAMAP=css images sw documents
@@ -18,6 +18,7 @@ STYLESHEET=base
 TAR=tar
 MV=mv
 SCP=scp
+GIT=git
 
 BUILD=site-build
 SRC=src
@@ -48,11 +49,10 @@ $(SRC)/papers.bib.xml: $(SRC)/papers.bib
 $(SRC)/papers.xml: $(SRC)/papers.bib.xml
 	$(BIBXML2XML) $(SRC)/papers.bib.xml > $(SRC)/papers.xml
 
-pkg:
+snap:
 	@make clean
-	@echo "Building $(SITE).$(TIME).tar.gz"
-	@cd .. && \
-	$(TAR) cfz $(SITE).$(TIME).tar.gz $(SITE) 2> /dev/null
+	@echo "Building $(SITE).SNAP.$(TIME).tar.gz"
+	@$(GIT) archive HEAD | gzip -c > ../$(SITE).SNAP.$(TIME).tar.gz 2> /dev/null
 
 deploy:
 	@echo "Deploying website: you will be asked of a password"
