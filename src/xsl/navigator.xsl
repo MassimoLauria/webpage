@@ -32,4 +32,11 @@
     </li>
 </xsl:template>
 
+<xsl:template match="toc/toc_nil">
+    <li class="toc_nil">
+        <xsl:apply-templates />
+    </li>
+</xsl:template>
+
+
 </xsl:stylesheet>
