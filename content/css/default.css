@@ -288,9 +288,27 @@ div .abstract {
     padding: 2px;
 }
 
-.bibentry {}
+.bibentry {
+    border-top: solid 1px #ccc;
+}
 
+.biblinks { 
+    border:0;
+    width:25%;
+}
+
+.biblinks img { 
+    border:0;
+    width:48px;
+}
+
+.bibinfo {  }
 
 .bibtitle {
+    font-weight: bold;
+}
+
+
+.bibid {
     font-weight: bold;
 }

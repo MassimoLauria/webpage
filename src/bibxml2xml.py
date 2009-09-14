@@ -118,13 +118,12 @@ def format_bibxml(xmldoc):
             print "<table style=\"border:0; width:100%;\" cellspacing=\"3\" cellpadding=\"0\">"
             print """
 <tr>
-<td style="width:20%;" valign="top" align="left" class="p">
+<td class="biblinks" valign="top" align="left">
 """
-            print "<a id=\""+eid+"\" />["+eid+"]<br/>"
             print "<span class=\"space\"><br/></span>"            
             print format_filelinks(en)
             print "</td>"
-            print "<td valign=\"baseline\" align=\"left\" class=\"p\">"
+            print "<td class=\"bibinfo\" valign=\"baseline\" align=\"left\">"
             print format_entry(en)
             print format_note(en)
             print "</td></tr></table>"
@@ -141,10 +140,10 @@ def format_bibxml(xmldoc):
 def format_filelinks(entry):
     out=""
     for (tag,img,text) in [
-         ("url","ps.png","Postscript"),
-         ("urlzip","ps_gz.png","Zipped PS"),
-         ("pdf","pdf.png","Pdf"),
-         ("ee","ee.png","Published version")
+         ("url","ps.png","PS"),
+         ("urlzip","ps_gz.png","PS.GZ"),
+         ("pdf","pdf.png","PDF"),
+         ("ee","ee.png","Online")
         ]:
         el=entry.getElementsByTagName(TAG_PREFIX+tag)
         if len(el) != 1: continue
