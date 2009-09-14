@@ -4,19 +4,7 @@
 <page>
     <title>Massimo Lauria @ CS Department - Contact infos</title>
     <page_title>Contact infos</page_title>
-    <entry>
-      <entry_title>Mail address</entry_title>
-      
-      
-      Massimo Lauria <br/>
-      Sapienza - Università di Roma <br/>
-      Dipartimento di Informatica <br/>
-      <br/>
-      Via Salaria, 113 <br/> 
-      00198 Rome <br/>
-      ITALY
-    </entry>
-            
+           
     <entry>
       <entry_title>Telephone/E-Mail/Location</entry_title>
       <table>
@@ -31,4 +19,18 @@
         </tr>
       </table>
     </entry>
+
+    <entry>
+      <entry_title>Mail address</entry_title>
+      
+      
+      Massimo Lauria <br/>
+      Sapienza - Università di Roma <br/>
+      Dipartimento di Informatica <br/>
+      <br/>
+      Via Salaria, 113 <br/> 
+      00198 Rome <br/>
+      ITALY
+    </entry>
+
 </page>
