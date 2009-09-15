@@ -70,6 +70,8 @@ In: %s. pp. %s.<br />""",
 import sys
 from xml.dom import minidom
 
+from latex2xhtml import latex2xhtml
+
 
 def author_list(entry):
     buf=u''
@@ -132,7 +134,8 @@ def format_bibxml(xmldoc):
             el=en.getElementsByTagName(TAG_PREFIX+"abstract")
             if len(el) == 1: 
                 print "<div class=\"box abstract\" id=\"abs-"+eid+"\">"
-                print el[0].firstChild.data
+                code=latex2xhtml("\\abstract{"+ el[0].firstChild.data + "}",doc_id=eid+"-")
+                print code.encode("utf8")
                 print "</div>"
         print "</entry>"
 

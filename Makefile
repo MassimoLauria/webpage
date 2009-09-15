@@ -27,7 +27,7 @@ CONTENT=content
 WEBPAGES= $(addprefix $(BUILD)/, $(addsuffix .html, $(SITEMAP)))
 DATADIR = $(addprefix $(CONTENT)/,$(DATAMAP))
 
-TEMPFILES=$(SRC)/papers.bib.xml $(SRC)/papers.xml
+TEMPFILES=$(SRC)/papers.bib.xml $(SRC)/papers.xml $(SRC)/latex2xhtml.pyc
 
 ########### THE RULES ############################
 TARGET= $(WEBPAGES)
