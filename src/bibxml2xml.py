@@ -70,7 +70,7 @@ In: %s. pp. %s.<br />""",
 import sys
 from xml.dom import minidom
 
-from latex2xhtml import latex2xhtml
+from latex2xhtml import latexfile2xhtml,latexfragment2xhtml
 
 
 def author_list(entry):
@@ -130,13 +130,34 @@ def format_bibxml(xmldoc):
             print format_note(en)
             print "</td></tr></table>"
             print "</div>"
-            # Print Abstract 
-            el=en.getElementsByTagName(TAG_PREFIX+"abstract")
-            if len(el) == 1: 
-                print "<div class=\"box abstract\" id=\"abs-"+eid+"\">"
-                code=latex2xhtml("\\abstract{"+ el[0].firstChild.data + "}",doc_id=eid+"-")
-                print code.encode("utf8")
+
+            # {{{ Load abstract ------------------------------------------
+            abstract_data=u""
+            
+            # From formatted LaTeX file (1)
+            el=en.getElementsByTagName(TAG_PREFIX+"abstract_file")
+            if len(el):
+                abstract_data=latexfile2xhtml(el[0].firstChild.data)
+
+            # From LaTex fragment (2)    
+            el=en.getElementsByTagName(TAG_PREFIX+"abstract_fragment")
+            if len(abstract_data)==0 and len(el):
+                try:
+                    fragment=open(el[0].firstChild.data, mode='r')
+                    abstract_data=latexfragment2xhtml("\\abstract{"+ fragment.read() + "}",doc_id=eid+"-")
+                except IOError:
+                    abstract_data=u""
+
+            # From LaTex fragment embedded in bibliography (3)    
+            el=en.getElementsByTagName(TAG_PREFIX+"abstract_text")
+            if len(abstract_data)==0 and len(el):
+                abstract_data=latexfragment2xhtml("\\abstract{"+ el[0].firstChild.data + "}",doc_id=eid+"-")
+                
+            if len(abstract_data):
+                print "<div class=\"box tex4ht\" id=\"abs-"+eid+"\">"
+                print abstract_data.encode("utf8")
                 print "</div>"
+            # }}} ---------------------------------------------------------
         print "</entry>"
 
         
@@ -161,6 +182,7 @@ def format_note(entry):
     el=entry.getElementsByTagName(TAG_PREFIX+"note")
     if len(el) == 1: return el[0].firstChild.data+"<br />"
     else: return ""
+
 
 
 # Main Program

@@ -22,6 +22,7 @@
     <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
         
         <head>
+
         <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8" />
 		<xsl:call-template name="load_meta_tags" />
 		<xsl:call-template name="load_javascript" />
@@ -56,6 +57,7 @@
 
 <!-- Manage meta tags -->
 <xsl:template name="load_meta_tags">
+    <!-- Load meta tags, for page indexing -->
 	<xsl:for-each select="page/meta">
         <meta>
             <xsl:attribute name="name">
@@ -66,16 +68,34 @@
             </xsl:attribute>
         </meta>
 	</xsl:for-each>
+    <!-- Load links tags, for special CSS -->
+	<xsl:for-each select="page/link">
+        <link>
+            <xsl:attribute name="rel">
+                <xsl:value-of select="@rel"/>
+            </xsl:attribute>
+            <xsl:attribute name="type">
+                <xsl:value-of select="@type"/>
+            </xsl:attribute>
+            <xsl:attribute name="media">
+                <xsl:value-of select="@media"/>
+            </xsl:attribute>
+            <xsl:attribute name="href">
+                <xsl:value-of select="@href"/>
+            </xsl:attribute>
+        </link>
+	</xsl:for-each>
 </xsl:template>
 
 <!-- Load Javascript snippets -->
 <xsl:template name="load_javascript">
 	<xsl:for-each select="page/javascript">
         <script type="text/javascript">
-            <xsl:value-of select="text()" disable-output-escaping="yes" />
+          <xsl:value-of select="text()" disable-output-escaping="yes" />
         </script>
 	</xsl:for-each>
 </xsl:template>
+
 
 
 </xsl:stylesheet>

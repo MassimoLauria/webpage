@@ -3,25 +3,30 @@
 
 <page>
 
-  <javascript>
-    function toggleAbstract(id) {
-
-	  var div = document.getElementById("abs-" + id);
-
-	  if (div.style.display == 'block')
-	    div.style.display = 'none';
-	  else 
-        div.style.display = 'block';
-	  return(true);
-    }
-  </javascript>
-
     
   <title>Massimo Lauria @ CS Department - Publications, papers, surveys...</title>
   <meta name="description" content="List of publications of Massimo Lauria" />
   <meta name="author" content="Massimo Lauria" />
   <meta name="keywords" content="Publication Massimo Lauria" />
-  
+  <link rel="stylesheet" type="text/css" media="all" href="css/math.css" />
+
+
+  <javascript>
+    function toggleAbstract(id) {
+    
+    var div = document.getElementById("abs-" + id);
+    
+    if (div.style.display == 'block')
+       div.style.display = 'none';
+    else 
+       div.style.display = 'block';
+    return(true);
+    
+    }
+  </javascript>
+
+    
+
   <page_title>Publications, papers, surveys...</page_title>
  
   <p>
