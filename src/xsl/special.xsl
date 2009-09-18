@@ -7,6 +7,10 @@
     <xsl:value-of select="text()" disable-output-escaping="yes" />
 </xsl:template>
 
+<xsl:template match="javascript">
+</xsl:template>
+
+
 <xsl:template name="include" match="include">
     <xsl:variable name="incfile" select="document(@filename)"/>
     <xsl:apply-templates select="$incfile//papers"/>
