@@ -1,7 +1,7 @@
 #!/bin/make
 
 ########### CONFIGURATION ########################
-SITE="academic_page"
+SITE="webpage.sapienza"
 TIME   = $(shell date +%Y%m%d.%H%M)
 
 SITEMAP=index writings teaching research downloads
