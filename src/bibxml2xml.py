@@ -40,7 +40,7 @@ In: %s. pp. %s.<br />""",
 "misc": ("""
 <span class='bibtitle'>%s</span> (%s).<br />
 <span class='bibauthor'>%s</span>.<br />""",
-("title","year","year")),
+("title","year","author")),
 
 "phdthesis":("""
 <strong>Ph.D. thesis</strong> <br />
