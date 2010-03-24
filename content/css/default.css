@@ -16,6 +16,8 @@
     rev-text: #fff;
     rev-bg:   #aaa;
     
+    link-visited: #17e5d1
+    link:         #1793e5
     
     box border: #777
 */ 
@@ -43,12 +45,14 @@ body {
     text-align: center;
 }
 
-a {
+a:link {
     text-decoration: none;
+    color: #172ce5;
 }
 
-a:hover {
+a:visited {
     text-decoration: none;
+    color: #1793e5;
 }
 
 
@@ -115,7 +119,7 @@ div#content{
 
     width: 80%;
     margin-top:    1%;
-    margin-bottom: 1%;
+    margin-bottom: 4%;
     padding: 0;
 
     background: #fff;
@@ -295,7 +299,7 @@ blockquote {
 
 .biblinks img { 
     border:0;
-    width:48px;
+    max-width:40px;
 }
 
 .bibinfo {  }

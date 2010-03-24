@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="iso-8859-15" ?>
+<?xml version="1.0" encoding="utf-8" ?>
 <?xml-stylesheet type="text/xsl" href="xsl/base.xsl"?>
 
 <page>
@@ -30,11 +30,20 @@
   <page_title>Publications, papers, surveys...</page_title>
  
   <p>
-  This is the list of my papers. It is supposed to me more up to date than my DBLP profile. The copyright of the
-  papers belongs to the publisher. In this page there are preprint which are essentially equivalent, and can be
-  only downloaded for personal or academic purposes. 
+  This is the list of my papers.  The copyright of the papers belongs to the publisher.  All papers available
+  on this page are preprints, are essentially equivalent to the published versions, and can be only downloaded
+  for personal or academic purposes.  Some of my articles are also indexed and stored at the following
+  locations
+   
+  <ul>
+    <li>
+      <a href="http://eccc.hpi-web.de/author/215/">Electronic Colloquium on Computational Complexity</a>
+    </li>
+    <li> <a href="http://www.informatik.uni-trier.de/%7Eley/db/indices/a-tree/l/Lauria:Massimo.html">Digital
+        Bibliography and Library Project (DBPL)</a> (not very up to date)
+    </li>
+  </ul>
   </p>
-
   <include filename="papers.xml" />
 
 </page>

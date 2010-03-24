@@ -2,7 +2,7 @@
 <?xml-stylesheet type="text/xsl" href="xsl/base.xsl"?>
 
 <page>
-    <title>Massimo Lauria @ CS Department - Contact infos</title>
+    <title>Massimo Lauria @ CS Department</title>
     <page_title>Contact infos</page_title>
            
     <entry>
@@ -33,4 +33,7 @@
       ITALY
     </entry>
 
+    <!--<entry>
+      <entry_title>Links</entry_title>
+    </entry> -->
 </page>

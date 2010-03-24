@@ -173,7 +173,7 @@ def format_filelinks(entry):
         if len(el) != 1: continue
         en = el[0]
         out += "<a href=\"" + en.firstChild.data +"\">"
-        out += "<img src=\"images/"+img+"\" alt=\"Download Article ("+text+")\" style=\"border:0;\"/>"
+        out += "<img src=\"images/"+img+"\" alt=\"Download Article ("+text+")\" />"
         out += "</a>\n"
     return out
 
