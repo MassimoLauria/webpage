@@ -4,7 +4,9 @@
 <toc>
     <toc_nil><img id="myphoto" src="images/mlauria_pic.jpg" alt="Massimo's pic" /></toc_nil>
 
-    <toc_title>Site map</toc_title>
+    <!-- toc_title>Site map</toc_title -->
+
+    <toc_nil></toc_nil>
 
     <toc_link href="index.html"    > Contacts</toc_link>
     <toc_link href="research.html" > Research</toc_link>

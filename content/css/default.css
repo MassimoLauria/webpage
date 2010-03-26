@@ -16,11 +16,16 @@
     rev-text: #fff;
     rev-bg:   #aaa;
     
-    link-visited: #17e5d1
-    link:         #1793e5
+    link-hover:   #3ae
+    link:         #33e
     
     box border: #777
 */ 
+
+
+/** Color properties **/
+
+/* Primary Text color #333, dark gray  */
 
 
 /** ------------ LAYOUT  ----------------------- */
@@ -47,13 +52,20 @@ body {
 
 a:link {
     text-decoration: none;
-    color: #172ce5;
+    color: #33e;
 }
+
 
 a:visited {
     text-decoration: none;
-    color: #172ce5;
+    color: #33e;
 }
+
+a:hover {
+    text-decoration: none;
+    color: #3ae;
+}
+
 
 
 /** CONTAINERS */
@@ -191,7 +203,7 @@ blockquote {
     font-variant: small-caps;
     font-weight: bold;
     background: #aaa;
-    color: #fff;
+    color: #333;
     text-align: center;
     
     border: 1px solid #777;
@@ -207,13 +219,15 @@ blockquote {
     font-variant: small-caps;
     font-weight: bold;
     background: transparent;
-    color: #fff;
+    color: #333;
     text-align: center;
     
     border: 0 solid #777;
-  
-    margin-left: 0;
-    margin-right: 0;
+
+    min-height: 1em;
+
+    margin-left: 0pt;
+    margin-right: 0pt;
 }
 
 
@@ -224,7 +238,7 @@ blockquote {
     font-weight: bold;
     text-transform: uppercase;
     background: #aaa;
-    color: #fff;
+    color: #333;
     text-align: center;
 
     margin-top: 0.4em;
@@ -241,7 +255,6 @@ blockquote {
 }
 
 .toc_item a:hover {
-    background: #ccc;
     color: #fff;
     text-decoration: none;
 }
