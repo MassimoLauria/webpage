@@ -49,7 +49,7 @@ blockquote, .box, .warning, .alert,
 .toc_item, .toc_title, .toc_nil, 
 .page_title, .entry, .entry_title { border-color: #777 }
 /* Secondary Border */
-.bibentry { border-top-color: #ccc; }
+.bibentry { border-color: #ccc; }
 
 
 /* Primary Link color */
