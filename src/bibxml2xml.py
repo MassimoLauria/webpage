@@ -1,9 +1,9 @@
 #!/usr/bin/env python
 # Setup
 CATEGORIES=[ 
+    (u'manuscript', "Manuscripts",[]),
     (u'journal' , "Journal",[]),
     (u'conference' , "Conference",[]),
-    (u'manuscript', "Manuscripts",[]),
     (u'thesis' , "Thesis",[]),
     (u'others' , "Misc",[])
 ]
