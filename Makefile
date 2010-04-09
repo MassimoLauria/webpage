@@ -8,6 +8,9 @@ SITEMAP=index writings teaching research downloads
 DATAMAP=css images sw documents
 
 TARGET_ACCOUNT="lauria@pegasus.dsi.uniroma1.it:~/public_html/"
+GATE_HOST     ="lauria@gate.di.uniroma1.it"
+GATE_ACCOUNT  ="lauria@gate.di.uniroma1.it:~/site-cache/"
+GATE_DEPLOYMENT_SCRIPT ="~/pegasus-deploy.sh"
 
 ########### BUILDING PARAMETERS ##################
 
@@ -17,7 +20,8 @@ BIBXML2XML=./src/bibxml2xml.py
 STYLESHEET=base
 TAR=tar
 MV=mv
-SCP=scp
+SCP=echo
+SSH=ssh
 GIT=git
 
 BUILD=site-build
@@ -54,9 +58,17 @@ snap:
 	@echo "Building $(SITE).SNAP.$(TIME).tar.gz"
 	@$(GIT) archive HEAD | gzip -c > ../$(SITE).SNAP.$(TIME).tar.gz 2> /dev/null
 
-deploy:
-	@echo "Deploying website: you will be asked of a password"
+directdeploy:
+	@echo "Deploying website: you will be asked for a password"
 	@cd $(BUILD) && \
 	$(SCP) -r "." $(TARGET_ACCOUNT)
+
+gatedeploy:
+	@echo "Deploying website (throught GATE): you will be asked for a couple of passwords"
+	@cd $(BUILD) && \
+	@echo "Uploading files on GATE machine..."
+	$(SCP) -r "." $(GATE_ACCOUNT)
+	@echo "Executing remote deploying script..."
+	$(SSH) $(GATE_HOST) $(GATE_DEPLOYMENT_SCRIPT)
 
 .PHONY: all clean pkg
