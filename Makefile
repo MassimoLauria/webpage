@@ -20,7 +20,7 @@ BIBXML2XML=./src/bibxml2xml.py
 STYLESHEET=base
 TAR=tar
 MV=mv
-SCP=echo
+SCP=scp
 SSH=ssh
 GIT=git
 
@@ -65,10 +65,9 @@ directdeploy:
 
 gatedeploy:
 	@echo "Deploying website (throught GATE): you will be asked for a couple of passwords"
-	@cd $(BUILD) && \
-	@echo "Uploading files on GATE machine..."
-	$(SCP) -r "." $(GATE_ACCOUNT)
-	@echo "Executing remote deploying script..."
+	@echo "Uploading files on GATE machine... (1) GATE password."
+	@cd $(BUILD) && $(SCP) -r "." $(GATE_ACCOUNT)
+	@echo "Executing remote deploying script... (1) GATE pass first (2) SERVER pass."
 	$(SSH) $(GATE_HOST) $(GATE_DEPLOYMENT_SCRIPT)
 
 .PHONY: all clean pkg
