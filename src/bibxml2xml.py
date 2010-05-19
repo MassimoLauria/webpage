@@ -190,6 +190,9 @@ if __name__ == "__main__":
     if len(sys.argv)<1:
         print "Usage "+sys.argv[0]+" <bibxmlfile>"
     else:
+        print '<?xml version="1.0" encoding="utf-8" ?>'
+        print '<?xml-stylesheet type="text/xsl" href="xsl/base.xsl"?>'
+        print ''
         print "<papers>"
         bib=minidom.parse(sys.argv[1])
         format_bibxml(bib)
