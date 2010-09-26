@@ -18,15 +18,19 @@ end_document=u"""
 \end{document}
 """
 
-def latexfragment2xhtml(document,doc_id="tex4ht-doc-",latex_optional_preamble=""):
+def latexfragment2xhtml(document, doc_id="tex4ht-doc-", latex_optional_preamble=""):
+    """
+    Puts a preamble on a fragment of LaTeX code, saves to a temporary
+    files and produces the XHTML equivalent (or at least it tries).  
+    """
 
-    filename="0xDEADBEEF"
-    xmlcode=u""
+    filename = "0xDEADBEEF"
+    xmlcode  = u""
     
     # Produce a LaTeX file with the desired content 
-    with tempfile.NamedTemporaryFile(mode="w",dir=".",prefix=doc_id,suffix=".tex",delete=False) as tmp:
+    with tempfile.NamedTemporaryFile(mode="w", dir=".", prefix=doc_id, suffix=".tex", delete=False) as tmp:
 
-        filename=tmp.name
+        filename = tmp.name
        
         tmp.write(latex_preamble)
         tmp.write(latex_optional_preamble)
@@ -36,7 +40,7 @@ def latexfragment2xhtml(document,doc_id="tex4ht-doc-",latex_optional_preamble=""
         tmp.write(end_document)
         tmp.close()
 
-        xmlcode=latexfile2xhtml(filename)
+        xmlcode = latexfile2xhtml(filename)
         os.remove(filename)
         
     return xmlcode
