@@ -164,8 +164,8 @@ def format_bibxml(xmldoc):
 def format_filelinks(entry):
     out=""
     for (tag,img,text) in [
-         ("url","ps.png","PS"),
-         ("urlzip","ps_gz.png","PS.GZ"),
+         ("ps","ps.png","PS"),
+         ("ps.gz","ps_gz.png","PS.GZ"),
          ("pdf","pdf.png","PDF"),
          ("ee","ee.png","Online")
         ]:
