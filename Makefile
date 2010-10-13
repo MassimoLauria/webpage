@@ -65,7 +65,7 @@ directdeploy:
 	$(SCP) -r "." $(TARGET_ACCOUNT)
 
 gatedeploy:
-	@echo "Deploying website (throught GATE): you will be asked for a couple of passwords"
+	@echo "Deploying website (throught GATE): you will be asked for passwords up to three times."
 	@echo "Uploading files on GATE machine... (1) GATE password."
 	@cd $(BUILD) && $(SCP) -r "." $(GATE_ACCOUNT)
 	@echo "Executing remote deploying script... (1) GATE pass first (2) SERVER pass."
