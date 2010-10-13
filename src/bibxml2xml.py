@@ -185,7 +185,7 @@ def format_filelinks(entry):
     out = ""
     for (tag, img, text) in [
          ("ps","ps.png","PS"),
-         ("ps.gz","ps_gz.png","PS.GZ"),
+         ("ps_gz","ps_gz.png","PS.GZ"),
          ("pdf","pdf.png","PDF"),
          ("ee","ee.png","Online")
         ]:
