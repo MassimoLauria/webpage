@@ -3,8 +3,55 @@
 <page>
     <title>Massimo Lauria @ CS Department - Teaching activities</title>
     <page_title>Teaching activities</page_title>
+
     <entry>
-      <entry_title>Tutoraggio per il corso Architettura 2</entry_title>
+      <entry_title>2010-2011 — Fondamenti di Programmazione (Esercitazioni)</entry_title>
+      <p>
+        Lo scopo delle esercitazioni di questo corso è quello di
+        introdurre gli studenti alla programmazione, utilizzando in
+        particolare il linguaggio C.  Le peculiarità di questo
+        linguaggio permettono agli studenti di acquisire familiarità
+        con il concetto di memoria, di puntatore, di gestione degli
+        indirizzi ed in generale di concetti che i linguaggi di
+        programmazione più moderni tendono a nascondere.
+      </p>
+
+      Per maggiori informazioni sul corso consiglio di visitare le seguenti pagine web:
+      <ul>
+        <li> La <a
+        href="http://www.dsi.uniroma1.it/~galesi/fond.html">pagina
+        principale</a> a cura del <a href="http://www.dsi.uniroma1.it/~galesi">Prof. Galesi</a></li>
+        <li> Il <a href="labprog2010.html">diario delle esercitazioni</a> a cura di Massimo Lauria</li>
+      </ul>
+
+    </entry>
+
+    <entry>
+      <entry_title>2009-2010 — Metodi Matematici per L'Informatica (Esercitazioni)</entry_title>
+      <p>
+        Nell’anno accademico 2009-2010 ho condotto le esercitazioni
+        del Canale P-Z del corso di “Metodi Matematici per
+        L’Informatica”. Le informazioni per questo corso non sono su
+        questo sito, e possono essere trovate alla seguente pagina
+        web:
+      </p>
+      <a href="http://twiki.di.uniroma1.it/twiki/view/Logica_PZ/WebHome">
+        Metodi Matematici per L’Informatica (canale P-Z), anno accademico 2009-2010
+      </a>
+
+      <p>
+        A grandi linee il corso introduce agli studenti i concetti più
+        semplici della logica e del ragionamento deduttivo.  Sia dal
+        punto di vista formale, attraverso lo studio dei sistemi
+        logici, sia dal punto di vista pratico, mettendoli di fronte
+        all’esigenza di capire, riprodurre e <em>produrre</em>
+        dimostrazioni matematiche corrette.
+      </p>
+
+    </entry>
+
+    <entry>
+      <entry_title>2007-2008 — Architettura 2 (Tutoraggio)</entry_title>
       <p>
         Qui potete trovare il codice sorgente legato alle sessioni di tutoraggio
         per il corso di architettura 2. Se avete domande sul codice potete
@@ -12,7 +59,7 @@
         programmi possono essere leggermente diversi da quelli visti in classe.
         Vi prego di segnalare eventuali sviste ed errori nel codice!
       </p>
-    
+
         Trasposta di una matrice
           - <a href="documents/asmex/transpose.s"><tt>transpose.s</tt></a><br/>
         Fattoriale ricorsivo con gestione dello stack

@@ -5,7 +5,7 @@ SITE="webpage.sapienza"
 TIME   = $(shell date +%Y%m%d.%H%M)
 
 
-SITEMAP=index writings teaching research downloads
+SITEMAP=index writings teaching research downloads labprog2010
 DATAMAP=css images sw documents
 
 TARGET_ACCOUNT="lauria@pegasus.dsi.uniroma1.it:~/public_html/"
@@ -21,7 +21,7 @@ BIBXML2XML=./src/bibxml2xml.py
 STYLESHEET=base
 TAR=tar
 MV=mv
-SCP=scp
+SCP=scp -1
 SSH=ssh
 GIT=git
 
