@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" 
+<xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
                               xmlns="http://www.w3.org/1999/xhtml">
 
 <!-- INCLUDE LIST -->
@@ -11,7 +11,7 @@
 <xsl:include href="special.xsl"  />
 
 <xsl:output method="xml"
-            encoding="utf-8" 
+            encoding="utf-8"
             indent="yes"
             omit-xml-declaration="yes"
             doctype-public="-//W3C//DTD XHTML 1.1//EN"
@@ -20,7 +20,7 @@
 
 <xsl:template match="/">
     <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
-        
+
         <head>
 
         <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8" />
@@ -29,11 +29,11 @@
         <link rel="stylesheet" type="text/css" media="all" href="css/default.css" />
         <title><xsl:value-of select="./page/title" /></title>
         </head>
-        
+
         <body>
           <div id="container">
-           
-            <!-- 2-Columns Layout with right menu "http://matthewjamestaylor.com/" --> 
+
+            <!-- 2-Columns Layout with right menu "http://matthewjamestaylor.com/" -->
             <div id="boxOuter">
               <div id="boxInner">
                 <div id="content">
@@ -41,18 +41,18 @@
                 </div>
                 <div id="navigator">
                   <xsl:apply-templates select="document('../navigator.xml')/*" />
-                </div>     
+                </div>
               </div>
             </div>
-           
+
             <div id="footer">
               <xsl:apply-templates select="document('../footer.xml')/*" />
             </div>
-          
+
           </div>
         </body>
     </html>
-    
+
 </xsl:template>
 
 <!-- Manage meta tags -->
@@ -91,6 +91,11 @@
 <xsl:template name="load_javascript">
 	<xsl:for-each select="page/javascript">
         <script type="text/javascript">
+          <xsl:if test="not(normalize-space(@src) = '')">
+			<xsl:attribute name="src">
+              <xsl:value-of select="@src"/>
+            </xsl:attribute>
+          </xsl:if>
           <xsl:value-of select="text()" disable-output-escaping="yes" />
         </script>
 	</xsl:for-each>
