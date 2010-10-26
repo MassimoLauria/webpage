@@ -21,7 +21,7 @@ BIBXML2XML=./src/bibxml2xml.py
 STYLESHEET=base
 TAR=tar
 MV=mv
-SCP=scp -1
+SCP=scp
 SSH=ssh
 GIT=git
 
@@ -62,7 +62,7 @@ snap:
 directdeploy:
 	@echo "Deploying website: you will be asked for a password"
 	@cd $(BUILD) && \
-	$(SCP) -r "." $(TARGET_ACCOUNT)
+	$(SCP) -1 -r "." $(TARGET_ACCOUNT)
 
 gatedeploy:
 	@echo "Deploying website (throught GATE): you will be asked for passwords up to three times."
