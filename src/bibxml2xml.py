@@ -220,6 +220,11 @@ def format_bibxml(xmldoc):
 
             if len(abstract_data):
                 print "<div class=\"abstract\" id=\"abs-"+eid+"\" onclick=\"toggleAbstract('"+eid+"');\">"
+
+                print "<div class=\"abstract-header\">"
+                print "Abstract"
+                print "</div>"
+
                 print abstract_data.encode("utf8")
                 print "</div>"
             # }}} ---------------------------------------------------------

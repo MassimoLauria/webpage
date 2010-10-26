@@ -321,7 +321,7 @@ blockquote {
 
 /*---------------------  Math -------------------------*/
 .abstract {
-    display: block; /* Abstract box are hidden by default. */
+    display: none; /* Abstract box are hidden by default. */
 
     margin-top:    1ex;
     margin-bottom: 1ex;
@@ -337,9 +337,19 @@ blockquote {
     border-style: solid;
     border-color: black;
 
-    background: #ccc;
+    background: #ddd;
 
     text-align: justify;
+    font-family: serif;
 
 }
 
+.abstract-header {
+    font-size: 120%;
+    font-weight: bold;
+    font-family: serif;
+    text-align: center;
+    margin-top:    1ex;
+    margin-bottom: 1ex;
+
+}
