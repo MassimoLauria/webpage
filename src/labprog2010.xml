@@ -45,13 +45,11 @@
       conoscenza del linguaggio C è necessario esercitarsi molto, per
       questo è stato messo on line un catalogo di esercizi su cui
       potete cimentarvi.
-      <br/>
-      <h4><a href="http://tmancini.di.uniroma1.it/index.php?page=teaching.fondprog.materiale.libreriaesercizi&amp;opt[]=notop@teaching.fondprog&amp;opt[]=nonav@teaching.fondprog">
-      Esercitatevi, esercitatevi, esercitatevi, ...</a></h4>
-      <h4><a href="labprog2010.html#cheat">
-      Conseguenze per chi imbroglia.</a></h4>
-      <br/>
     </p>
+    <h4><a href="http://tmancini.di.uniroma1.it/index.php?page=teaching.fondprog.materiale.libreriaesercizi&amp;opt[]=notop@teaching.fondprog&amp;opt[]=nonav@teaching.fondprog">
+    Esercitatevi, esercitatevi, esercitatevi, ...</a></h4>
+    <h4><a href="labprog2010.html#cheat">
+    Conseguenze per chi imbroglia.</a></h4>
 
     <entry>
       <entry_title>27 Ottobre 2010 - Sistemi Unix, compilatore e primi programmi in C.</entry_title>
@@ -66,17 +64,16 @@
         in primo luogo devono saper utilizzare le funzioni base del
         compilatore <a href="http://gcc.gnu.org"><tt>GCC</tt></a>.
       </p>
-      <p>
-        Gli studenti devono inoltre provare a risolve i seguenti esercizi:
-        <ul>
-          <li><a href="http://tmancini.di.uniroma1.it/index.php?page=teaching.fondprog.materiale.libreriaesercizi.esercizio&amp;opt[]=notop@teaching.fondprog&amp;opt[]=nonav@teaching.fondprog&amp;fname=Q.20101025-1.simple-print.c">Output su terminale.</a>
-          </li>
-          <li><a href="http://tmancini.di.uniroma1.it/index.php?page=teaching.fondprog.materiale.libreriaesercizi.esercizio&amp;opt[]=notop@teaching.fondprog&amp;opt[]=nonav@teaching.fondprog&amp;fname=Q.20101025-2.read-two-nums.c">Lettura da tastiera e stampa su terminale.</a></li>
-          <li><a href="http://tmancini.di.uniroma1.it/index.php?page=teaching.fondprog.materiale.libreriaesercizi.esercizio&amp;opt[]=notop@teaching.fondprog&amp;opt[]=nonav@teaching.fondprog&amp;fname=Q.20101025-3.miles-to-km.c">Convertitore da miglia terrestri a chilometri.</a></li>
-          <li><a href="http://tmancini.di.uniroma1.it/index.php?page=teaching.fondprog.materiale.libreriaesercizi.esercizio&amp;opt[]=notop@teaching.fondprog&amp;opt[]=nonav@teaching.fondprog&amp;fname=Q.20101025-4.split-seconds.c">Intervallo di tempo: DA secondi A giorni, ore, minuti, secondi.</a></li>
-          <li><a href="http://tmancini.di.uniroma1.it/index.php?page=teaching.fondprog.materiale.libreriaesercizi.esercizio&amp;opt[]=notop@teaching.fondprog&amp;opt[]=nonav@teaching.fondprog&amp;fname=Q.20101026-1.binary-converter.c">Stampa della codifica binaria di un numero.</a></li>
-        </ul>
-      </p>
+
+      Gli studenti devono inoltre provare a risolve i seguenti esercizi:
+      <ul>
+        <li><a href="http://tmancini.di.uniroma1.it/index.php?page=teaching.fondprog.materiale.libreriaesercizi.esercizio&amp;opt[]=notop@teaching.fondprog&amp;opt[]=nonav@teaching.fondprog&amp;fname=Q.20101025-1.simple-print.c">Output su terminale.</a>
+        </li>
+        <li><a href="http://tmancini.di.uniroma1.it/index.php?page=teaching.fondprog.materiale.libreriaesercizi.esercizio&amp;opt[]=notop@teaching.fondprog&amp;opt[]=nonav@teaching.fondprog&amp;fname=Q.20101025-2.read-two-nums.c">Lettura da tastiera e stampa su terminale.</a></li>
+        <li><a href="http://tmancini.di.uniroma1.it/index.php?page=teaching.fondprog.materiale.libreriaesercizi.esercizio&amp;opt[]=notop@teaching.fondprog&amp;opt[]=nonav@teaching.fondprog&amp;fname=Q.20101025-3.miles-to-km.c">Convertitore da miglia terrestri a chilometri.</a></li>
+        <li><a href="http://tmancini.di.uniroma1.it/index.php?page=teaching.fondprog.materiale.libreriaesercizi.esercizio&amp;opt[]=notop@teaching.fondprog&amp;opt[]=nonav@teaching.fondprog&amp;fname=Q.20101025-4.split-seconds.c">Intervallo di tempo: DA secondi A giorni, ore, minuti, secondi.</a></li>
+        <li><a href="http://tmancini.di.uniroma1.it/index.php?page=teaching.fondprog.materiale.libreriaesercizi.esercizio&amp;opt[]=notop@teaching.fondprog&amp;opt[]=nonav@teaching.fondprog&amp;fname=Q.20101026-1.binary-converter.c">Stampa della codifica binaria di un numero.</a></li>
+      </ul>
     </entry>
 
 
@@ -96,7 +93,7 @@
     </entry>
 
     <entry>
-      <entry_title><a name="cheat">Conseguenze per chi imbroglia</a></entry_title>
+      <entry_title><a id="cheat">Conseguenze per chi imbroglia</a></entry_title>
       <p>
         Imbrogliare in un corso universitario equivale ad una truffa.
         Per evitare dubbi e fraintendimenti mi raccomando di leggere

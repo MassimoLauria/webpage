@@ -312,6 +312,7 @@ blockquote {
 
 .bibtitle {
     font-weight: bold;
+    font-variant: small-caps;
 }
 
 .bibid {
@@ -337,7 +338,7 @@ blockquote {
     border-style: solid;
     border-color: black;
 
-    background: #ddd;
+    background: #eee;
 
     text-align: justify;
     font-family: serif;
@@ -352,4 +353,25 @@ blockquote {
     margin-top:    1ex;
     margin-bottom: 1ex;
 
+}
+
+.abstract-button {
+    font-size: 80%;
+    color: #333;
+    text-align: center;
+    margin-top:    2ex;
+    margin-bottom: 1ex;
+
+    border-width: 2px;
+    border-style: solid;
+    border-color: #777;
+
+    width: 10em;
+
+    background-color: #ccc;
+
+    /* Rounded borders non CSS-2.1 valid */
+    /* border-radius: 	    1em; */
+    /* -webkit-border-radius: 1em; */
+    /* -moz-border-radius: 1em; */
 }

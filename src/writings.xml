@@ -55,7 +55,7 @@
   on this page are preprints, are essentially equivalent to the published versions, and can be only downloaded
   for personal or academic purposes.  Some of my articles are also indexed and stored at the following
   locations
-
+  </p>
   <ul>
     <li>
       <a href="http://eccc.hpi-web.de/author/215/">Electronic Colloquium on Computational Complexity</a>
@@ -64,7 +64,7 @@
         Bibliography and Library Project (DBPL)</a> (not very up to date)
     </li>
   </ul>
-  </p>
+
   <include filename="papers.xml" />
 
 </page>
