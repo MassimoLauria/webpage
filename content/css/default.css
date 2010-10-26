@@ -1,35 +1,35 @@
 /* Main CSS for Massimo's personal page */
-/*
-   2-Columns Layout with right menu due to
+/* 
+   2-Columns Layout with right menu due to 
    http://matthewjamestaylor.com/
-
+   
    2-Columns layout with all max height columns, full CSS compliant.
 */
 
 
 
-/*--------------------------  Palette ---------------------------
+/*--------------------------  Palette --------------------------- 
     text:  #333; black
     bg1:   #fff; white
     bg2:   #ccc; light gray
     bg3:   #aaa; gray
-
+    
     rev-text: #fff; white
-
+    
     link-hover:   #3ae
     link:         #33e
-
+    
     box border: #777; dark gray
 
     warning/alarm #ecc,#faa; red
 
-*/
+*/ 
 
 
 /* Primary Text color */
 body, div#footer,
-.box, .warning, .alarm, blockquote,
-.toc_item, .toc_nil, .toc_title, .toc_item a, .toc_item a:visited
+.box, .warning, .alarm, blockquote, 
+.toc_item, .toc_nil, .toc_title, .toc_item a, .toc_item a:visited 
 { color: #333; }
 /* Reverse Text color */
 .toc_item a:hover, .toc_item a:visited:hover { color: #fff; }
@@ -44,9 +44,9 @@ div#boxOuter, div#footer, div#navigator, .box, blockquote { background: #ccc; }
 
 
 /* Primary Border */
-blockquote, .box, .warning, .alert,
-#myphoto, div#footer,
-.toc_item, .toc_title, .toc_nil,
+blockquote, .box, .warning, .alert, 
+#myphoto, div#footer, 
+.toc_item, .toc_title, .toc_nil, 
 .page_title, .entry, .entry_title { border-color: #777 }
 /* Secondary Border */
 .bibentry { border-color: #ccc; }
@@ -123,7 +123,7 @@ div#boxOuter {
 div#boxInner {
     float: left;
     width: 100%;
-
+    
     position: relative;
     right: 18%;
 
@@ -158,7 +158,7 @@ div#navigator {
     float:left;
     position: relative;
     left: 21%;
-
+     
     width: 16%;
     margin-top:    1%;
     margin-bottom: 1%;
@@ -177,7 +177,7 @@ div#navigator {
 .warning {
     font-weight: bold;
 }
-
+    
 .alarm {
     font-weight: bold;
     font-size: 120%;
@@ -213,10 +213,10 @@ blockquote {
     font-variant: small-caps;
     font-weight: bold;
     text-align: center;
-
+    
     border-width: 1px;
     border-style: solid;
-
+  
     margin-left: 10pt;
     margin-right: 10pt;
 }
@@ -229,7 +229,7 @@ blockquote {
     font-weight: bold;
     background: transparent;
     text-align: center;
-
+    
     border-width: 0;
     border-style: solid;
 
@@ -240,9 +240,9 @@ blockquote {
 }
 
 
-.toc_title {
+.toc_title { 
     list-style: none inside none;
-
+   
     font-size: 120%;
     font-weight: bold;
     text-transform: uppercase;
@@ -254,22 +254,22 @@ blockquote {
     padding-right: 5pt;
     border-width: 1px;
     border-style: solid;
-}
+} 
 
 
 /** PAGE CONTENTS **/
 .page_title {
-
+ 
     font-variant: small-caps;
     font-weight: bold;
     background-color: transparent;
     border-bottom-width: medium;
     border-bottom-style: solid;
     width: 80%;
-    font-size: 200%;
+    font-size: 200%;  
 
     margin-bottom: 0.5em;
-    margin-top: 0.5em;
+    margin-top: 0.5em; 
 }
 
 .page_index_entry {
@@ -298,12 +298,12 @@ blockquote {
     border-top-style: solid;
 }
 
-.biblinks {
+.biblinks { 
     border:0;
     width:25%;
 }
 
-.biblinks img {
+.biblinks img { 
     border:0;
     max-width:40px;
 }
@@ -320,26 +320,12 @@ blockquote {
 
 
 /*---------------------  Math -------------------------*/
-.abstract {
-    display: block; /* Abstract box are hidden by default. */
+.tex4ht {
+    display: none; /* Abstract box are hidden by default. */
+   
+    margin-top: 0px;
+    margin-bottom: 2em;
 
-    margin-top:    1ex;
-    margin-bottom: 1ex;
-    margin-left:   2em;
-    margin-right:  2em;
-
-    padding-top:    2ex;
-    padding-bottom: 2ex;
-    padding-left:   1em;
-    padding-right:  1em;
-
-    border-width: 1px;
-    border-style: solid;
-    border-color: black;
-
-    background: #ccc;
-
-    text-align: justify;
-
+    font-family: serif;
 }
 
