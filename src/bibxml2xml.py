@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 # Setup
-CATEGORIES=[ 
+CATEGORIES=[
     (u'manuscript', "Manuscripts",[]),
     (u'journal' , "Journal",[]),
     (u'conference' , "Conference",[]),
@@ -67,14 +67,11 @@ In: %s. pp. %s.<br />""",
 
 
 ################ SOURCE CODE STARTS HERE ######################
-import sys
+import sys,os
 from xml.dom import minidom
 
-from latex2xhtml import latexfile2xhtml,latexfragment2xhtml
-
-
 def author_list(entry):
-    """ 
+    """
     Produces the string with the list of authors
     """
     buf = u''
@@ -91,7 +88,7 @@ def format_entry(entry):
     Applies the appropriate formatting templates on an entry and
     output the XML string.
     """
-    nodetype = [ c.nodeName[7:] for c in entry.childNodes if c.nodeName[:7] == TAG_PREFIX][0]    
+    nodetype = [ c.nodeName[7:] for c in entry.childNodes if c.nodeName[:7] == TAG_PREFIX][0]
     try:
         (text, args) = templates[nodetype]
     except KeyError:
@@ -104,30 +101,30 @@ def format_entry(entry):
             return author_list(entry)
         else:
             el = entry.getElementsByTagName(TAG_PREFIX+tag)
-            if len(el) == 1: 
+            if len(el) == 1:
                 return el[0].firstChild.data
-            else: 
+            else:
                 return "??????"
-         
-    return text % tuple( [get_value(a) for a in args] )
-    
 
-def format_bibxml(xmldoc):
+    return text % tuple( [get_value(a) for a in args] )
+
+
+def format_bibxml_old(xmldoc):
     """
-    Extract the formatted XML (ready for the web) from the document 
+    Extract the formatted XML (ready for the web) from the document
     """
     entries = xmldoc.getElementsByTagName(TAG_PREFIX+"entry");
-   
+
     # Keywords triage
     for en in entries:
         entry_keys = [a.firstChild.data for a in en.getElementsByTagName(TAG_PREFIX+"keywords")]
         for (k, _, l) in CATEGORIES:
-            if k in entry_keys: 
+            if k in entry_keys:
                 l.append(en)
     # Entry formatting
     for (key, title, elist) in CATEGORIES:
-        if not (PRINT_EMPTY_CATEGORIES or elist): 
-            continue 
+        if not (PRINT_EMPTY_CATEGORIES or elist):
+            continue
         print "<entry>"
         print "<entry_title><a id=\""+key+"\"/>"+title+"</entry_title>"
         for en in elist:
@@ -139,7 +136,7 @@ def format_bibxml(xmldoc):
 <tr>
 <td class="biblinks" valign="top" align="left">
 """
-            print "<span class=\"space\"><br/></span>"            
+            print "<span class=\"space\"><br/></span>"
             print format_filelinks(en)
             print "</td>"
             print "<td class=\"bibinfo\" valign=\"baseline\" align=\"left\">"
@@ -150,13 +147,13 @@ def format_bibxml(xmldoc):
 
             # {{{ Load abstract ------------------------------------------
             abstract_data = u""
-            
+
             # From formatted LaTeX file (1)
             el = en.getElementsByTagName(TAG_PREFIX+"abstract_file")
             if len(el):
                 abstract_data = latexfile2xhtml(el[0].firstChild.data)
 
-            # From LaTex fragment (2)    
+            # From LaTex fragment (2)
             el = en.getElementsByTagName(TAG_PREFIX+"abstract_fragment")
             if len(abstract_data)==0 and len(el):
                 try:
@@ -165,11 +162,11 @@ def format_bibxml(xmldoc):
                 except IOError:
                     abstract_data = u""
 
-            # From LaTex fragment embedded in bibliography (3)    
+            # From LaTex fragment embedded in bibliography (3)
             el = en.getElementsByTagName(TAG_PREFIX+"abstract_text")
             if len(abstract_data)==0 and len(el):
                 abstract_data = latexfragment2xhtml("\\abstract{"+ el[0].firstChild.data + "}", doc_id=eid+"-")
-                
+
             if len(abstract_data):
                 print "<div class=\"box tex4ht\" id=\"abs-"+eid+"\">"
                 print abstract_data.encode("utf8")
@@ -177,7 +174,71 @@ def format_bibxml(xmldoc):
             # }}} ---------------------------------------------------------
         print "</entry>"
 
-        
+def format_bibxml(xmldoc):
+    """
+    Extract the formatted XML (ready for the web) from the document
+    """
+    entries = xmldoc.getElementsByTagName(TAG_PREFIX+"entry");
+
+    # Keywords triage
+    for en in entries:
+        entry_keys = [a.firstChild.data for a in en.getElementsByTagName(TAG_PREFIX+"keywords")]
+        for (k, _, l) in CATEGORIES:
+            if k in entry_keys:
+                l.append(en)
+    # Entry formatting
+    for (key, title, elist) in CATEGORIES:
+        if not (PRINT_EMPTY_CATEGORIES or elist):
+            continue
+        print "<entry>"
+        print "<entry_title><a id=\""+key+"\"/>"+title+"</entry_title>"
+        for en in elist:
+            eid = en.getAttribute("id")
+            # Print information
+            print "<div class=\"bibentry\" onclick=\"toggleAbstract('"+eid+"');\">"
+            print "<table style=\"border:0; width:100%;\" cellspacing=\"3\" cellpadding=\"0\">"
+            print """
+<tr>
+<td class="biblinks" valign="top" align="left">
+"""
+            print "<span class=\"space\"><br/></span>"
+            print format_filelinks(en)
+            print "</td>"
+            print "<td class=\"bibinfo\" valign=\"baseline\" align=\"left\">"
+            print format_entry(en)
+            print format_note(en)
+            print "</td></tr></table>"
+            print "</div>"
+
+            # {{{ Load abstract ------------------------------------------
+            abstract_data = u""
+
+            # From formatted LaTeX file (1)
+            el = en.getElementsByTagName(TAG_PREFIX+"abstract_file")
+            if len(el):
+                abstract_data = extract_latexdata(el[0].firstChild.data)
+
+            if len(abstract_data):
+                print "<div class=\"abstract\" id=\"abs-"+eid+"\" onclick=\"toggleAbstract('"+eid+"');\">"
+                print abstract_data.encode("utf8")
+                print "</div>"
+            # }}} ---------------------------------------------------------
+        print "</entry>"
+
+
+def extract_latexdata(filename):
+    code=u""
+    # Works only on readable files
+    if (not os.access(filename,os.R_OK )): return code
+    # Extract the relevant part from the XHTML code
+    try:
+        with file(filename, mode='rU') as texfile:
+            code=texfile.read();
+    except IOError:
+        code=u""
+    return code
+
+
 def format_filelinks(entry):
     """
     Produces the table of links to files.
@@ -190,7 +251,7 @@ def format_filelinks(entry):
          ("ee","ee.png","Online")
         ]:
         el = entry.getElementsByTagName(TAG_PREFIX+tag)
-        if len(el) != 1: 
+        if len(el) != 1:
             continue
         en = el[0]
         out += "<a href=\"" + en.firstChild.data +"\">"
@@ -198,13 +259,13 @@ def format_filelinks(entry):
         out += "</a>\n"
     return out
 
-        
+
 def format_note(entry):
     """
     Outputs the annotation contained in the entry.
     """
     el = entry.getElementsByTagName(TAG_PREFIX+"note")
-    if len(el) == 1: 
+    if len(el) == 1:
         return el[0].firstChild.data+"<br />"
     else: return ""
 
