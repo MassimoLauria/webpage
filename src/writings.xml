@@ -3,7 +3,7 @@
 
 <page>
 
-    
+
   <title>Massimo Lauria @ CS Department - Publications, papers, surveys...</title>
   <meta name="description" content="List of publications of Massimo Lauria" />
   <meta name="author" content="Massimo Lauria" />
@@ -11,30 +11,55 @@
   <link rel="stylesheet" type="text/css" media="all" href="css/math.css" />
 
 
+  <javascript src="MathJax/MathJax.js">
+    MathJax.Hub.Config({
+         showProcessingMessages: true,
+         extensions: ["tex2jax.js","TeX/AMSmath.js","TeX/AMSsymbols.js"],
+         jax: ["input/TeX", "output/HTML-CSS"],
+    tex2jax: {
+        inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+        displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+        processEscapes: true
+    },
+    "HTML-CSS": {
+        availableFonts: ["STIX","TeX"],
+        preferredFont: "TeX",
+        webFont: "TeX",
+        imageFont: null,
+        showMathMenu: true
+        }
+    });
+    //MathJax.Hub.Config({ config: "MathJax.js" });
+  </javascript>
+
+
   <javascript>
     function toggleAbstract(id) {
-    
+
     var div = document.getElementById("abs-" + id);
-    
+
     if (div.style.display == 'block')
        div.style.display = 'none';
-    else 
+    else
        div.style.display = 'block';
     return(true);
-    
+
     }
   </javascript>
 
-    
+
 
   <page_title>Publications, papers, surveys...</page_title>
- 
+  <p>
+    Cool! This page is full of \$ real math! $$2^\pi+ \sum_i^\infty \left( \frac{\mathbb{N}}{k} \right)$$
+  </p>
+
   <p>
   This is the list of my papers.  The copyright of the papers belongs to the publisher.  All papers available
   on this page are preprints, are essentially equivalent to the published versions, and can be only downloaded
   for personal or academic purposes.  Some of my articles are also indexed and stored at the following
   locations
-   
+
   <ul>
     <li>
       <a href="http://eccc.hpi-web.de/author/215/">Electronic Colloquium on Computational Complexity</a>
