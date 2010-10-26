@@ -1,0 +1,21 @@
+<p>
+We examine the proof-theoretic strength of parameterized tree-like
+resolution---a proof system for the $\mathsf{co}\mathsf{W}[2]$-complete set of
+parameterized tautologies.  Parameterized resolution and, moreover, a general
+framework for parameterized proof complexity was introduced by Dantchev, Martin,
+and Szeider (FOCS'07). In that paper, Dantchev et al.\ show a complexity gap in
+parameterized tree-like resolution for propositional formulas arising from
+translations of first-order principles.
+</p>
+<p>
+Here we pursue a purely combinatorial approach to obtain lower bounds to the
+proof size in parameterized tree-like resolution.  For this we devise a
+prover-delayer game suitable for parameterized resolution.  By exhibiting good
+delayer strategies we then show lower bounds for the pigeonhole principle as
+well as the order principle.  On the other hand, we demonstrate that
+parameterized tree-like resolution is a very powerful system, as it allows
+short refutations of all parameterized contradictions given as bounded-width
+CNF's.  Thus, a number of principles such as Tseitin tautologies, pebbling
+contradictions, or random 3-CNF's which serve as hard examples for classical
+resolution become easy in the parameterized setting.
+</p>

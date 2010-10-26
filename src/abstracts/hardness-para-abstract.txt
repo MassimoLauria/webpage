@@ -1,0 +1,30 @@
+<p> Parameterized Resolution and, moreover, a general framework for
+parameterized proof complexity was introduced by Dantchev, Martin, and Szeider
+(FOCS'07). In that paper, Dantchev et al. show a complexity gap in tree-like
+Parameterized Resolution for propositional formulas arising from translations of
+first-order principles.  </p>
+
+<p> We broadly investigate Parameterized Resolution obtaining the following main
+results: </p>
+
+<ul>
+<li>We introduce a purely combinatorial approach to obtain lower bounds to the
+  proof size in tree-like Parameterized Resolution.  For this we devise a new
+  asymmetric Prover-Delayer game which characterizes proofs in (parameterized)
+  tree-like Resolution.  By exhibiting good Delayer strategies we then show
+  lower bounds for the pigeonhole principle as well as the order principle.
+</li>
+<li> Interpreting a well-known $\mathsf{FPT}$ algorithm for vertex cover as a DPLL
+procedure for Parameterized Resolution, we devise a proof search algorithm for
+Parameterized Resolution and show that tree-like Parameterized Resolution allows
+short refutations of all parameterized contradictions given as bounded-width
+CNF's.
+</li>
+<li> We answer a question posed by Dantchev, Martin, and Szeider in [FOCS 2007],
+  showing that dag-like Parameterized Resolution is not fpt-bounded. We obtain
+  this result by proving that the pigeonhole principle requires proofs of size
+  $n^{\Omega(k)}$ in dag-like Parameterized Resolution.  For this lower bound we
+  use a different Prover-Delayer game which was developed for Resolution by
+  Pudlák [2000].
+</li>
+</ul>
