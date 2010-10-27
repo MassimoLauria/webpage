@@ -1,0 +1,9 @@
+<p>
+The $d$-Dim $h$-hops MST problem is defined as follows: Given a set $S$ of points in the $d$-
+dimensional Euclidean space and $s \in S$, find a minimum-cost spanning tree for $S$ rooted at $s$
+with height at most $h$. We investigate the problem for any constants $h$ and $d > 0$. We prove
+the first non trivial lower bound on the solution cost <em>for almost all</em> Euclidean instances (i.e.
+the lower-bound holds with hight probability). Then we introduce an easy-to-implement,
+very fast divide et impera heuristic and we prove that its solution cost matches the lower
+bound.
+</p>

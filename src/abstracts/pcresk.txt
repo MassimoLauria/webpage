@@ -1,0 +1,26 @@
+
+$\newcommand{\Pcrk}[1]{\mathsf{Pcr}_{#1}}$
+$\newcommand{\Resk}[1]{\mathsf{Res}_{#1}}$
+$\newcommand{\Pcr}{\mathsf{Pcr}}$
+$\newcommand{\Pc}{\mathsf{Pc}}$
+
+
+<p> We introduce an algebraic proof system $\Pcrk{k}$, which combines together
+<em>Polynomial Calculus</em> ($\Pc$) and <em>$k$-DNF Resolution</em> ($\Resk{k}$).  This
+is a natural generalization to $\Resk{k}$ of the well-known <em>Polynomial
+Calculus with Resolution</em> ($\Pcr$) system which combines together $\Pc$ and
+Resolution.  </p>
+
+<p> We study the complexity of proofs in such a system extending to $\Pcrk{k}$
+the results known for $\Resk{k}$. We prove that random $3$-CNF formulas with a
+linear number of clauses are hard to prove in $\Pcrk{k}$ (over a field with
+characteristic different from $2$) as long as $k$ is in $o(\sqrt{\log n/\log
+\log n})$. This is the strongest system where $3$-CNF formulas are hard to
+prove.  </p>
+
+<p> Moreover we prove a strict hierarchy result showing that $\Pcrk{k+1}$ is
+exponentially stronger than $\Pcrk{k}$. This result is the consequence of
+proving a $\Omega(n)$ degree lower bound for $\Pcr$ refutations of a <em>Graph
+Ordering Principle</em>. This is the first example of a family of contradictions
+having $\Pcr$ short refutations but requiring high degree, and thus also proving
+the optimality of the size-degree tradeoff for $\Pcr$.  </p>

@@ -1,9 +1,9 @@
 <p>
 We examine the proof-theoretic strength of parameterized tree-like
-resolution---a proof system for the $\mathsf{co}\mathsf{W}[2]$-complete set of
+resolution — a proof system for the $\mathsf{co}\mathsf{W}[2]$-complete set of
 parameterized tautologies.  Parameterized resolution and, moreover, a general
 framework for parameterized proof complexity was introduced by Dantchev, Martin,
-and Szeider (FOCS'07). In that paper, Dantchev et al.\ show a complexity gap in
+and Szeider (FOCS'07). In that paper, Dantchev et al. show a complexity gap in
 parameterized tree-like resolution for propositional formulas arising from
 translations of first-order principles.
 </p>

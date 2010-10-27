@@ -8,8 +8,6 @@
   <meta name="description" content="List of publications of Massimo Lauria" />
   <meta name="author" content="Massimo Lauria" />
   <meta name="keywords" content="Publication Massimo Lauria" />
-  <link rel="stylesheet" type="text/css" media="all" href="css/math.css" />
-
 
   <javascript src="MathJax/MathJax.js">
     MathJax.Hub.Config({

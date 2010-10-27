@@ -1,0 +1,29 @@
+
+$\newcommand{\Pcrk}[1]{\mathsf{Pcr}_{#1}}$
+$\newcommand{\Resk}[1]{\mathsf{Res}_{#1}}$
+$\newcommand{\Pcr}{\mathsf{Pcr}}$
+$\newcommand{\Pc}{\mathsf{Pc}}$
+
+<p> There are methods to turn short refutations in <em>Polynomial Calculus</em>
+($\Pc$) and <em>Polynomial Calculus with Resolution</em> ($\Pcr$) into refutations of
+low degree. Bonet and Galesi [Bonet and Galesi 1999, 2003] asked if such size-degree
+trade-offs for $\Pc$ [Clegg et al. 1996; Impagliazzo et al. 1999] and $\Pcr$
+[Alekhnovich et al. 2004] are optimal.
+</p>
+
+
+<p> We answer this question by showing a polynomial encoding of <em>Graph
+Ordering Principle</em> on $m$ variables which requires $\Pc$ and $\Pcr$
+refutations of degree $\Omega(\sqrt{m})$. Trade-offs optimality follows from our
+result and from the short refutations of Graph Ordering Principle in [Bonet and
+Galesi 1999, 2001].
+</p>
+
+<p> We then introduce the algebraic proof system $\Pcrk{k}$ which combines
+together <em>Polynomial Calculus</em> ($\Pc$) and <em>$k$-DNF Resolution</em>
+($\Resk{k}$). We show a size hierarchy theorem for $\Pcrk{k}$: $\Pcrk{k}$ is
+exponentially separated from $\Pcrk{k+1}$. This follows from the previous degree
+lower bound and from techniques developed for $\Resk{k}$.  </p>
+
+<p>Finally we show that random formulas in conjunctive normal form ($3$-CNF) are
+hard to refute in $\Pcrk{k}$.</p>

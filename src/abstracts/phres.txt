@@ -1,0 +1,7 @@
+<p>
+We initiate the study of the proof complexity of propositional encoding of (weak
+cases of) concrete independence results. In particular we study the proof
+complexity of Paris-Harrington's Large Ramsey Theorem. We prove a conditional
+lower bound in Resolution and a quasipolynomial upper bound in bounded-depth
+Frege.
+</p>

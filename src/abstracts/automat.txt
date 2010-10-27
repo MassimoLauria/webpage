@@ -1,0 +1,7 @@
+<p>
+We prove that Polynomial Calculus and Polynomial Calculus with Resolution are
+not automatizable, unless $W[P]$-hard problems are fixed parameter tractable by
+one-side error randomized algorithms. This extends to Polynomial Calculus the
+analogous result obtained for Resolution by Alekhnovich and Razborov (SIAM
+J. Computing, 38(4), 2008).
+</p>
