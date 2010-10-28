@@ -59,16 +59,22 @@ snap:
 	@echo "Building $(SITE).SNAP.$(TIME).tar.gz"
 	@$(GIT) archive HEAD | gzip -c > ../$(SITE).SNAP.$(TIME).tar.gz 2> /dev/null
 
-directdeploy:
+fulldeploy:
 	@echo "Deploying website: you will be asked for a password"
 	@cd $(BUILD) && \
 	$(SCP) -1 -r "." $(TARGET_ACCOUNT)
 
+htmldeploy:
+	@echo "Deploying website: you will be asked for a password"
+	@cd $(BUILD) && \
+	$(SCP) -1 -r *.html css/ $(TARGET_ACCOUNT)
+
 gatedeploy:
+	@echo "This make  command is broken."
 	@echo "Deploying website (throught GATE): you will be asked for passwords up to three times."
 	@echo "Uploading files on GATE machine... (1) GATE password."
-	@cd $(BUILD) && $(SCP) -r "." $(GATE_ACCOUNT)
+	@echo cd $(BUILD) && $(SCP) -r "." $(GATE_ACCOUNT)
 	@echo "Executing remote deploying script... (1) GATE pass first (2) SERVER pass."
-	$(SSH) $(GATE_HOST) $(GATE_DEPLOYMENT_SCRIPT)
+	@echo $(SSH) $(GATE_HOST) $(GATE_DEPLOYMENT_SCRIPT)
 
 .PHONY: all clean pkg
