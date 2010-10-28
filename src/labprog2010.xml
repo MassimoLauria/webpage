@@ -25,10 +25,12 @@
         <tr><td><strong>Orario</strong></td><td>Mercoledì, 9.00-12.00</td></tr>
         <tr><td><strong>Luogo</strong></td><td>Laboratori AST di via Tiburtina</td></tr>
         <tr><td>Docente</td><td>Nicola Galesi</td></tr>
-        <tr><td>Esercitatori</td><td>Massimo Lauria, Toni Mancini</td></tr>
+        <tr><td>Esercitatori</td><td><a href="mailto:lauria@di.uniroma1.it">Massimo Lauria</a>, Toni Mancini</td></tr>
         <tr>
-          <td>Email</td>
-          <td><a href="mailto:lab-fondamentiprogrammazione-di-uniroma1-it+subscribe@googlegroups.com">Iscriviti</a> per fare domande/ricevere risposte!</td>
+          <td>Avvisi</td>
+          <td><a
+          href="mailto:lab-fondamentiprogrammazione-di-uniroma1-it+subscribe@googlegroups.com">Iscriviti</a>
+          per ricevere gli avvisi!</td>
         </tr>
       </tbody>
     </table>
@@ -50,6 +52,21 @@
     Esercitatevi, esercitatevi, esercitatevi, ...</a></h4>
     <h4><a href="labprog2010.html#cheat">
     Conseguenze per chi imbroglia.</a></h4>
+
+    <entry>
+      <entry_title>3 Novembre 2010</entry_title>
+      <p>
+        Introduzione ad altre optioni del compilatore GCC:
+      </p>
+      <ul>
+        <li><tt>-std=c99</tt></li>
+        <li><tt>-pedantic</tt></li>
+        <li><tt>-pedantic-errors</tt></li>
+        <li><tt>-Wall</tt></li>
+        <li><tt>-Werror</tt></li>
+        <li><tt>-fno-builtin</tt></li>
+      </ul>
+    </entry>
 
     <entry>
       <entry_title>27 Ottobre 2010 - Sistemi Unix, compilatore e primi programmi in C.</entry_title>
