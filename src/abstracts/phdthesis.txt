@@ -1,0 +1,23 @@
+<p>
+Given a propositional formula $\phi$ we are interested in studying how difficult
+is to prove that $\phi$ is a tautology. Multivariate polynomials can be
+manipulated in a specific way to obtain such a proof. We study the power of this
+algebraic manipulation. In particular its running time is deeply related with
+the degree of the polynomials involved. We prove that this method behaves very
+badly in some cases, by showing that there are tautologies with very short
+proofs but which require high degree polynomials.
+</p>
+
+<p>
+This does not exclude that another method of polynomial manipulation could lead
+to an efficient algorithm. In this case we are able to prove that if such
+efficient algorithm exists, it could be used to solve problems believed to be
+very hard.
+</p>
+
+<p>
+Algebraic proof systems discussed so far are limited. We define a slightly
+stronger system $\mathsf{Pcrk}_{k}$. We give examples of tautologies that are easy for this
+system, but very hard for systems known in literature. Nevertheless we show that
+a random tautology is still very hard to prove for $\mathsf{Pcrk}_{k}$.
+</p>

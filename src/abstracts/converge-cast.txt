@@ -1,0 +1,17 @@
+<p>
+Given a set $S$ of points (<em>stations</em>) located in the $d$-dim. Euclidean space and a
+<em>root</em> $b \in S$, the $h$-$\mathsf{hops Convergecast}$ problem asks to find for a minimal
+energy-cost range assignment which allows to perform the <em>converge-cast</em> primitive
+(i.e. node accumulation) towards $b$ in at most $h$ hops. For this problem no
+polynomial time algorithm is known even for $h = 2$.
+</p>
+
+<p> The main goal of this work is the design of an efficient <em>distributed</em>
+heuristic (i.e. protocol) and the analysis (both theoretical and experimental)
+of its expected solution cost. In particular, we introduce an efficient
+parameterized randomized protocol for $h$-$\mathsf{hops Convergecast}$ and we analyze it on
+<em>random</em> instances created by placing $n$ points uniformly at random in a $d$-cube
+of side length $L$. We prove that for $h = 2$, its expected approximation ratio
+is bounded by some constant factor. Finally, for $h = 3,..., 8$, we provide a
+wide experimental study showing that our protocol has very good performances
+when compared with previously introduced (centralized) heuristics.  </p>
