@@ -36,25 +36,57 @@
     </table>
     <!-- END RECEIVE ORGTBL infophys -->
 
-    <p>
-      Lo scopo delle esercitazioni di questo corso è quello di
-      introdurre gli studenti alla programmazione, utilizzando in
-      particolare il linguaggio C.  Le peculiarità di questo
-      linguaggio permettono agli studenti di acquisire familiarità con
-      il concetto di memoria, di puntatore, di gestione degli
-      indirizzi ed in generale di concetti che i linguaggi di
-      programmazione più moderni tendono a nascondere.  Per acquisire
-      conoscenza del linguaggio C è necessario esercitarsi molto, per
-      questo è stato messo on line un catalogo di esercizi su cui
-      potete cimentarvi.
-    </p>
-    <h4><a href="http://tmancini.di.uniroma1.it/index.php?page=teaching.fondprog.materiale.libreriaesercizi&amp;opt[]=notop@teaching.fondprog&amp;opt[]=nonav@teaching.fondprog">
-    Esercitatevi, esercitatevi, esercitatevi, ...</a></h4>
-    <h4><a href="labprog2010.html#cheat">
-    Conseguenze per chi imbroglia.</a></h4>
+    <entry>
+      <entry_title>Avvisi</entry_title>
+
+      <h4><a
+      href="http://tmancini.di.uniroma1.it/index.php?page=teaching.fondprog.homeworks">
+      Il primo homework è stato pubblicato.</a> La scadenza per la
+      consegna è il 10 Dicembre 2010.<br />
+
+      Poiché la registrazione comporta diversi passaggi, fatela appena
+      il servizio di registrazione sarà pronto.  In ogni caso potete
+      cominciare a lavorare sugli esercizi.
+      </h4>
+    </entry>
 
     <entry>
-      <entry_title>3 Novembre 2010</entry_title>
+      <entry_title>17 Novembre 2010</entry_title>
+    </entry>
+
+    <entry>
+      <entry_title>10 Novembre 2010 - Uso dei costrutti iterativi.</entry_title>
+      <p>
+        A lezione è stato spiegato in dettaglio il codice
+        dell’esercizio <a
+        href="http://tmancini.di.uniroma1.it/index.php?page=teaching.fondprog.materiale.libreriaesercizi.esercizio&amp;opt[]=notop@teaching.fondprog&amp;opt[]=nonav@teaching.fondprog&amp;fname=Q.20101109-11.xmas.c">Xmas</a>. L’esercizio
+        è un esempio di codice che contiene cicli annidati.
+      </p>
+      <p>Un’annotazione riguardante numeri grandi. Su una macchina a
+      32 bit i <tt>long int</tt> sono interi realizzati utilizzando 32
+      bit, mentre su una macchina a 64 bit vengono realizzati
+      utilizzando 64 bit. Per avere 64 bit su entrambi i tipi di
+      macchine, consiglio di utilizzare i <tt>long long int</tt>, che
+      vengono gestiti da <tt>printf/scanf</tt> utilizzando il pattern
+      <tt>%lld</tt>.</p>
+      <ul>
+        <li><a
+        href="http://tmancini.di.uniroma1.it/index.php?page=teaching.fondprog.materiale.libreriaesercizi.esercizio&amp;opt[]=notop@teaching.fondprog&amp;opt[]=nonav@teaching.fondprog&amp;fname=Q.20101109-5.digitsum.c">Sommare le cifre di un numero.</a></li>
+        <li><a
+        href="http://tmancini.di.uniroma1.it/index.php?page=teaching.fondprog.materiale.libreriaesercizi.esercizio&amp;opt[]=notop@teaching.fondprog&amp;opt[]=nonav@teaching.fondprog&amp;fname=Q.20101109-6.digitroot.c">Radice digitale.</a></li>
+        <li><a
+        href="http://tmancini.di.uniroma1.it/index.php?page=teaching.fondprog.materiale.libreriaesercizi.esercizio&amp;opt[]=notop@teaching.fondprog&amp;opt[]=nonav@teaching.fondprog&amp;fname=Q.20101109-7.threeandeleven.c">Divisibilità per 3 e per 11.</a></li>
+        <li><a
+        href="http://tmancini.di.uniroma1.it/index.php?page=teaching.fondprog.materiale.libreriaesercizi.esercizio&amp;opt[]=notop@teaching.fondprog&amp;opt[]=nonav@teaching.fondprog&amp;fname=Q.20101109-9.base_change.c">Cambio di base.</a></li>
+        <li><a
+        href="http://tmancini.di.uniroma1.it/index.php?page=teaching.fondprog.materiale.libreriaesercizi.esercizio&amp;opt[]=notop@teaching.fondprog&amp;opt[]=nonav@teaching.fondprog&amp;fname=Q.20101109-8.digitinverter.c">Riflessione di un numero.</a></li>
+        <li><a
+        href="http://tmancini.di.uniroma1.it/index.php?page=teaching.fondprog.materiale.libreriaesercizi.esercizio&amp;opt[]=notop@teaching.fondprog&amp;opt[]=nonav@teaching.fondprog&amp;fname=Q.20101109-10.gcd.c">Massimo comun divisore.</a></li>
+      </ul>
+    </entry>
+
+    <entry>
+      <entry_title>3 Novembre 2010 - Uso di IF-ELSE e opzioni di GCC.</entry_title>
       <p>
         Introduzione ad altre optioni del compilatore GCC:
       </p>
@@ -66,6 +98,25 @@
         <li><tt>-Werror</tt></li>
         <li><tt>-fno-builtin</tt></li>
       </ul>
+
+      <p> I seguenti esercizi di C sono stati proposti a lezione
+      </p>
+      <ul>
+        <li><a href="http://tmancini.di.uniroma1.it/index.php?page=teaching.fondprog.materiale.libreriaesercizi.esercizio&amp;opt[]=notop@teaching.fondprog&amp;opt[]=nonav@teaching.fondprog&amp;fname=Q.20101103-2.least3.c">Il minimo di tre numeri.</a></li>
+        <li><a href="http://tmancini.di.uniroma1.it/index.php?page=teaching.fondprog.materiale.libreriaesercizi.esercizio&amp;opt[]=notop@teaching.fondprog&amp;opt[]=nonav@teaching.fondprog&amp;fname=Q.20101103-6.euro.c">Data una quantità in Euro, scomporla adeguatamente in tagli diversi.</a></li>
+        <li><a href="http://tmancini.di.uniroma1.it/index.php?page=teaching.fondprog.materiale.libreriaesercizi.esercizio&amp;opt[]=notop@teaching.fondprog&amp;opt[]=nonav@teaching.fondprog&amp;fname=Q.20101103-3.distance.c">Distanza tra due numeri.</a></li>
+        <li><a href="http://tmancini.di.uniroma1.it/index.php?page=teaching.fondprog.materiale.libreriaesercizi.esercizio&amp;opt[]=notop@teaching.fondprog&amp;opt[]=nonav@teaching.fondprog&amp;fname=Q.20101103-13.threeonaline.c">Verificare che tre punti siano su una retta.</a></li>
+        <li><a href="http://tmancini.di.uniroma1.it/index.php?page=teaching.fondprog.materiale.libreriaesercizi.esercizio&amp;opt[]=notop@teaching.fondprog&amp;opt[]=nonav@teaching.fondprog&amp;fname=Q.20101103-1.bisestile.c">Anni bisestili.</a></li>
+        <li><a href="http://tmancini.di.uniroma1.it/index.php?page=teaching.fondprog.materiale.libreriaesercizi.esercizio&amp;opt[]=notop@teaching.fondprog&amp;opt[]=nonav@teaching.fondprog&amp;fname=Q.20101103-14.interval.c ">Due intervalli della retta si intersecano?</a></li>
+        <li><a href="http://tmancini.di.uniroma1.it/index.php?page=teaching.fondprog.materiale.libreriaesercizi.esercizio&amp;opt[]=notop@teaching.fondprog&amp;opt[]=nonav@teaching.fondprog&amp;fname=Q.20101103-5.palindrome4digit.c">Numeri palindromi.</a></li>
+        <li><a href="http://tmancini.di.uniroma1.it/index.php?page=teaching.fondprog.materiale.libreriaesercizi.esercizio&amp;opt[]=notop@teaching.fondprog&amp;opt[]=nonav@teaching.fondprog&amp;fname=Q.20101103-4.rectangle.c">Punti interni ad un rettangolo.</a></li>
+      </ul>
+
+      <p>
+        Dovete provare a usare il costrutto IF-ELSE per verificare che
+        i dati inseriti in input siano corretti.
+      </p>
+
     </entry>
 
     <entry>
@@ -110,7 +161,34 @@
     </entry>
 
     <entry>
+      <entry_title>Esercizi disponibili per gli studenti</entry_title>
+      <p>
+        Lo scopo delle esercitazioni di questo corso è quello di
+        introdurre gli studenti alla programmazione, utilizzando in
+        particolare il linguaggio C.  Le peculiarità di questo
+        linguaggio permettono agli studenti di acquisire familiarità con
+        il concetto di memoria, di puntatore, di gestione degli
+        indirizzi ed in generale di concetti che i linguaggi di
+        programmazione più moderni tendono a nascondere.  Per acquisire
+        conoscenza del linguaggio C è necessario esercitarsi molto, per
+        questo è stato messo on line un catalogo di esercizi su cui
+        potete cimentarvi.
+      </p>
+      <h4><a href="http://tmancini.di.uniroma1.it/index.php?page=teaching.fondprog.materiale.libreriaesercizi&amp;opt[]=notop@teaching.fondprog&amp;opt[]=nonav@teaching.fondprog">
+      Esercitatevi, esercitatevi, esercitatevi, ...</a></h4>
+    </entry>
+
+    <entry>
       <entry_title><a id="cheat">Conseguenze per chi imbroglia</a></entry_title>
+
+      <p>
+        Il regolamento per lo svolgimento degli <em>“Homework”</em> è
+        spiegato alla <a
+        href="http://tmancini.di.uniroma1.it/index.php?page=teaching.fondprog.homeworks.regolamento">pagina relativa</a>.
+        La nota che segue approfondisce su alcuni degli aspetti etici
+        legati allo svolgimento del compito.
+      </p>
+
       <p>
         Imbrogliare in un corso universitario equivale ad una truffa.
         Per evitare dubbi e fraintendimenti mi raccomando di leggere
