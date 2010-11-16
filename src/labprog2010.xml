@@ -43,15 +43,31 @@
       href="http://tmancini.di.uniroma1.it/index.php?page=teaching.fondprog.homeworks">
       Il primo homework è stato pubblicato.</a> La scadenza per la
       consegna è il 10 Dicembre 2010.<br />
-
-      Poiché la registrazione comporta diversi passaggi, fatela appena
-      il servizio di registrazione sarà pronto.  In ogni caso potete
+      <br />
+      La registrazione comporta diversi passaggi, fatela appena il
+      servizio di registrazione sarà pronto.  In ogni caso potete
       cominciare a lavorare sugli esercizi.
       </h4>
     </entry>
 
     <entry>
-      <entry_title>17 Novembre 2010</entry_title>
+      <entry_title>17 Novembre 2010 - Uso di funzioni.</entry_title>
+      <ul>
+        <li><a
+        href="http://tmancini.di.uniroma1.it/index.php?page=teaching.fondprog.materiale.libreriaesercizi.esercizio&amp;opt[]=notop@teaching.fondprog&amp;opt[]=nonav@teaching.fondprog&amp;fname=Q.20101116-1.squareequation.c">Equazioni di secondo grado.</a></li>
+        <li><a
+        href="http://tmancini.di.uniroma1.it/index.php?page=teaching.fondprog.materiale.libreriaesercizi.esercizio&amp;opt[]=notop@teaching.fondprog&amp;opt[]=nonav@teaching.fondprog&amp;fname=Q.20101116-2.sqrtapx.c">Approssimazione della radice quadrata (soluzione visibile).</a></li>
+        <li><a
+        href="http://tmancini.di.uniroma1.it/index.php?page=teaching.fondprog.materiale.libreriaesercizi.esercizio&amp;opt[]=notop@teaching.fondprog&amp;opt[]=nonav@teaching.fondprog&amp;fname=Q.20101116-3.squarenosqrt.c">Equazioni di secondo grado (senza usare <tt>sqrt</tt>).</a></li>
+        <li><a
+        href="http://tmancini.di.uniroma1.it/index.php?page=teaching.fondprog.materiale.libreriaesercizi.esercizio&amp;opt[]=notop@teaching.fondprog&amp;opt[]=nonav@teaching.fondprog&amp;fname=Q.20101116-4.factiter.c">Fattoriale iterativo.</a></li>
+        <li><a
+        href="http://tmancini.di.uniroma1.it/index.php?page=teaching.fondprog.materiale.libreriaesercizi.esercizio&amp;opt[]=notop@teaching.fondprog&amp;opt[]=nonav@teaching.fondprog&amp;fname=Q.20101116-5.fibiter.c">Fibonacci iterativo.</a></li>
+        <li><a
+        href="http://tmancini.di.uniroma1.it/index.php?page=teaching.fondprog.materiale.libreriaesercizi.esercizio&amp;opt[]=notop@teaching.fondprog&amp;opt[]=nonav@teaching.fondprog&amp;fname=Q.20101116-6.binom.c">Coefficienti binomiali.</a></li>
+        <li><a
+        href="http://tmancini.di.uniroma1.it/index.php?page=teaching.fondprog.materiale.libreriaesercizi.esercizio&amp;opt[]=notop@teaching.fondprog&amp;opt[]=nonav@teaching.fondprog&amp;fname=Q.20101116-7.intlog.c">Logaritmo.</a></li>
+      </ul>
     </entry>
 
     <entry>
