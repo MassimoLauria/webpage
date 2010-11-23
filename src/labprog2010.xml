@@ -51,6 +51,27 @@
     </entry>
 
     <entry>
+      <entry_title>24 Novembre - Uso dei vettori</entry_title>
+      <p>
+      Nel corso abbiamo visto le funzioni in sufficiente dettaglio.
+      E` caldamente consigliato che tutti gli esercizi elencati oggi
+      (e in futuro) siano realizzati con un <tt>main</tt> che richiama
+      una funzione.  Questa funzione dovrebbe realizzare il compito
+      specificato dal testo dell'esercizio.
+      </p>
+      <ul>
+        <li><a
+        href="http://tmancini.di.uniroma1.it/index.php?page=teaching.fondprog.materiale.libreriaesercizi.esercizio&amp;opt[]=notop@teaching.fondprog&amp;opt[]=nonav@teaching.fondprog&amp;fname=Q.20101123-1.oddelements.c">Elementi dispari in un vettore.</a></li>
+      <li><a href="http://tmancini.di.uniroma1.it/index.php?page=teaching.fondprog.materiale.libreriaesercizi.esercizio&amp;opt[]=notop@teaching.fondprog&amp;opt[]=nonav@teaching.fondprog&amp;fname=Q.20101123-2.increasingarray.c">Ordine crescente.</a></li>
+      <li><a href="http://tmancini.di.uniroma1.it/index.php?page=teaching.fondprog.materiale.libreriaesercizi.esercizio&amp;opt[]=notop@teaching.fondprog&amp;opt[]=nonav@teaching.fondprog&amp;fname=Q.20101123-3.average.c">Media e varianza.</a></li>
+      <li><a href="http://tmancini.di.uniroma1.it/index.php?page=teaching.fondprog.materiale.libreriaesercizi.esercizio&amp;opt[]=notop@teaching.fondprog&amp;opt[]=nonav@teaching.fondprog&amp;fname=Q.20101123-3.average.c">Media e varianza (singola passata sui dati).</a></li>
+      <li><a href="http://tmancini.di.uniroma1.it/index.php?page=teaching.fondprog.materiale.libreriaesercizi.esercizio&amp;opt[]=notop@teaching.fondprog&amp;opt[]=nonav@teaching.fondprog&amp;fname=Q.20101123-4.increasedecrease.c">Indici pari crescenti, indici dispari decrescenti.</a></li>
+      <li><a href="http://tmancini.di.uniroma1.it/index.php?page=teaching.fondprog.materiale.libreriaesercizi.esercizio&amp;opt[]=notop@teaching.fondprog&amp;opt[]=nonav@teaching.fondprog&amp;fname=Q.20101123-5.increment.c">Incremento degli elementi.</a></li>
+      <li><a href="http://tmancini.di.uniroma1.it/index.php?page=teaching.fondprog.materiale.libreriaesercizi.esercizio&amp;opt[]=notop@teaching.fondprog&amp;opt[]=nonav@teaching.fondprog&amp;fname=Q.20101123-6.signchanges.c">Cambi di segno.</a></li>
+      </ul>
+    </entry>
+
+    <entry>
       <entry_title>17 Novembre 2010 - Uso di funzioni.</entry_title>
       <ul>
         <li><a
@@ -68,6 +89,18 @@
         <li><a
         href="http://tmancini.di.uniroma1.it/index.php?page=teaching.fondprog.materiale.libreriaesercizi.esercizio&amp;opt[]=notop@teaching.fondprog&amp;opt[]=nonav@teaching.fondprog&amp;fname=Q.20101116-7.intlog.c">Logaritmo.</a></li>
       </ul>
+      <p>
+        Abbiamo discusso l'uso dell'opzione <tt>-lm</tt> per il
+        compilatore GCC.  Questa opzione è necessaria per fare in modo
+        che il compilatore inserisca nell'eseguibile finale i
+        sottoprogrammi che realizzano funzioni matematiche come <tt>sqrt</tt>.
+      </p>
+      <p>
+        Abbiamo anche discusso gli intervalli numerici rappresentabili
+        in C utilizzando i vari tipi di dati, interi ed in virgola
+        mobile.  Abbiamo discusso le differenze in questo senso tra
+        compilatori a 64 bit e compilatori a 32 bit.
+      </p>
     </entry>
 
     <entry>
