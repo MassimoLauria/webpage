@@ -39,25 +39,42 @@
     <entry>
       <entry_title>Avvisi</entry_title>
 
+      <h4>Il primo esonero è mercoledì 1 Dicembre</h4>
+
       <h4><a
       href="http://tmancini.di.uniroma1.it/index.php?page=teaching.fondprog.homeworks">
       Il primo homework è stato pubblicato.</a> La scadenza per la
       consegna è il 10 Dicembre 2010.<br />
       <br />
-      La registrazione comporta diversi passaggi, fatela appena il
-      servizio di registrazione sarà pronto.  In ogni caso potete
-      cominciare a lavorare sugli esercizi.
+      La registrazione comporta diversi passaggi, fatela appena il servizio di
+      registrazione sarà pronto.  In ogni caso potete cominciare a lavorare
+      sugli esercizi.
       </h4>
     </entry>
+
+
+    <entry>
+      <entry_title>1 Dicembre - Primo Esonero.</entry_title>
+
+      L'esonero si svolgerà dalle ore 9.00 alle ore 12.00 nell'Aula 1
+      del Nuovo Edificio di Chimica (NEC).  Raccomandiamo di
+      presentarsi con un <strong>documento di identità</strong>.
+      Consigliamo oltretutto di presentarsi con il modulo di
+      registrazione per la consegna degli homework, per chi lo avesse
+      già pronto.
+      <br />
+      Durante l'esonero è possibile portare i propri appunti.
+    </entry>
+
 
     <entry>
       <entry_title>24 Novembre - Uso dei vettori</entry_title>
       <p>
-      Nel corso abbiamo visto le funzioni in sufficiente dettaglio.
-      E` caldamente consigliato che tutti gli esercizi elencati oggi
-      (e in futuro) siano realizzati con un <tt>main</tt> che richiama
-      una funzione.  Questa funzione dovrebbe realizzare il compito
-      specificato dal testo dell'esercizio.
+      Nel corso abbiamo visto le funzioni in sufficiente dettaglio.  E`
+      caldamente consigliato che tutti gli esercizi elencati oggi (e in futuro)
+      siano realizzati con un <tt>main</tt> che richiama una funzione.  Questa
+      funzione dovrebbe realizzare il compito specificato dal testo
+      dell'esercizio.
       </p>
       <ul>
         <li><a
@@ -291,3 +308,8 @@
 
 </page>
 
+<!--
+Local Variables:
+
+End:
+-->
