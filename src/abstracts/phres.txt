@@ -1,7 +1,15 @@
-<p>
-We initiate the study of the proof complexity of propositional encoding of (weak
-cases of) concrete independence results. In particular we study the proof
-complexity of Paris-Harrington's Large Ramsey Theorem. We prove a conditional
-lower bound in Resolution and a quasipolynomial upper bound in bounded-depth
-Frege.
-</p>
+<p>We  initiate the  study of  the proof  complexity  of propositional
+encoding of  (weak cases of) concrete independence  results.  We study
+the proof  complexity of  Paris-Harrington's Large Ramsey  Theorem for
+bicolorings of graphs.</p>
+
+<p>We prove a non-trivial conditional  lower bound in Resolution and a
+quasi-polynomial upper bound in  bounded-depth Frege.  The lower bound
+is conditional on a  hardness assumption for a Weak (quasi-polynomial)
+Pigeonhole Principle in $\mathsf{Res}(2)$.  The proof technique of the
+lower bound  extends the  idea of using  a combinatorial  principle to
+blow-up  a counterexample for  another combinatorial  principle beyond
+the  threshold  of  inconsistency.   A  strong  link  with  the  proof
+complexity  of  an  unbalanced   Ramsey  principle  for  triangles  is
+established.   This is  obtained by  applying some  highly non-trivial
+constructions due to Erdös and Mills.</p>

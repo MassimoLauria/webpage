@@ -1,27 +1,29 @@
+<p>  A  general  framework  for  parameterized  proof  complexity  was
+introduced  by Dantchev, Martin,  and Szeider  [FOCS, 2007].   In that
+framework  the  parameterized  version  of  any proof  system  is  not
+fpt-bounded  for  some technical  reasons,  but  we  remark that  this
+question  becomes much more  interesting if  we restrict  ourselves to
+those parameterized  contradictions $(F,k)$ in  which $F$ itself  is a
+contradiction.     We   call    such    parameterized   contradictions
+<i>strong</i>,  and with  one important  exception (vertex  cover) all
+interesting  contradictions we are  aware of  are strong.   It follows
+from the gap complexity theorem  of Dantchev, Martin and Szeider [FOCS
+2007]  that  tree-like  Parameterized  Resolution is  not  fpt-bounded
+w.r.t. strong parameterized contradictions.  </p>
 
-
-<p> A general framework for parameterized proof complexity was introduced by
-Dantchev, Martin and Szeider [FOCS, 2007]. In that framework the parameterized
-version of any proof system is not fpt-bounded for some technical reasons, but
-we remark that this question becomes much more interesting if we restrict
-ourselves to those parameterized contradictions $(F,k)$ in which $F$ itself is a
-contradiction. We call such parameterized contradictions {\em strong}, and with
-one important exception (vertex cover) all interesting contradictions we are
-aware of are strong. It follows from the gap complexity theorem of Dantchev,
-Martin and Szeider [FOCS 2007] that tree-like Parameterized Resolution is not
-fpt-bounded w.r.t. strong parameterized contradictions.</p>
-
-
-<p> The main result of this paper significantly improves upon this by showing
-that even the parameterized version of bounded-depth Frege is not fpt-bounded
-w.r.t.  strong contradictions. More precisely, we prove that the pigeonhole
-principle requires proofs of size $n^{\Omega(k)}$ in bounded-depth Frege, and,
-as a special case, in dag-like Parameterized Resolution. This answers an open
-question posed in Dantchev, Martin and Szeider [FOCS 2007].  </p>
-
-<p> In the opposite direction, we interpret a well-known $\mathsf{FPT}$
-algorithm for vertex cover as a DPLL procedure for Parameterized Resolution. Its
-generalization leads to a proof search algorithm for Parameterized Resolution
-that in particular shows that tree-like Parameterized Resolution allows short
-refutations of all parameterized contradictions given as bounded-width CNF's.
+<p>
+The  main result  of this  paper significantly  improves upon  this by
+showing that even the  parameterized version of bounded-depth Frege is
+not  fpt-bounded  w.r.t.\ strong  contradictions.  More precisely,  we
+prove  that   the  pigeonhole   principle  requires  proofs   of  size
+$n^{\Omega(k)}$  in bounded-depth Frege,  and, as  a special  case, in
+dag-like  Parameterized  Resolution.  This  answers  an open  question
+posed in Dantchev, Martin and Szeider [FOCS 2007].
 </p>
+
+<p>   In   the  opposite   direction,   we   interpret  a   well-known
+$\mathsf{FPT}$  algorithm for  vertex cover  as a  DPLL  procedure for
+Parameterized Resolution.  Its generalization leads to  a proof search
+algorithm for  Parameterized Resolution that in  particular shows that
+tree-like  Parameterized Resolution  allows short  refutations  of all
+parameterized contradictions given as bounded-width CNF's.</p>
