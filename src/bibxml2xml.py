@@ -30,6 +30,13 @@ In: %s. %s(%s):%s.<br />""",
 In: %s. pp. %s.<br />""",
 ("title","year","author","booktitle","pages")),
 
+"conference": ("""
+<span class='bibtitle'>%s</span> (%s).<br />
+<span class='bibauthor'>%s</span>.<br />
+In: %s. pp. %s.<br />""",
+("title","year","author","booktitle","pages")),
+
+
 "masterthesis":("""
 <strong>Master thesis</strong> <br />
 <span class='bibtitle'>%s</span> (%s).<br />
