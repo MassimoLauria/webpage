@@ -1,4 +1,6 @@
 #!/usr/bin/env python
+# -*- coding: utf-8 -*-
+
 # Setup
 CATEGORIES=[
     (u'manuscript', "Manuscripts",[]),
@@ -109,7 +111,7 @@ def format_entry(entry):
         else:
             el = entry.getElementsByTagName(TAG_PREFIX+tag)
             if len(el) == 1:
-                return el[0].firstChild.data
+                return u""+el[0].firstChild.data
             else:
                 return "??????"
 
