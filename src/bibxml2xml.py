@@ -3,9 +3,9 @@
 
 # Setup
 CATEGORIES=[
-    (u'manuscript', "Manuscripts",[]),
-    (u'journal' , "Journal",[]),
     (u'conference' , "Conference",[]),
+    (u'journal' , "Journal",[]),
+    (u'manuscript', "Manuscripts",[]),
     (u'thesis' , "Thesis",[]),
     (u'others' , "Misc",[])
 ]

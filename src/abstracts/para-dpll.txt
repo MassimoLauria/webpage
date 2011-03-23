@@ -1,0 +1,26 @@
+<p>
+
+We  study   the  performance  of  DPLL   algorithms  on  parameterized
+problems. In particular, we investigate  how difficult it is to decide
+whether  small solutions  exist for  satisfiability  and combinatorial
+problems.
+
+For this  purpose we  develop a Prover-Delayer  game which  models the
+running   time    of   DPLL    procedures   and   we    establish   an
+information-theoretic  method to  obtain lower  bounds to  the running
+time of parameterized DPLL procedures.
+
+
+We  illustrate   this  technique  by  showing  lower   bounds  to  the
+parameterized pigeonhole principle and to the ordering principle.
+
+As our main application we study the DPLL procedure for the problem of
+deciding whether a graph has a small clique.  We show that proving the
+absence  of  a  $k$-clique   requires  $n^{\Omega(k)}$  steps  for  a
+non-trivial distribution of graphs close to the critical threshold.
+
+For the  restricted case  of tree-like Parameterized  Resolution, this
+result answers a question asked  in Beyersdorff et al. (ECCC TR10-198)
+of understanding the Resolution complexity of this family of formulas.
+
+</p>
