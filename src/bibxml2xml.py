@@ -2,106 +2,111 @@
 # -*- coding: utf-8 -*-
 
 # Setup
-CATEGORIES=[
-    (u'conference' , "Conference",[]),
-    (u'journal' , "Journal",[]),
-    (u'manuscript', "Manuscripts",[]),
-    (u'thesis' , "Thesis",[]),
-    (u'others' , "Misc",[])
-]
+CATEGORIES = [
+    (u'conference', "Conference", []),
+    (u'journal', "Journal", []),
+    (u'manuscript', "Manuscripts", []),
+    (u'thesis', "Thesis", []),
+    (u'others', "Misc", [])]
 
-PRINT_EMPTY_CATEGORIES=False
+PRINT_EMPTY_CATEGORIES = False
 
-SORTBY=u"year"
-AUTHOR_SEP=u', '
-AUTHOR_LAST_SEP=u' and '
-TAG_PREFIX=u"bibxml:"
+SORTBY = u"year"
+AUTHOR_SEP = u', '
+AUTHOR_LAST_SEP = u' and '
+TAG_PREFIX = u"bibxml:"
 
 #FORMAT TEMPLATES
-templates={
+templates = {
 
 "article": ("""
 <span class='bibtitle'>%s</span> (%s).<br />
 <span class='bibauthor'>%s</span>.<br />
 In: %s. %s(%s):%s.<br />""",
-("title","year","author","journal","volume","number","pages")),
+("title", "year", "author", "journal", "volume", "number", "pages")),
 
 "inproceedings": ("""
 <span class='bibtitle'>%s</span> (%s).<br />
 <span class='bibauthor'>%s</span>.<br />
 In: %s. pp. %s.<br />""",
-("title","year","author","booktitle","pages")),
+("title", "year", "author", "booktitle", "pages")),
 
 "conference": ("""
 <span class='bibtitle'>%s</span> (%s).<br />
 <span class='bibauthor'>%s</span>.<br />
 In: %s. pp. %s.<br />""",
-("title","year","author","booktitle","pages")),
+("title", "year", "author", "booktitle", "pages")),
 
 
-"masterthesis":("""
+"masterthesis": ("""
 <strong>Master thesis</strong> <br />
 <span class='bibtitle'>%s</span> (%s).<br />
 <span class='bibauthor'>%s</span>.<br />
 %s.<br />""",
-("title","year","author","school")),
+("title", "year", "author", "school")),
 
 "misc": ("""
 <span class='bibtitle'>%s</span> (%s).<br />
 <span class='bibauthor'>%s</span>.<br />""",
-("title","year","author")),
+("title", "year", "author")),
 
-"phdthesis":("""
+"phdthesis": ("""
 <strong>Ph.D. thesis</strong> <br />
 <span class='bibtitle'>%s</span> (%s).<br />
 <span class='bibauthor'>%s</span>.<br />
 %s.<br />""",
-("title","year","author","school")),
+("title", "year", "author", "school")),
 
-"techreport":("""
+"techreport": ("""
 <span class='bibtitle'>%s</span> (%s).<br />
 <span class='bibauthor'>%s</span>.<br />
 %s. Report %s of %s.<br />""",
-("title","year","author","institution","number","year")),
+("title", "year", "author", "institution", "number", "year")),
 
 "unpublished": ("""
 <span class='bibtitle'>%s</span> (%s).<br />
 <span class='bibauthor'>%s</span>.<br />""",
-("title","year","author")),
+("title", "year", "author")),
 
 "backuptemplate": ("""
 <span class='bibtitle'>%s</span> (%s).<br />
 <span class='bibauthor'>%s</span>.<br />""",
-("title","year","author")) }
+("title", "year", "author"))}
 
 
 ################ SOURCE CODE STARTS HERE ######################
-import sys,os
+import sys
+import os
 from xml.dom import minidom
+
 
 def author_list(entry):
     """
     Produces the string with the list of authors
     """
     buf = u''
-    authors = [a.firstChild.data for a in entry.getElementsByTagName(TAG_PREFIX+"author")]
+    authors = [a.firstChild.data
+               for a in entry.getElementsByTagName(TAG_PREFIX + "author")]
     for a in authors[:-2]:
         buf += a + AUTHOR_SEP
     for a in authors[-2:-1]:
-       buf += authors[-2]+AUTHOR_LAST_SEP
+        buf += authors[-2] + AUTHOR_LAST_SEP
     buf += authors[-1]
     return buf
+
 
 def format_entry(entry):
     """
     Applies the appropriate formatting templates on an entry and
     output the XML string.
     """
-    nodetype = [ c.nodeName[7:] for c in entry.childNodes if c.nodeName[:7] == TAG_PREFIX][0]
+    nodetype = [c.nodeName[7:]
+                 for c in entry.childNodes if c.nodeName[:7] == TAG_PREFIX][0]
     try:
         (text, args) = templates[nodetype]
     except KeyError:
         (text, args) = templates["backuptemplate"]
+
     def get_value(tag):
         """
         Internal function.
@@ -109,24 +114,25 @@ def format_entry(entry):
         if tag == "author":
             return author_list(entry)
         else:
-            el = entry.getElementsByTagName(TAG_PREFIX+tag)
+            el = entry.getElementsByTagName(TAG_PREFIX + tag)
             if len(el) == 1:
-                return u""+el[0].firstChild.data
+                return u"" + el[0].firstChild.data
             else:
                 return "??????"
 
-    return text % tuple( [get_value(a) for a in args] )
+    return text % tuple([get_value(a) for a in args])
 
 
 def format_bibxml(xmldoc):
     """
     Extract the formatted XML (ready for the web) from the document
     """
-    entries = xmldoc.getElementsByTagName(TAG_PREFIX+"entry");
+    entries = xmldoc.getElementsByTagName(TAG_PREFIX + "entry")
 
     # Keywords triage
     for en in entries:
-        entry_keys = [a.firstChild.data for a in en.getElementsByTagName(TAG_PREFIX+"keywords")]
+        entry_keys = [a.firstChild.data
+                  for a in en.getElementsByTagName(TAG_PREFIX + "keywords")]
         for (k, _, l) in CATEGORIES:
             if k in entry_keys:
                 l.append(en)
@@ -135,17 +141,16 @@ def format_bibxml(xmldoc):
         if not (PRINT_EMPTY_CATEGORIES or elist):
             continue
         print "<entry>"
-        print "<entry_title><a id=\""+key+"\"/>"+title+"</entry_title>"
+        print "<entry_title><a id=\"" + key + "\"/>" + title + "</entry_title>"
         for en in elist:
             eid = en.getAttribute("id")
 
             # {{{ Load abstract ------------------------------------------
             abstract_data = u""
-            el = en.getElementsByTagName(TAG_PREFIX+"abstract_file")
+            el = en.getElementsByTagName(TAG_PREFIX + "abstract_file")
             if len(el):
                 abstract_data = extract_utf8data(el[0].firstChild.data)
             # }}} ---------------------------------------------------------
-
 
             # Print initial information
             print "<div class=\"bibentry\">"
@@ -227,8 +232,9 @@ def format_note(entry):
     """
     el = entry.getElementsByTagName(TAG_PREFIX+"note")
     if len(el) == 1:
-        return el[0].firstChild.data+"<br />"
-    else: return ""
+        return el[0].firstChild.data+".<br />"
+    else:
+        return ""
 
 
 
