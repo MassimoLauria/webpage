@@ -7,7 +7,7 @@ those parameterized  contradictions $(F,k)$ in  which $F$ itself  is a
 contradiction.     We   call    such    parameterized   contradictions
 <i>strong</i>,  and with  one important  exception (vertex  cover) all
 interesting  contradictions we are  aware of  are strong.   It follows
-from the gap complexity theorem  of Dantchev, Martin and Szeider [FOCS
+from the gap complexity theorem of Dantchev, Martin and Szeider [FOCS,
 2007]  that  tree-like  Parameterized  Resolution is  not  fpt-bounded
 w.r.t. strong parameterized contradictions.  </p>
 
@@ -18,7 +18,7 @@ not  fpt-bounded  w.r.t.\ strong  contradictions.  More precisely,  we
 prove  that   the  pigeonhole   principle  requires  proofs   of  size
 $n^{\Omega(k)}$  in bounded-depth Frege,  and, as  a special  case, in
 dag-like  Parameterized  Resolution.  This  answers  an open  question
-posed in Dantchev, Martin and Szeider [FOCS 2007].
+posed in Dantchev, Martin and Szeider [FOCS, 2007].
 </p>
 
 <p>   In   the  opposite   direction,   we   interpret  a   well-known
