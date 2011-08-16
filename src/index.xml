@@ -6,16 +6,22 @@
     <page_title>Contact info</page_title>
 
     <entry>
+      <entry_title>Position</entry_title>
+
+      <p>
+        I am a PostDoc at <a href="http://www.math.cas.cz/recherche/equipe.php?id_equipe=16">Department of Mathematical Logic, Algebra and Theoretical Computer Science</a> of the <a href="http://www.math.cas.cz/">Institute of Mathematics</a> of the <a href="http://www.cas.cz/">Academy of Sciences of the Czech Republic</a>.
+      </p>
+
+    </entry>
+
+    <entry>
       <entry_title>Telephone/E-Mail/Location</entry_title>
       <table>
         <tr>
-          <td>Tel:</td><td>+39 06 4991 8352 </td>
+          <td>Email:</td><td><tt>lauria[DOT]massimo[AT]gmail[DOT]com</tt> </td>
         </tr>
         <tr>
-          <td>Email:</td><td><tt>lauria[AT]di[DOT]uniroma1[DOT]it</tt> </td>
-        </tr>
-        <tr>
-          <td>Room:</td><td>336, in the 3<sup>rd</sup> floor of the building, north corridor.</td>
+          <td>Room:</td><td>524, in the 2<sup>nd</sup> floor.</td>
         </tr>
       </table>
     </entry>
@@ -25,12 +31,11 @@
 
 
       Massimo Lauria <br/>
-      Sapienza - Università di Roma <br/>
-      Dipartimento di Informatica <br/>
+      Institute of Mathematics, AS ČR<br/>
       <br/>
-      Via Salaria, 113 <br/>
-      00198 Rome <br/>
-      ITALY
+      Žitná 25<br/>
+      115 67  Praha 1<br/>
+      Czech Republic<br/>
     </entry>
 
     <!--<entry>
