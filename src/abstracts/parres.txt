@@ -14,7 +14,7 @@ w.r.t. strong parameterized contradictions.  </p>
 <p>
 The  main result  of this  paper significantly  improves upon  this by
 showing that even the  parameterized version of bounded-depth Frege is
-not  fpt-bounded  w.r.t.\ strong  contradictions.  More precisely,  we
+not  fpt-bounded  w.r.t. strong  contradictions.  More precisely,  we
 prove  that   the  pigeonhole   principle  requires  proofs   of  size
 $n^{\Omega(k)}$  in bounded-depth Frege,  and, as  a special  case, in
 dag-like  Parameterized  Resolution.  This  answers  an open  question

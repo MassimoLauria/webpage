@@ -49,7 +49,7 @@ TEMPFILES=$(SRC)/papers.bib.xml $(SRC)/papers.xml
 TARGET= $(WEBPAGES)
 
 all: $(TARGET)
-	@cp -avr $(addprefix $(CONTENT)/,$(DATAMAP)) $(BUILD)
+	@cp -av $(addprefix $(CONTENT)/,$(DATAMAP)) $(BUILD)
 
 clean:
 	@rm -vf $(TARGET)

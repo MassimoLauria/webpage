@@ -9,29 +9,38 @@
   <meta name="author" content="Massimo Lauria" />
   <meta name="keywords" content="Publication Massimo Lauria" />
 
-  <javascript src="MathJax/MathJax.js">
-    MathJax.Hub.Config({
-         showProcessingMessages: true,
-         extensions: ["tex2jax.js","TeX/AMSmath.js","TeX/AMSsymbols.js"],
-         jax: ["input/TeX", "output/HTML-CSS"],
-    tex2jax: {
-        inlineMath: [ ['$','$'], ["\\(","\\)"] ],
-        displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
-        processEscapes: true
-    },
-    "HTML-CSS": {
-        availableFonts: ["STIX","TeX"],
-        preferredFont: "TeX",
-        webFont: "TeX",
-        imageFont: null,
-        showMathMenu: true
-        }
-    });
-    //MathJax.Hub.Config({ config: "MathJax.js" });
-  </javascript>
+  <!-- MathJax Configuration -->
+  <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        showProcessingMessages: true,
+        extensions: ["tex2jax.js","TeX/AMSmath.js","TeX/AMSsymbols.js"],
+        jax: ["input/TeX", "output/HTML-CSS"],
+        tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+          displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+          processEscapes: true
+          },
+        "HTML-CSS": {
+          availableFonts: ["STIX","TeX"],
+          preferredFont: "TeX",
+          webFont: "TeX",
+          imageFont: null,
+          showMathMenu: true
+          }
+        });
+    </script>
+
+    <!-- Load MathJax from remote server (avoid local installation) -->
+    <script type="text/javascript"
+            src="http://cdn.mathjax.org/mathjax/latest/MathJax.js">
+    </script>
+    <!-- Local installation of MathJax -->
+    <!-- <script type="text/javascript" src="MathJax/MathJax.js">
+         </script>
+    -->
 
 
-  <javascript>
+  <script type="text/javascript">
     function toggleAbstract(id) {
 
     var div = document.getElementById("abs-" + id);
@@ -43,7 +52,7 @@
     return(true);
 
     }
-  </javascript>
+  </script>
 
 
 

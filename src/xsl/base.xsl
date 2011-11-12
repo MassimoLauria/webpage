@@ -25,7 +25,7 @@
 
         <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8" />
 		<xsl:call-template name="load_meta_tags" />
-		<xsl:call-template name="load_javascript" />
+		<xsl:call-template name="load_script" />
         <link rel="stylesheet" type="text/css" media="all" href="css/default.css" />
         <title><xsl:value-of select="./page/title" /></title>
         </head>
@@ -88,9 +88,13 @@
 </xsl:template>
 
 <!-- Load Javascript snippets -->
-<xsl:template name="load_javascript">
-	<xsl:for-each select="page/javascript">
-        <script type="text/javascript">
+<xsl:template name="load_script">
+	<xsl:for-each select="page/script">
+        <!-- <script type="text/javascript"> -->
+        <script>
+          <xsl:attribute name="type">
+            <xsl:value-of select="@type"/>
+          </xsl:attribute>
           <xsl:if test="not(normalize-space(@src) = '')">
 			<xsl:attribute name="src">
               <xsl:value-of select="@src"/>
