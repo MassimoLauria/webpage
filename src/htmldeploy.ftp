@@ -1,5 +1,5 @@
 # Batch script for FTP, deploy of HTML files
 
 cd ./public_html/
-put -r css/
+put css/
 put *.html
