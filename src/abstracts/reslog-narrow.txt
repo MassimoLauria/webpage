@@ -1,0 +1,15 @@
+<p>
+In  this note  we show  that any  $k$-CNF which  can be  refuted  by a
+quasi-polynomial $\mathsf{Res}^{*}(\mathsf{polylog})$ refutation has a
+“narrow”  refutation  in  $\mathsf{Res}$  (i.e.,  of  poly-logarithmic
+width).  Notice  that while $\mathsf{Res}^{*}(\mathsf{polylog})$  is a
+complete proof system,  this is not the case  for $\mathsf{Res}$ if we
+ask for  a narrow refutation.  In  particular is not  even possible to
+express all CNFs with narrow clauses.  But even for constant width CNF
+the former system  is complete and the latter is  not (see for example
+Bonet, Galesi  2001).  We  are going to  show that the  formulas “left
+out”       are      the       ones      which       require      large
+$\mathsf{Res}^{*}(\mathsf{polylog})$  refutations.  We  also  show the
+converse implication:  a narrow Resolution refutation can be simulated
+by a short $\mathsf{Res}^{*}(\mathsf{polylog})$ refutation.
+</p>
