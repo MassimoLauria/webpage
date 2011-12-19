@@ -5,8 +5,8 @@
 CATEGORIES = [
     (u'conference', "Conference", []),
     (u'journal', "Journal", []),
-    (u'short', "Short Notes", []),
-    (u'manuscript', "Manuscripts", []),
+    (u'short', "Short Notes (not peer reviewed)", []),
+    (u'manuscript', "Manuscripts (not peer reviewed)", []),
     (u'thesis', "Thesis", []),
     (u'others', "Misc", [])]
 
