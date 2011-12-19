@@ -8,8 +8,8 @@ TIME   = $(shell date +%Y%m%d.%H%M)
 SITEMAP=index writings teaching research downloads labprog2010
 DATAMAP=css images sw documents
 
-# TARGET_ACCOUNT="lauria@wwwusers.di.uniroma1.it"    # DSI Roma
-TARGET_ACCOUNT="lauria@matsrv.math.cas.cz"         # Math Institute Prague
+TARGET_ACCOUNT="lauria@wwwusers.di.uniroma1.it"    # DI Roma
+#TARGET_ACCOUNT="lauria@matsrv.math.cas.cz"         # Math Institute Prague
 
 # GATE_HOST     ="lauria@gate.di.uniroma1.it"
 # GATE_ACCOUNT  ="lauria@gate.di.uniroma1.it:~/site-cache/"
