@@ -1,5 +1,14 @@
-# Batch script for FTP, deploy of HTML files
+# Batch script for SFTP, deploy only the web pages
 
 cd ./public_html/
-put css/
-put *.html
+
+
+# Ensure site structure
+-mkdir css/
+-mkdir images/
+
+# Upload files
+put *.*
+put css/*.* css/
+put images/*.* images/
+

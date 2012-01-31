@@ -1,4 +1,20 @@
-# Batch script for FTP, deploy of the full site
+# Batch script for SFTP, deploy of the full site
 
 cd ./public_html/
-put .
+
+
+# Ensure site structure
+-mkdir css/
+-mkdir images/
+-mkdir sw/
+-mkdir documents/
+-mkdir documents/asmex
+
+# Upload files
+put *.*
+put css/*.* css/
+put images/*.* images/
+put sw/*.* sw/
+put documents/*.* documents/
+put documents/asmex/*.* documents/asmex/
+
