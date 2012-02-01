@@ -16,8 +16,8 @@
 
     rev-text: #fff; white
 
-    link-hover:   #3ae
-    link:         #33e
+    link-hover:   #333
+    link:         #333 underline
 
     box border: #777; dark gray
 
@@ -29,10 +29,8 @@
 /* Primary Text color */
 body, div#footer,
 .box, .warning, .alarm, blockquote,
-.toc_item, .toc_nil, .toc_title, .toc_item a, .toc_item a:visited
+.toc_item, .toc_nil, .toc_title
 { color: #333; }
-/* Reverse Text color */
-.toc_item a:hover, .toc_item a:visited:hover { color: #fff; }
 
 
 /* Primary Background */
@@ -53,9 +51,17 @@ blockquote, .box, .warning, .alert,
 
 
 /* Primary Link color */
-a:link, a:visited { color: #33e; }
+a:link, a:visited
+{ color: #333; text-decoration:underline; }
+.toc_item a, .toc_item a:visited
+{ color: #333; text-decoration:none; }
+
 /* Secondary Link color:  */
-a:link:hover, a:visited:hover { color: #3ae; }
+a:link:hover, a:visited:hover
+{ color: #333; text-decoration: none }
+
+.toc_item a:hover, .toc_item a:visited:hover
+{ color: #fff; text-decoration:none;}
 
 
 /* Alarm colors */
@@ -277,16 +283,16 @@ blockquote {
 
 .entry_title {
     width: 100%;
-    border-bottom-width: 2px;
-    border-bottom-style: solid;
+    /* border-bottom-width: 2px; */
+    /* border-bottom-style: solid; */
 }
 
 .entry {
     padding: 0;
     margin-left: 1%;
     margin-right: 1%;
-    border-bottom-width: 2px;
-    border-bottom-style: solid;
+    /* border-bottom-width: 2px; */
+    /* border-bottom-style: solid; */
 
     text-align: justify;
 }
@@ -294,8 +300,8 @@ blockquote {
 /** BIBLIOGRAPHY STUFF **/
 
 .bibentry {
-    border-top-width: 1px;
-    border-top-style: solid;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
 }
 
 .biblinks {
