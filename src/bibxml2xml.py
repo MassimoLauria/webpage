@@ -155,7 +155,8 @@ def format_bibxml(xmldoc):
 
             # Print initial information
             print "<div class=\"bibentry\">"
-            print "<table style=\"border:0; width:100%;\" cellspacing=\"3\" cellpadding=\"0\">"
+            print "<table style=\"border:0; width:100%;\"" \
+                  " cellspacing=\"3\" cellpadding=\"0\">"
             print """
 <tr>
 <td class="biblinks" valign="top" align="left">
@@ -168,7 +169,8 @@ def format_bibxml(xmldoc):
             print format_note(en)
 
             if len(abstract_data):
-                print "<div class=\"abstract-button\" onclick=\"toggleAbstract('"+eid+"');\">"
+                print "<div class=\"abstract-button\""\
+                      " onclick=\"toggleAbstract('" + eid + "');\">"
                 print "Show/Hide abstract"
                 print "</div>"
 
@@ -176,7 +178,7 @@ def format_bibxml(xmldoc):
             print "</div>"
 
             if len(abstract_data):
-                print "<div class=\"abstract\" id=\"abs-"+eid+"\" >"
+                print "<div class=\"abstract\" id=\"abs-" + eid + "\" >"
 
                 print "<div class=\"abstract-header\">"
                 print "Abstract"
@@ -195,12 +197,12 @@ def extract_utf8data(filename):
     import codecs
     code = u""
     # Works only on readable files
-    if (not os.access(filename, os.R_OK )):
+    if (not os.access(filename, os.R_OK)):
         return code
     # Extract the relevant part from the XHTML code
     try:
         with codecs.open(filename, "r", "UTF-8") as texfile:
-            code = texfile.read();
+            code = texfile.read()
     except IOError:
         code = u""
     return code
@@ -212,17 +214,17 @@ def format_filelinks(entry):
     """
     out = ""
     for (tag, img, text) in [
-         ("ps","ps.png","PS"),
-         ("ps_gz","ps_gz.png","PS.GZ"),
-         ("pdf","pdf.png","PDF"),
-         ("ee","ee.png","Online")
+         #("ps", "ps.png", "PS"),
+         #("ps_gz", "ps_gz.png", "PS.GZ"),
+         ("pdf", "pdf.png", "PDF"),
+         ("ee", "ee.png", "URL")
         ]:
-        el = entry.getElementsByTagName(TAG_PREFIX+tag)
+        el = entry.getElementsByTagName(TAG_PREFIX + tag)
         if len(el) != 1:
             continue
         en = el[0]
-        out += "<a href=\"" + en.firstChild.data +"\">"
-        out += "<img src=\"images/"+img+"\" alt=\"Download Article ("+text+")\" />"
+        out += "<a href=\"" + en.firstChild.data + "\">"
+        out += "<img src=\"images/" + img + "\" alt=\"[" + text + "]\" />"
         out += "</a>\n"
     return out
 
@@ -231,23 +233,22 @@ def format_note(entry):
     """
     Outputs the annotation contained in the entry.
     """
-    el = entry.getElementsByTagName(TAG_PREFIX+"note")
+    el = entry.getElementsByTagName(TAG_PREFIX + "note")
     if len(el) == 1:
-        return el[0].firstChild.data+".<br />"
+        return el[0].firstChild.data + ".<br />"
     else:
         return ""
 
 
-
 # Main Program
 if __name__ == "__main__":
-    if len(sys.argv)<1:
-        print "Usage "+sys.argv[0]+" <bibxmlfile>"
+    if len(sys.argv) < 1:
+        print "Usage " + sys.argv[0] + " <bibxmlfile>"
     else:
         print '<?xml version="1.0" encoding="utf-8" ?>'
         print '<?xml-stylesheet type="text/xsl" href="xsl/base.xsl"?>'
         print ''
         print "<papers>"
-        bib=minidom.parse(sys.argv[1])
+        bib = minidom.parse(sys.argv[1])
         format_bibxml(bib)
         print "</papers>"
