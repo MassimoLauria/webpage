@@ -1,0 +1,53 @@
+<p>
+During the last decade, an active line of research in proof complexity
+has  been to  study  space complexity  and  time-space trade-offs  for
+proofs.   Besides  being a  natural  complexity  measure of  intrinsic
+interest,  space is also  an important  issue in  SAT solving,  and so
+research  has mostly  focused on  weak systems  that are  used  by SAT
+solvers.
+</p>
+
+<p> There  has been a relatively  long sequence of papers  on space in
+resolution and resolution-based proof systems, and it is probably fair
+to say that  resolution is reasonably well understood  from this point
+of  view. For  other natural  candidates  to study,  however, such  as
+polynomial calculus or cutting planes,  very little has been known. We
+are not aware of any nontrivial space lower bounds for cutting planes,
+and  for polynomial calculus  the only  lower bound  has been  for CNF
+formulas of unbounded width in [Alekhnovich et al '02], where the
+space lower bound is smaller than  the initial width of the clauses in
+the  formulas.   Thus, in  particular,  it  has  been consistent  with
+current knowledge that polynomial calculus could be able to refute any
+$k$-CNF formula in constant space.</p>
+
+<p> In this paper, we prove several new results on space in polynomial
+calculus (PC),  and in the  extended proof system  polynomial calculus
+resolution (PCR) studied in [Alekhnovich et al '02]:
+<ol>
+<li>We prove an $\Omega(n)$ space lower bound in PC
+    for the canonical $3$-CNF version of the pigeonhole principle
+    formulas $\mathsf{PHP}_n^m$ with $m$ pigeons and $n$ holes, and show
+    that this is tight.</li>
+<li>
+For PCR, we prove an $\Omega(n)$ space lower bound for a bitwise
+    encoding of the functional pigeonhole principle with
+    $m$ pigeons and $n$ holes. These formulas have
+    width $O(\log n)$, and so this is an exponential improvement
+    over [Alekhnovich et al '02] measured in the width of the formulas.</li>
+<li>
+    We then present another encoding of a version of the
+    pigeonhole principle that has constant width, and prove
+    an $\Omega(n)$ space lower bound in PCR for these formulas as well.</li>
+
+<li>
+    Finally, we prove that any $k$-CNF formula can be refuted in PC in
+    simultaneous exponential size and linear space (which holds for
+    resolution and thus for PCR, but was not obviously the case for
+    PC). We also characterize a natural class of CNF formulas for
+    which the space complexity in resolution and PCR does not change
+    when the formula is transformed into a $3$-CNF in the canonical way,
+    something that we believe can be useful when proving PCR space lower
+    bounds for other well-studied formula families in proof complexity.
+</li>
+</ol>
+</p>
