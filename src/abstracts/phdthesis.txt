@@ -17,7 +17,7 @@ very hard.
 
 <p>
 Algebraic proof systems discussed so far are limited. We define a slightly
-stronger system $\mathsf{Pcrk}_{k}$. We give examples of tautologies that are easy for this
+stronger system $\mathsf{Pcr}_{k}$. We give examples of tautologies that are easy for this
 system, but very hard for systems known in literature. Nevertheless we show that
-a random tautology is still very hard to prove for $\mathsf{Pcrk}_{k}$.
+a random tautology is still very hard to prove for $\mathsf{Pcr}_{k}$.
 </p>
