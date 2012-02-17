@@ -162,11 +162,11 @@ def format_bibxml(xmldoc):
 <td class="biblinks" valign="top" align="left">
 """
             print "<span class=\"space\"><br/></span>"
-            print format_filelinks(en)
+            print format_filelinks(en).encode("utf8")
             print "</td>"
             print "<td class=\"bibinfo\" valign=\"baseline\" align=\"left\">"
-            print format_entry(en)
-            print format_note(en)
+            print format_entry(en).encode("utf8")
+            print format_note(en).encode("utf8")
 
             if len(abstract_data):
                 print "<div class=\"abstract-button\""\
