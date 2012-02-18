@@ -14,7 +14,7 @@ of  view. For  other natural  candidates  to study,  however, such  as
 polynomial calculus or cutting planes,  very little has been known. We
 are not aware of any nontrivial space lower bounds for cutting planes,
 and  for polynomial calculus  the only  lower bound  has been  for CNF
-formulas of unbounded width in [Alekhnovich et al '02], where the
+formulas of unbounded width in [Alekhnovich et al.'02], where the
 space lower bound is smaller than  the initial width of the clauses in
 the  formulas.   Thus, in  particular,  it  has  been consistent  with
 current knowledge that polynomial calculus could be able to refute any
@@ -22,7 +22,7 @@ $k$-CNF formula in constant space.</p>
 
 <p> In this paper, we prove several new results on space in polynomial
 calculus (PC),  and in the  extended proof system  polynomial calculus
-resolution (PCR) studied in [Alekhnovich et al '02]:
+resolution (PCR) studied in [Alekhnovich et al.'02]:
 <ol>
 <li>We prove an $\Omega(n)$ space lower bound in PC
     for the canonical $3$-CNF version of the pigeonhole principle
@@ -33,7 +33,7 @@ For PCR, we prove an $\Omega(n)$ space lower bound for a bitwise
     encoding of the functional pigeonhole principle with
     $m$ pigeons and $n$ holes. These formulas have
     width $O(\log n)$, and so this is an exponential improvement
-    over [Alekhnovich et al '02] measured in the width of the formulas.</li>
+    over [Alekhnovich et al.'02] measured in the width of the formulas.</li>
 <li>
     We then present another encoding of a version of the
     pigeonhole principle that has constant width, and prove
