@@ -2,19 +2,17 @@
 <?xml-stylesheet type="text/xsl" href="xsl/base.xsl"?>
 
 <page>
-    <title>Massimo Lauria @ CS Department</title>
+    <title>Massimo Lauria @ KTH Royal Institute of Technology</title>
     <page_title>Contact info</page_title>
 
     <entry>
       <entry_title>Position</entry_title>
 
       <p>
-        I am a PostDoc at the <a
-        href="http://www.di.uniroma1.it">Department of Computer
-        Science</a> of <a href="http://www.uniroma1.it">Sapienza,
-        Università di Roma</a>.  The department is member of
-        the <a href="http://www.i3s.uniroma1.it/">Facoltà di
-        Ingegneria dell'Informazione, Informatica e Statistica</a>.
+        I am currently a PostDoc at the <a href="http://www.kth.se/en/csc">School of Computer Science and
+        Communication</a>   of   <a  href="http://www.kth.se/en/">KTH
+        Royal  Institute of  Technology</a>, working  in  the research
+        group of <a  href="http://www.csc.kth.se/~jakobn/">Jakob Nordström</a>.
       </p>
 
     </entry>
@@ -23,13 +21,13 @@
       <entry_title>Telephone/E-Mail/Location</entry_title>
       <table>
         <tr>
-          <td>Email:</td><td><tt>lauria[AT]di[DOT]uniroma1[DOT]it</tt> </td>
+          <td>Email:</td><td><tt>lauria[AT]kth[DOT]se</tt> </td>
         </tr>
         <tr>
-          <td>Tel:</td><td>+39 06 4991 8305</td>
+          <td>Telephone:</td><td>not available yet</td>
         </tr>
         <tr>
-          <td>Room:</td><td>336, on the 3<sup>nd</sup> floor.</td>
+          <td>Office:</td><td>Osquars backe 2, 4th floor, office 1433.</td>
         </tr>
       </table>
     </entry>
@@ -37,19 +35,18 @@
     <entry>
       <entry_title>Mail address</entry_title>
 
-
       Massimo Lauria<br/>
-      Dipartimento di Informatica - Sapienza, Università di Roma<br/>
-      <br/>
-      Via Salaria, 113<br/>
-      00198 Roma<br/>
-      Italy<br/>
+      KTH Royal Institute of Technology<br/>
+      School of Computer Science and Communication<br/>
+      SE-100 44 Stockholm<br/>
+      Sweden<br/>
     </entry>
 
     <!--<entry>
       <entry_title>Links</entry_title>
     </entry> -->
 </page>
+
 
 
 

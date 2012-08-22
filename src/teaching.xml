@@ -1,8 +1,27 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <?xml-stylesheet type="text/xsl" href="xsl/base.xsl"?>
 <page>
-    <title>Massimo Lauria @ CS Department - Teaching activities</title>
+    <title>Massimo Lauria @ KTH Royal Institute of Technology - Teaching activities</title>
     <page_title>Teaching activities</page_title>
+
+    <entry>
+      <entry_title>Fall 2012 — Communication Complexity (Co-Lecturer)</entry_title>
+      <p>
+        This year the course 2D2441 (i.e. “Seminars on Theoretical
+        Computer Science”) is  devoted to Communication Complexity and
+        is taught by <a  href="http://www.csc.kth.se/~jakobn/">Jakob Nordström</a>.<br/>
+
+        Consider the following problem:  Alice and Bob want to compute
+        a function  <i>f(x,y)</i>. Alice has input  <i>x</i> while Bob
+        has input <i>y</i>:  how many bit do they  need to exchange in
+        order  to compute  the desired  function?  The  study  of such
+        communication  complexity has  application in  circuit design,
+        data stream algorithms, cryptography, ecc...
+      </p>
+
+      More information can  be found  at the course
+      <a href="http://www.csc.kth.se/utbildning/kth/kurser/DD2441/semteo12/">page</a>.
+    </entry>
 
     <entry>
       <entry_title>2010-2011 — Fondamenti di Programmazione (Esercitazioni)</entry_title>
@@ -89,3 +108,4 @@
 
 </entry>
 </page>
+

@@ -4,7 +4,7 @@
 <page>
 
 
-  <title>Massimo Lauria @ CS Department - Publications, papers, surveys...</title>
+  <title>Massimo Lauria @ KTH Royal Institute of Technology - Publications, papers, surveys...</title>
   <meta name="description" content="List of publications of Massimo Lauria" />
   <meta name="author" content="Massimo Lauria" />
   <meta name="keywords" content="Publication Massimo Lauria" />
@@ -34,11 +34,6 @@
     <script type="text/javascript"
             src="http://cdn.mathjax.org/mathjax/latest/MathJax.js">
     </script>
-    <!-- Local installation of MathJax -->
-    <!-- <script type="text/javascript" src="MathJax/MathJax.js">
-         </script>
-    -->
-
 
   <script type="text/javascript">
     function toggleAbstract(id) {
@@ -76,4 +71,5 @@
   <include filename="papers.xml" />
 
 </page>
+
 
