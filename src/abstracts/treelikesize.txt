@@ -1,0 +1,12 @@
+<p>
+We  explain   an  asymmetric   Prover-Delayer  game   which  precisely
+characterizes  proof  size  in  tree-like Resolution.  This  game  was
+previously  described in  a parameterized  complexity context  to show
+lower  bounds  for  parameterized   formulas  and  for  the  classical
+pigeonhole principle. The main point of  this note is to show that the
+asymmetric game in fact characterizes tree-like Resolution proof size,
+i.e.  in principle  our  proof  method allows  to  always achieve  the
+optimal lower  bounds. This  is in  contrast with  previous techniques
+described  in  the  literature.  We  also  provide  a  very  intuitive
+information-theoretic interpretation of the game.
+</p>
