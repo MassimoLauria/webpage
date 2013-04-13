@@ -1,0 +1,29 @@
+<p>
+  During the last decade, an active line of research in proof
+  complexity has been into the space complexity of proofs and how
+  space is related to other measures. By now these aspects of
+  resolution are fairly well understood, but many open problems remain
+  for the related but stronger polynomial calculus (PC/PCR) proof
+  system.  For instance, the space complexity of many standard
+  “benchmark formulas” is still open, as well as the relation of
+  space to size and degree in PC/PCR.
+  <br />
+  We prove that if a formula requires large resolution width, then
+  making XOR substitution yields a formula requiring large PCR space,
+  providing some circumstantial evidence that degree might be a lower
+  bound for space. More importantly, this immediately yields formulas
+  that are very hard for space but very easy for size, exhibiting a
+  size-space separation similar to what is known for resolution. Using
+  related ideas, we show that if a graph has good expansion and in
+  addition its edge set can be partitioned into short cycles, then the
+  Tseitin formula over this graph requires large PCR space. In
+  particular, Tseitin formulas over random $4$-regular graphs
+  almost surely require space at least $\Omega(\sqrt{n})$.
+  <br />
+  Our proofs use techniques recently introduced in
+  [Bonacina-Galesi '13].  Our final contribution, however, is to show
+  that these techniques provably cannot yield non-constant space lower
+  bounds for the functional pigeonhole principle, delineating the
+  limitations of this framework and suggesting that we are still far
+  from characterizing PC/PCR space.
+</p>
