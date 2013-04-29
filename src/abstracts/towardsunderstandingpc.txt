@@ -21,7 +21,7 @@
   almost surely require space at least $\Omega(\sqrt{n})$.
   <br />
   Our proofs use techniques recently introduced in
-  [Bonacina-Galesi '13].  Our final contribution, however, is to show
+  [Bonacina-Galesi~'13].  Our final contribution, however, is to show
   that these techniques provably cannot yield non-constant space lower
   bounds for the functional pigeonhole principle, delineating the
   limitations of this framework and suggesting that we are still far
