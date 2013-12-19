@@ -20,7 +20,7 @@ absence  of  a  $k$-clique   requires  $n^{\Omega(k)}$  steps  for  a
 non-trivial distribution of graphs close to the critical threshold.
 
 For the  restricted case  of tree-like Parameterized  Resolution, this
-result answers a question asked  in Beyersdorff et al. (ECCC TR10-198)
-of understanding the Resolution complexity of this family of formulas.
+result  answers a  question  asked  in Beyersdorff  et  al. (2012)  of
+understanding the Resolution complexity of this family of formulas.
 
 </p>
