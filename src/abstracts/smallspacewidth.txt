@@ -1,0 +1,13 @@
+In 2003, Atserias and Dalmau resolved  a major open question about the
+resolution proof system  by establishing that the  space complexity of
+formulas  is always  an  upper bound  on the  width  needed to  refute
+them.  Their proof  is beautiful  but somewhat  mysterious in  that it
+relies  heavily  on  tools  from  finite model  theory.   We  give  an
+alternative,  completely  elementary,  proof   that  works  by  simple
+syntactic manipulations of resolution refutations. As a by-product, we
+develop a “black-box” technique for proving space lower bounds via a
+“static” complexity  measure  that  works  against  any  resolution
+refutation—previous techniques have been inherently adaptive.  We
+conclude by showing that the  related question for polynomial calculus
+(i.e., whether space is an upper bound on degree) seems unlikely to be
+resolvable by similar methods.
