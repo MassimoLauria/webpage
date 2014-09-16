@@ -53,17 +53,21 @@
 
   <page_title>Publications, papers, surveys...</page_title>
   <p>
-  This is the list of my papers.  The copyright of the papers belongs to the publisher.  All papers available
-  on this page are preprints, are essentially equivalent to the published versions, and can be only downloaded
-  for personal or academic purposes.  Some of my articles are also indexed and stored at the following
+  Here I list  my papers.  Their copyrights belongs  to the publisher.
+  All papers locally stored on this page are preprints, are essentially equivalent to the published versions, and can be only downloaded
+  for personal or academic purposes. Some of my papers are also indexed and stored at the following
   locations
   </p>
   <ul>
     <li>
       <a href="http://eccc.hpi-web.de/author/215/">Electronic Colloquium on Computational Complexity</a>
     </li>
+    <li>
+      <a href="http://arxiv.org/find/cs/1/au:+Lauria_M/0/1/0/all/0/1">ArXiv</a>
+    </li>
+    <li><a href="http://scholar.google.se/citations?user=XCR-qNgAAAAJ">Google Scholar</a></li>
     <li> <a href="http://www.informatik.uni-trier.de/%7Eley/db/indices/a-tree/l/Lauria:Massimo.html">Digital
-        Bibliography and Library Project (DBPL)</a> (not very up to date)
+        Bibliography and Library Project (DBPL)</a>
     </li>
     <li><a href="http://www.scribd.com/MassimoL">Scribd document archives</a></li>
   </ul>
