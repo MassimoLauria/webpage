@@ -2,9 +2,35 @@
 <?xml-stylesheet type="text/xsl" href="xsl/base.xsl"?>
 <page>
     <title>Massimo Lauria @ KTH Royal Institute of Technology - Files</title>
-    <page_title>Downloads page</page_title>
-     <entry>
-    No files to download. Old debian packages which were present here have been removed.
+    <page_title>Software</page_title>
+
+    <p>
+      My work has mostly theoretical nature,  but from time to time it
+      is  useful   to  produce   some  piece   of  software   to  help
+      with research.
+      My software can be found on <a href="https://github.com/MassimoLauria/">GitHub</a>.
+    </p>
+
+    <entry>
+      <entry_title>CNF formula generator [<a href="https://github.com/MassimoLauria/cnfgen">here</a>]</entry_title>
+
+      Proof complexity  research often  studies benchmark  formulas to
+      prove various  theorems. Furthermore it is  often informative to
+      run SAT solvers on  these formulas. <code>CNFgen</code> software
+      (and the included  library) provides a convenient  way to create
+      and manipulate these formulas.
+      <br />
+
     </entry>
+
+    <entry>
+      <entry_title>Pebble [<a href="https://github.com/MassimoLauria/pebble">here</a>]</entry_title>
+
+      This program computes  the black/reversible/black-white pebbling
+      number  of  a  single  sink  directed  acyclic  graph.  This  is
+      a particularly difficult computation, and the program uses a lot
+      of memory and time.
+    </entry>
+
 </page>
 
