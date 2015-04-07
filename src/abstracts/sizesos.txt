@@ -1,18 +1,20 @@
 <p>
-We  exhibit  families  of  $k$-CNF  formulas  on  $n$  variables  with
-sums-of-squares (SOS)  proofs of  unsatisfiability of degree  $d$ that
-require  SOS  proofs of  size  $n^{\Omega(d)}$  for  $d =  d(n)$  from
-constant all the way up to $n^\delta$ for some constant $\delta$. This
-shows that the $n^{O(d)}$ running  time obtained by using the Lasserre
-semidefinite programming relaxations to  find degree-$d$ SOS proofs is
-optimal  up to  constant factors  in the  exponent. We  establish this
-result  by  combining  NP-reductions  expressible  as  low-degree  SOS
-derivations with  the idea of  relativizing CNF formulas  in [Dantchev
-and  Riis  '03],  and  then  applying a  restriction  argument  as  in
-[Atserias, Muller, and Oliva '13] and [Atserias, Lauria, and Nordstrom
-'14].  This  yields a  generic method of  amplifying SOS  degree lower
-bounds  to size  lower bounds  (and also  generalizes the  approach in
-[ALN14] to obtain size lower  bounds for the proof systems resolution,
-polynomial  calculus, and  Sherali-Adams from  lower bounds  on width,
-degree, and rank, respectively).
+We exhibit families of $4$-CNF formulas over $n$ variables that have
+sums-of-squares (SOS)  proofs of unsatisfiability of  degree (a.k.a.
+rank) $d$ but require SOS proofs of size $n^{\Omega(d)}$ for values
+of $d = d(n)$ from constant all the way up to $n^{\delta}$ for some
+universal  constant$\delta$.  This  shows  that  the  $n^{O(d)}$
+running time  obtained by using the  Lasserre semidefinite programming
+relaxations to  find degree-$d$ SOS  proofs is optimal up  to constant
+factors  in  the  exponent.  We establish  this  result  by  combining
+$\mathsf{NP}$-reductions expressible  as low-degree SOS  derivations with
+the      idea      of      relativizing      CNF      formulas      in
+[Kraj́íček '04] and [Dantchev and Riis'03],
+and then applying a restriction  argument as in [Atserias, Müller, and
+Oliva '13] and [Atserias, Lauria, and Nordström '14].
+This yields a generic method of  amplifying SOS degree lower bounds to
+size lower  bounds, and  also generalizes the  approach in  [ALN14] to
+obtain size lower bounds for  the proof systems resolution, polynomial
+calculus, and  Sherali-Adams from lower  bounds on width,  degree, and
+rank, respectively.
 </p>
