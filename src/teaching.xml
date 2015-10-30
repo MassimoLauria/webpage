@@ -5,7 +5,23 @@
     <page_title>Teaching activities</page_title>
 
     <entry>
-      <entry_title>Spring 2014 — Sum of squares and integer programming relaxations</entry_title>
+      <entry_title>Fall 2015 TokyoTech — Introduction to Proof Complexity</entry_title>
+      <p>
+          “Proof Complexity” is the study of the complexity of proving
+          propositional theorems.  In this  course we  discuss various
+          proof systems and we will show lower bounds for them.
+      </p>
+      <p>
+          <strong>TIMEFRAME:</strong> the  course consists in  <b>10 lectures</b>
+          of 90 minutes  each. It starts in October, 20th  and ends in
+          November 27th.
+      </p>
+
+    </entry>
+
+    
+    <entry>
+      <entry_title>Spring 2014 KTH — Sum of squares and integer programming relaxations</entry_title>
       <p>
           The strongest  approximation algorithms in literature  employ linear
           and semidefinite positive relaxations of integer programs.
@@ -42,7 +58,7 @@
 
 
     <entry>
-      <entry_title>Fall 2012 — Communication Complexity (Co-Lecturer)</entry_title>
+      <entry_title>Fall 2012 KTH — Communication Complexity (Co-Lecturer)</entry_title>
       <p>
         This year the course 2D2441 (i.e. “Seminars on Theoretical
         Computer Science”) is  devoted to Communication Complexity and
@@ -69,7 +85,7 @@
     </entry>
 
     <entry>
-      <entry_title>2010-2011 — Fondamenti di Programmazione (Esercitazioni)</entry_title>
+      <entry_title>2010-2011 Uniroma1 — Fondamenti di Programmazione (Esercitazioni)</entry_title>
       <p>
         Lo scopo delle esercitazioni di questo corso è quello di
         introdurre gli studenti alla programmazione, utilizzando in
@@ -91,7 +107,7 @@
     </entry>
 
     <entry>
-      <entry_title>2009-2010 — Metodi Matematici per L'Informatica (Esercitazioni)</entry_title>
+      <entry_title>2009-2010 Uniroma1 — Metodi Matematici per L'Informatica (Esercitazioni)</entry_title>
       <p>
         Nell’anno accademico 2009-2010 ho condotto le esercitazioni
         del Canale P-Z del corso di “Metodi Matematici per
@@ -115,7 +131,7 @@
     </entry>
 
     <entry>
-      <entry_title>2007-2008 — Architettura 2 (Tutoraggio)</entry_title>
+      <entry_title>2007-2008 Uniroma1 — Architettura 2 (Tutoraggio)</entry_title>
       <p>
         Qui potete trovare il codice sorgente legato alle sessioni di tutoraggio
         per il corso di architettura 2. Se avete domande sul codice potete
