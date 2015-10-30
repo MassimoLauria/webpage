@@ -8,7 +8,6 @@ cd ./public_html/
 -mkdir images/
 -mkdir sw/
 -mkdir documents/
--mkdir documents/asmex
 
 # Upload files
 put *.*
@@ -16,5 +15,4 @@ put css/*.* css/
 put images/*.* images/
 put sw/*.* sw/
 put documents/*.* documents/
-put documents/asmex/*.* documents/asmex/
 
