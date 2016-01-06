@@ -1,14 +1,15 @@
 #!/bin/make
 
 ########### CONFIGURATION ########################
-SITE="webpage.sapienza"
+SITE="webpage.lauria"
 TIME   = $(shell date +%Y%m%d.%H%M)
 
 
 SITEMAP=index writings teaching research downloads labprog2010
 DATAMAP=css images sw documents
 
-TARGET_ACCOUNT="lauria@u-shell.csc.kth.se"          # KTH
+TARGET_ACCOUNT="lauria@login1.lsi.upc.edu"          # UPC
+#TARGET_ACCOUNT="lauria@u-shell.csc.kth.se"         # KTH
 #TARGET_ACCOUNT="lauria@wwwusers.di.uniroma1.it"    # DI Roma
 #TARGET_ACCOUNT="lauria@matsrv.math.cas.cz"         # Math Institute Prague
 
