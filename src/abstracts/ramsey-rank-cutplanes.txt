@@ -1,11 +1,11 @@
 <p>
-Ramsey Theorem  is a  cornerstone of combinatorics  and logic.  In its
-simplest formulation  it says that there  is a function  $r$ such that
-any simple  graph with $r(k,s)$  vertices contains either a  clique of
-size $k$ or  an independent set of size $s$.   We study the complexity
-of  proving upper  bounds for  the number  $r(k,k)$. In  particular we
-focus on the propositional proof  system cutting planes; we prove that
-the upper  bound $r(k,k)\leq 4^{k}$ requires  cutting planes proof
-of high  rank. In order  to do that  we show a protection  lemma which
-could be of independent interest.
+Ramsey's Theorem is  a cornerstone of combinatorics and  logic. In its
+simplest formulation it says that for every $k > 0$ and $s > 0$, there
+is a minimum number  $r(k, s)$ such that any simple  graph with at least
+$r(k, s)$ vertices contains either a  clique of size $k$ or an independent
+set of size $s$. We study the complexity of proving upper bounds for the
+number $r(k,  k)$. In  particular, we focus  on the  propositional proof
+system cutting  planes; we show  that any  cutting plane proof  of the
+upper bound “$r(k, k) \leq 4k$” requires  high rank. In order to do that we
+show a protection lemma which could be of independent interest.
 </p>
