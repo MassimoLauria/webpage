@@ -4,8 +4,8 @@
 SITE="webpage.lauria"
 TIME   = $(shell date +%Y%m%d.%H%M)
 
-
-SITEMAP=index writings teaching research downloads labprog2010
+COURSES=2010-Labprog-Uniroma1
+SITEMAP=index writings teaching research downloads ${COURSES}
 DATAMAP=css images sw documents
 
 TARGET_ACCOUNT="lauria@login1.lsi.upc.edu"          # UPC
