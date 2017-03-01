@@ -2,7 +2,7 @@
 <?xml-stylesheet type="text/xsl" href="xsl/base.xsl"?>
 
 <page>
-    <title>Massimo Lauria @ Universitat Politècnica de Catalunya</title>
+    <title>Massimo Lauria @ Sapienza, Università di Roma</title>
     <page_title>Contact info</page_title>
 
 
@@ -10,41 +10,45 @@
       <entry_title>Position</entry_title>
 
       <p>
-        I     am     currently     a     postdoc     at     the     <a
-        href="http://www.cs.upc.edu/">Computer  Science Department</a>
-        of  the <a  href="http://www.upc.edu/">Universitat Politècnica
-        de    Catalunya</a>   in    the   research    group   of    <a
-        href="https://www.cs.upc.edu/~atserias/">Albert Atserias</a>.
+        I      am      currently      a     Researcher      at      <a
+        href="http://www.dss.uniroma1.it/en">Department of Statistical
+        Sciences</a>  of <a  href="http://www.uniroma1.it/">Sapienza -
+        Università di Roma</a>
       </p>
       
-      <p>
-        Among previous appointments, I  have been a visiting professor
-        at the Department of Mathematical and Computing Science of the
-        <a href="http://www.titech.ac.jp/english/">Tokyo  Institute of
-        Technology</a>,            hosted             by            <a
-        href="http://www.is.titech.ac.jp/~watanabe/">Osamu
-        Watanabe</a>   and   previously   a    PostDoc   at   the   <a
-        href="http://www.kth.se/en/csc">School of Computer Science and
-        Communication</a> of <a href="http://www.kth.se/en/">KTH Royal
-        Institute of Technology</a> during  the period from September,
-        2012  to August,  2015, working  in the  research group  of <a
-        href="http://www.csc.kth.se/~jakobn/">Jakob Nordström</a>.
-      </p>
+      <!-- <p> -->
+      <!--   Among previous appointments,  I have been a postdoc  at the <a -->
+      <!--   href="http://www.cs.upc.edu/">Computer  Science Department</a> -->
+      <!--   of  the <a  href="http://www.upc.edu/">Universitat Politècnica -->
+      <!--   de    Catalunya</a>   in    the   research    group   of    <a -->
+      <!--   href="https://www.cs.upc.edu/~atserias/">Albert  Atserias</a>, -->
+      <!--   I  have  been  a  visiting  professor  at  the  Department  of -->
+      <!--   Mathematical    and    Computing    Science    of    the    <a -->
+      <!--   href="http://www.titech.ac.jp/english/">Tokyo   Institute   of -->
+      <!--   Technology</a>,            hosted             by            <a -->
+      <!--   href="http://www.is.titech.ac.jp/~watanabe/">Osamu -->
+      <!--   Watanabe</a>   and   previously   a    PostDoc   at   the   <a -->
+      <!--   href="http://www.kth.se/en/csc">School of Computer Science and -->
+      <!--   Communication</a> of <a href="http://www.kth.se/en/">KTH Royal -->
+      <!--   Institute of Technology</a> during  the period from September, -->
+      <!--   2012  to August,  2015, working  in the  research group  of <a -->
+      <!--   href="http://www.csc.kth.se/~jakobn/">Jakob Nordström</a>. -->
+      <!-- </p> -->
 
     </entry>
- 
+
     <entry>
       <entry_title>E-Mail/Location</entry_title>
       <table>
         <tr>
-          <td>Email:</td><td><tt>lauria[AT]cs[DOT]upc[DOT]edu</tt> </td>
+          <td>Email:</td><td><tt>massimo[DOT]lauria[AT]sapienza[DOT]it</tt> </td>
         </tr>
 
         <tr>
-          <td>Office:</td><td>Omega Building - Room 223, Campus Nord, Universitat Politècnica de Catalunya</td>
+          <td>Office:</td><td>TBA</td>
         </tr>
         <tr>
-          <td>Phone:</td><td>+34 93 41 37864</td>
+          <td>Phone:</td><td>TBA</td>
         </tr>
       </table>
     </entry>
@@ -53,14 +57,13 @@
       <entry_title>Mail address</entry_title>
 
       Massimo Lauria<br/>
-      Universitat Politècnica de Catalunya<br/>
-      c/ Jordi Girona, 1-3, Omega 223<br/>
-      08034 Barcelona, Catalonia, Spain<br/>
+      Sapienza University of Rome<br/>
+      Dipartimento di Scienze Statistiche<br/>
+      Piazzale Aldo Moro, 5<br/>
+      00185 Roma<br/>
+      Italy<br/>
     </entry>
 
-    <!--<entry>
-      <entry_title>Links</entry_title>
-    </entry> -->
 </page>
 
 
