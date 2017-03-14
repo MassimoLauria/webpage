@@ -1,14 +1,15 @@
 # Batch script for SFTP, deploy only the web pages
 
-cd ./public_html/
-
-
-# Ensure site structure
+# Upload site
 -mkdir css/
 -mkdir images/
-
-# Upload files
 put *.*
 put css/*.* css/
 put images/*.* images/
 
+# Fix permissions
+chmod 755 css/
+chmod 755 images/
+chmod 644 *.*
+chmod 644 css/*.*
+chmod 644 images/*.*

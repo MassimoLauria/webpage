@@ -1,25 +1,18 @@
 #!/bin/make
 
 ########### CONFIGURATION ########################
-SITE="webpage.lauria"
+
+NAME="webpage.lauria"
+REMOTE="massimo@massimolauria.net:/srv/www/massimolauria.net/"
 TIME   = $(shell date +%Y%m%d.%H%M)
 
 COURSES=2010-Labprog-Uniroma1
 SITEMAP=index writings teaching research downloads ${COURSES}
 DATAMAP=css images sw documents
 
-TARGET_ACCOUNT="massimo@46.101.177.90"              # Digital Ocean Host
-#TARGET_ACCOUNT="lauria@login1.lsi.upc.edu"         # UPC
-#TARGET_ACCOUNT="lauria@u-shell.csc.kth.se"         # KTH
-#TARGET_ACCOUNT="lauria@wwwusers.di.uniroma1.it"    # DI Roma
-#TARGET_ACCOUNT="lauria@matsrv.math.cas.cz"         # Math Institute Prague
 
-# GATE_HOST     ="lauria@gate.di.uniroma1.it"
-# GATE_ACCOUNT  ="lauria@gate.di.uniroma1.it:~/site-cache/"
-# GATE_DEPLOYMENT_SCRIPT ="~/pegasus-deploy.sh"
 
 ########### BUILDING PARAMETERS ##################
-
 
 STYLESHEET=base
 
@@ -68,28 +61,20 @@ $(SRC)/papers.bib.xml: $(SRC)/papers.bib
 $(SRC)/papers.xml: $(SRC)/papers.bib.xml
 	$(BIBXML2XML) $(SRC)/papers.bib.xml > $(SRC)/papers.xml
 
-snap:
+pkg:
 	@make clean
-	@echo "Building $(SITE).SNAP.$(TIME).tar.gz"
-	@$(GIT) archive HEAD | gzip -c > ../$(SITE).SNAP.$(TIME).tar.gz 2> /dev/null
+	@echo "Building $(NAME).SNAP.$(TIME).tar.gz"
+	@$(GIT) archive HEAD | gzip -c > ../$(NAME).SNAP.$(TIME).tar.gz 2> /dev/null
 
 fulldeploy:
 	@echo "Deploying website: you will be asked for a password"
 	@cd $(BUILD) && \
-	$(SFTP) -o "BatchMode=no" -b $(DEPLOYFULL) $(TARGET_ACCOUNT)
+	$(SFTP) -o "BatchMode=no" -b $(DEPLOYFULL) $(REMOTE)
 
 htmldeploy:
 	@echo "Deploying website: you will be asked for a password"
 	@cd $(BUILD) && \
-	$(SFTP) -o "BatchMode=no" -b $(DEPLOYHTML) $(TARGET_ACCOUNT)
+	$(SFTP) -o "BatchMode=no" -b $(DEPLOYHTML) $(REMOTE)
 
 
-# gatedeploy:
-# 	@echo "This make  command is broken."
-# 	@echo "Deploying website (throught GATE): you will be asked for passwords up to three times."
-# 	@echo "Uploading files on GATE machine... (1) GATE password."
-# 	@echo cd $(BUILD) && $(SCP) -r "." $(GATE_ACCOUNT)
-# 	@echo "Executing remote deploying script... (1) GATE pass first (2) SERVER pass."
-# 	@echo $(SSH) $(GATE_HOST) $(GATE_DEPLOYMENT_SCRIPT)
-
-.PHONY: all clean pkg
+.PHONY: all clean pkg htmldeploy fulldeploy
