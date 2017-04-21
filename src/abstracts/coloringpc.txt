@@ -1,0 +1,21 @@
+<p>
+We consider the natural encoding of the $k$-colouring problem for a
+   given graph as a set of polynomial equations.
+  We prove that there are bounded-degree graphs that do not have legal
+  $k$-colourings but for which the polynomial calculus proof system
+  defined in [Clegg et al '96, Alekhnovich et al '02]
+  requires linear degree, and hence exponential size, to establish
+  this fact. This implies a linear degree lower bound for any algorithms based
+  on Gröbner bases solving $k$-colouring problems using this encoding.
+  The same bound applies also for the algorithm studied in a sequence of papers
+  [De Loera et al '08, '09, '11, '15]
+  based on Hilbert's Nullstellensatz proofs for a slightly
+  different encoding, thus resolving an open problem  mentioned, e.g., in  
+  [De Loera et al '09] and [Li et al '16].
+  <br />
+  We obtain  our results by  combining the polynomial  calculus degree
+  lower bound for functional pigeonhole principle (FPHP) formulas over
+  bounded-degree bipartite graphs in [Mikša and Nordström '15]
+  with a reduction from FPHP  to $k$-colouring derivable by polynomial
+  calculus in constant degree.
+</p>
