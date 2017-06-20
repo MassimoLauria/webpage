@@ -1,0 +1,1363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- 2017-06-20 Tue 16:46 -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Massimo Lauria @ Sapienza - Publications</title>
+<meta name="generator" content="Org mode">
+<meta name="author" content="Massimo Lauria">
+<style type="text/css">
+ <!--/*--><![CDATA[/*><!--*/
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #ccc;
+    box-shadow: 3px 3px 3px #eee;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: visible;
+    padding-top: 1.2em;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    background-color: white;
+    top: -10px;
+    right: 10px;
+    padding: 3px;
+    border: 1px solid black;
+  }
+  pre.src:hover:before { display: inline;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { width: 90%; }
+  /*]]>*/-->
+</style>
+<link rel='stylesheet' href='css/default.css' />
+</head>
+<body>
+<div id="preamble" class="status">
+<header>
+      <nav>
+        <ul class="nav">
+          <li> <a href="index.html"> Home</a></li>
+          <li> <a href="research.html">Research</a></li>
+          <li> <a href="writings.html">Papers</a></li>
+          <li class="current"> <a href="teaching.html">Teaching</a></li>
+          <li> <a href="downloads.html">Software</a></li>
+        </ul>
+      </nav>
+    </header>
+</div>
+<main id="content">
+
+
+<article id="outline-container-org1901eca" class="outline-1">
+<h1 id="org1901eca">Publications, papers, surveys&#x2026;</h1>
+<div class="outline-text-1" id="text-org1901eca">
+<p>
+Here I  list my papers.  Their copyrights belongs to  the publisher.
+All  papers  locally   stored  on  this  page   are  preprints,  are
+essentially equivalent  to the published  versions, and can  be only
+downloaded for personal or academic  purposes. Some of my papers are
+also indexed and stored at the following locations
+</p>
+
+<ul class="org-ul">
+<li><a href="http://eccc.hpi-web.de/author/215/">Electronic Colloquium on Computational Complexity</a></li>
+<li><a href="http://arxiv.org/find/cs/1/au:+Lauria_M/0/1/0/all/0/1">ArXiv</a></li>
+<li><a href="http://scholar.google.se/citations?user=XCR-qNgAAAAJ">Google Scholar</a></li>
+<li><a href="http://www.informatik.uni-trier.de/~ley/db/indices/a-tree/l/Lauria:Massimo.html">Digital Bibliography and Library Project (DBPL)</a></li>
+</ul>
+
+
+<div class="papers">
+<article>
+<h2><a id="journal"/>Journal</h2>
+<div class="bibentry">
+<table style="border:0; width:100%;" cellspacing="3" cellpadding="0">
+
+<tr>
+<td class="biblinks" valign="top" align="left">
+
+<span class="space"><br/></span>
+<a href="documents/ramsey-rank-cutplanes.pdf"><img src="images/pdf.png" alt="[PDF]" /></a>
+<a href="http://doi.acm.org/10.1145/2903266"><img src="images/ee.png" alt="[URL]" /></a>
+
+</td>
+<td class="bibinfo" valign="baseline" align="left">
+
+<span class='bibtitle'>A Rank Lower Bound for Cutting Planes Proofs of Ramsey's Theorem</span> (2016).<br />
+<span class='bibauthor'>Massimo Lauria</span>.<br />
+In: ACM Trans. Comput. Theory. 8(4):17:1--17:13.<br />
+Conference version published at SAT, 2013.<br />
+<div class="abstract-button" onclick="toggleAbstract('Lauria2016RankLower');">
+Show/Hide abstract
+</div>
+</td></tr></table>
+</div>
+<div class="abstract" id="abs-Lauria2016RankLower" >
+<div class="abstract-header">
+Abstract
+</div>
+<p>
+Ramsey's Theorem is  a cornerstone of combinatorics and  logic. In its
+simplest formulation it says that for every $k > 0$ and $s > 0$, there
+is a minimum number  $r(k, s)$ such that any simple  graph with at least
+$r(k, s)$ vertices contains either a  clique of size $k$ or an independent
+set of size $s$. We study the complexity of proving upper bounds for the
+number $r(k,  k)$. In  particular, we focus  on the  propositional proof
+system cutting  planes; we show  that any  cutting plane proof  of the
+upper bound “$r(k, k) \leq 4k$” requires  high rank. In order to do that we
+show a protection lemma which could be of independent interest.
+</p>
+
+</div>
+<div class="bibentry">
+<table style="border:0; width:100%;" cellspacing="3" cellpadding="0">
+
+<tr>
+<td class="biblinks" valign="top" align="left">
+
+<span class="space"><br/></span>
+<a href="documents/sizesos.pdf"><img src="images/pdf.png" alt="[PDF]" /></a>
+
+</td>
+<td class="bibinfo" valign="baseline" align="left">
+
+<span class='bibtitle'>Tight Size-Degree Bounds for Sums-of-Squares Proofs</span> (2017).<br />
+<span class='bibauthor'>Massimo Lauria and Jakob Nordström</span>.<br />
+In: Computationa Complexity. TBA(TBA):1--38.<br />
+Conference version published at CCC, 2015.<br />
+<div class="abstract-button" onclick="toggleAbstract('LauriaNordstrom2017SOS');">
+Show/Hide abstract
+</div>
+</td></tr></table>
+</div>
+<div class="abstract" id="abs-LauriaNordstrom2017SOS" >
+<div class="abstract-header">
+Abstract
+</div>
+<p>
+We exhibit families of $4$-CNF formulas over $n$ variables that have
+sums-of-squares (SOS)  proofs of unsatisfiability of  degree (a.k.a.
+rank) $d$ but require SOS proofs of size $n^{\Omega(d)}$ for values
+of $d = d(n)$ from constant all the way up to $n^{\delta}$ for some
+universal  constant$\delta$.  This  shows  that  the  $n^{O(d)}$
+running time  obtained by using the  Lasserre semidefinite programming
+relaxations to  find degree-$d$ SOS  proofs is optimal up  to constant
+factors  in  the  exponent.  We establish  this  result  by  combining
+$\mathsf{NP}$-reductions expressible  as low-degree SOS  derivations with
+the      idea      of      relativizing      CNF      formulas      in
+[Kraj́íček '04] and [Dantchev and Riis'03],
+and then applying a restriction  argument as in [Atserias, Müller, and
+Oliva '13] and [Atserias, Lauria, and Nordström '14].
+This yields a generic method of  amplifying SOS degree lower bounds to
+size lower  bounds, and  also generalizes the  approach in  [ALN14] to
+obtain size lower bounds for  the proof systems resolution, polynomial
+calculus, and  Sherali-Adams from lower  bounds on width,  degree, and
+rank, respectively.
+</p>
+
+</div>
+<div class="bibentry">
+<table style="border:0; width:100%;" cellspacing="3" cellpadding="0">
+
+<tr>
+<td class="biblinks" valign="top" align="left">
+
+<span class="space"><br/></span>
+<a href="documents/largenarrowproofs.pdf"><img src="images/pdf.png" alt="[PDF]" /></a>
+<a href="http://dx.doi.org/10.1145/2898435"><img src="images/ee.png" alt="[URL]" /></a>
+
+</td>
+<td class="bibinfo" valign="baseline" align="left">
+
+<span class='bibtitle'>Narrow Proofs May Be Maximally Long</span> (2016).<br />
+<span class='bibauthor'>Albert Atserias, Massimo Lauria and Jakob Nordström</span>.<br />
+In: ACM Trans. Comput. Logic. 17(3):19:1--19:30.<br />
+Conference version published at CCC, 2014.<br />
+<div class="abstract-button" onclick="toggleAbstract('aln16');">
+Show/Hide abstract
+</div>
+</td></tr></table>
+</div>
+<div class="abstract" id="abs-aln16" >
+<div class="abstract-header">
+Abstract
+</div>
+We prove that there are  $3$-CNF formulas over $n$ variables refutable
+in  resolution in  width $w$  that require  resolution proofs  of size
+$n^{\Omega(w)}$.  This shows that the simple counting argument that
+any  formula  refutable  in  width  $w$ must  have  a  proof  in  size
+$n^{O(w)}$  is  essentially  tight.  Moreover,  our  lower  bound
+extends   even   to   polynomial   calculus   resolution   (PCR)   and
+Sherali-Adams, implying  that the  corresponding size upper  bounds in
+terms of degree and rank are tight as well.  In contrast, the formulas
+have Lasserre proofs of constant rank  and size polynomial in both $n$
+and $w$.
+
+</div>
+<div class="bibentry">
+<table style="border:0; width:100%;" cellspacing="3" cellpadding="0">
+
+<tr>
+<td class="biblinks" valign="top" align="left">
+
+<span class="space"><br/></span>
+<a href="documents/paris-harrington.pdf"><img src="images/pdf.png" alt="[PDF]" /></a>
+<a href="http://doi.acm.org/10.1145/2946801"><img src="images/ee.png" alt="[URL]" /></a>
+
+</td>
+<td class="bibinfo" valign="baseline" align="left">
+
+<span class='bibtitle'>On the Proof Complexity of Paris-Harrington and Off-Diagonal Ramsey Tautologies</span> (2016).<br />
+<span class='bibauthor'>Lorenzo Carlucci, Nicola Galesi and Massimo Lauria</span>.<br />
+In: ACM Trans. Comput. Logic. 17(4):26:1--26:25.<br />
+Part of this work appeared as a conference paper at CCC, 2011.<br />
+<div class="abstract-button" onclick="toggleAbstract('CarlucciGalesiLauria2016ParisHarrington');">
+Show/Hide abstract
+</div>
+</td></tr></table>
+</div>
+<div class="abstract" id="abs-CarlucciGalesiLauria2016ParisHarrington" >
+<div class="abstract-header">
+Abstract
+</div>
+<p>We study  the proof  complexity of Paris-Harrington’s  Large Ramsey
+Theorem  for  bi-colorings  of  graphs and  of  off-diagonal  Ramsey’s
+Theorem. For Paris-Harrington we prove a non-trivial conditional lower
+bound in  Resolution and  a non-trivial  upper bound  in bounded-depth
+Frege. The lower bound is  conditional on a (very reasonable) hardness
+assumption  for  a  weak (quasi-polynomial)  Pigeonhole  principle  in
+$\mathsf{Res}(2)$. We  show that  under such  assumption, there  is no
+refutation of  the Paris-Harrington formulas of  size quasi-polynomial
+in the number of propositional  variables. The proof technique for the
+lower bound  extends the  idea of using  a combinatorial  principle to
+blow-up a  counterexample for  another combinatorial  principle beyond
+the  threshold  of  inconsistency.  A   strong  link  with  the  proof
+complexity  of   an  unbalanced   off-diagonal  Ramsey   principle  is
+established. This  is obtained by  adapting some constructions  due to
+Erdös and  Mills. We  prove a non-trivial  Resolution lower  bound for
+a family of such off-diagonal Ramsey principles.</p>
+
+</div>
+<div class="bibentry">
+<table style="border:0; width:100%;" cellspacing="3" cellpadding="0">
+
+<tr>
+<td class="biblinks" valign="top" align="left">
+
+<span class="space"><br/></span>
+<a href="documents/ramsey-graphs-full.pdf"><img src="images/pdf.png" alt="[PDF]" /></a>
+<a href="http://dx.doi.org/10.1007/s00493-015-3193-9"><img src="images/ee.png" alt="[URL]" /></a>
+
+</td>
+<td class="bibinfo" valign="baseline" align="left">
+
+<span class='bibtitle'>The Complexity of Proving that a Graph is Ramsey</span> (2017).<br />
+<span class='bibauthor'>Massimo Lauria, Pavel Pudlák, Vojtěch Rödl and Neil Thapen</span>.<br />
+In: Combinatorica. 37(2):253--268.<br />
+Conference version published at ICALP, 2013.<br />
+<div class="abstract-button" onclick="toggleAbstract('lprt2016');">
+Show/Hide abstract
+</div>
+</td></tr></table>
+</div>
+<div class="abstract" id="abs-lprt2016" >
+<div class="abstract-header">
+Abstract
+</div>
+<p>
+We say  that a graph  with $n$ vertices is  $c$-Ramsey if it  does not
+contain either a clique or an independent  set of size $c \log n$.  We
+define a  CNF formula which expresses  this property for a  graph $G$.
+We  show a  superpolynomial lower  bound on  the length  of resolution
+proofs that $G$ is $c$-Ramsey,  for <em>every</em> graph $G$.  Our proof
+makes use  of the fact  that every Ramsey  graph must contain  a large
+subgraph with some of the statistical properties of the random graph.
+</p>
+
+</div>
+<div class="bibentry">
+<table style="border:0; width:100%;" cellspacing="3" cellpadding="0">
+
+<tr>
+<td class="biblinks" valign="top" align="left">
+
+<span class="space"><br/></span>
+<a href="documents/spacepoly.pdf"><img src="images/pdf.png" alt="[PDF]" /></a>
+<a href="http://dx.doi.org/10.1137/120895950"><img src="images/ee.png" alt="[URL]" /></a>
+
+</td>
+<td class="bibinfo" valign="baseline" align="left">
+
+<span class='bibtitle'>Space Complexity in Polynomial Calculus</span> (2015).<br />
+<span class='bibauthor'>Yuval Filmus, Massimo Lauria, Jakob Nordström, Neil Thapen and Noga Ron-Zewi</span>.<br />
+In: SIAM Journal on Computing. 44(4):1119--1153.<br />
+Conference version published at CCC, 2012.<br />
+<div class="abstract-button" onclick="toggleAbstract('flntr2015');">
+Show/Hide abstract
+</div>
+</td></tr></table>
+</div>
+<div class="abstract" id="abs-flntr2015" >
+<div class="abstract-header">
+Abstract
+</div>
+<p>
+During the last decade, an active line of research in proof complexity
+has  been to  study  space complexity  and  time-space trade-offs  for
+proofs.   Besides  being a  natural  complexity  measure of  intrinsic
+interest,  space is also  an important  issue in  SAT solving,  and so
+research  has mostly  focused on  weak systems  that are  used  by SAT
+solvers.
+</p>
+
+<p> There  has been a relatively  long sequence of papers  on space in
+resolution and resolution-based proof systems, and it is probably fair
+to say that  resolution is reasonably well understood  from this point
+of  view. For  other natural  candidates  to study,  however, such  as
+polynomial calculus or cutting planes,  very little has been known. We
+are not aware of any nontrivial space lower bounds for cutting planes,
+and  for polynomial calculus  the only  lower bound  has been  for CNF
+formulas of unbounded width in [Alekhnovich et al.'02], where the
+space lower bound is smaller than  the initial width of the clauses in
+the  formulas.   Thus, in  particular,  it  has  been consistent  with
+current knowledge that polynomial calculus could be able to refute any
+$k$-CNF formula in constant space.</p>
+
+<p> In this paper, we prove several new results on space in polynomial
+calculus (PC),  and in the  extended proof system  polynomial calculus
+resolution (PCR) studied in [Alekhnovich et al.'02]:
+<ol>
+<li>We prove an $\Omega(n)$ space lower bound in PC
+    for the canonical $3$-CNF version of the pigeonhole principle
+    formulas $\mathsf{PHP}_n^m$ with $m$ pigeons and $n$ holes, and show
+    that this is tight.</li>
+<li>
+For PCR, we prove an $\Omega(n)$ space lower bound for a bitwise
+    encoding of the functional pigeonhole principle with
+    $m$ pigeons and $n$ holes. These formulas have
+    width $O(\log n)$, and so this is an exponential improvement
+    over [Alekhnovich et al.'02] measured in the width of the formulas.</li>
+<li>
+    We then present another encoding of a version of the
+    pigeonhole principle that has constant width, and prove
+    an $\Omega(n)$ space lower bound in PCR for these formulas as well.</li>
+
+<li>
+    Finally, we prove that any $k$-CNF formula can be refuted in PC in
+    simultaneous exponential size and linear space (which holds for
+    resolution and thus for PCR, but was not obviously the case for
+    PC). We also characterize a natural class of CNF formulas for
+    which the space complexity in resolution and PCR does not change
+    when the formula is transformed into a $3$-CNF in the canonical way,
+    something that we believe can be useful when proving PCR space lower
+    bounds for other well-studied formula families in proof complexity.
+</li>
+</ol>
+</p>
+
+</div>
+<div class="bibentry">
+<table style="border:0; width:100%;" cellspacing="3" cellpadding="0">
+
+<tr>
+<td class="biblinks" valign="top" align="left">
+
+<span class="space"><br/></span>
+<a href="documents/smallspacewidth.pdf"><img src="images/pdf.png" alt="[PDF]" /></a>
+<a href="http://dx.doi.org/10.1145/2746339"><img src="images/ee.png" alt="[URL]" /></a>
+
+</td>
+<td class="bibinfo" valign="baseline" align="left">
+
+<span class='bibtitle'>From Small Space to Small Width in Resolution</span> (2015).<br />
+<span class='bibauthor'>Yuval Filmus, Massimo Lauria, Mladen Miksa, Jakob Nordström and Marc Vinyals</span>.<br />
+In: ACM Transactions on Computational Logic. 16(4):28:1--28:15.<br />
+Conference version published at STACS, 2014.<br />
+<div class="abstract-button" onclick="toggleAbstract('flmnv15');">
+Show/Hide abstract
+</div>
+</td></tr></table>
+</div>
+<div class="abstract" id="abs-flmnv15" >
+<div class="abstract-header">
+Abstract
+</div>
+In 2003, Atserias and Dalmau resolved  a major open question about the
+resolution proof system  by establishing that the  space complexity of
+formulas  is always  an  upper bound  on the  width  needed to  refute
+them.  Their proof  is beautiful  but somewhat  mysterious in  that it
+relies  heavily  on  tools  from  finite model  theory.   We  give  an
+alternative,  completely  elementary,  proof   that  works  by  simple
+syntactic manipulations of resolution refutations. As a by-product, we
+develop a “black-box” technique for proving space lower bounds via a
+“static” complexity  measure  that  works  against  any  resolution
+refutation—previous techniques have been inherently adaptive.  We
+conclude by showing that the  related question for polynomial calculus
+(i.e., whether space is an upper bound on degree) seems unlikely to be
+resolvable by similar methods.
+
+</div>
+<div class="bibentry">
+<table style="border:0; width:100%;" cellspacing="3" cellpadding="0">
+
+<tr>
+<td class="biblinks" valign="top" align="left">
+
+<span class="space"><br/></span>
+<a href="documents/para-dpll.pdf"><img src="images/pdf.png" alt="[PDF]" /></a>
+<a href="http://dx.doi.org/10.1145/2499937.2499941"><img src="images/ee.png" alt="[URL]" /></a>
+
+</td>
+<td class="bibinfo" valign="baseline" align="left">
+
+<span class='bibtitle'>Parameterized Complexity of DPLL Search Procedures</span> (2013).<br />
+<span class='bibauthor'>Olaf Beyersdorff, Nicola Galesi and Massimo Lauria</span>.<br />
+In: ACM Transactions on Computational Logic. 14(3):20.<br />
+Conference version appeared at SAT, 2011.<br />
+<div class="abstract-button" onclick="toggleAbstract('beyersdorff2013parameterized');">
+Show/Hide abstract
+</div>
+</td></tr></table>
+</div>
+<div class="abstract" id="abs-beyersdorff2013parameterized" >
+<div class="abstract-header">
+Abstract
+</div>
+<p>
+
+We  study   the  performance  of  DPLL   algorithms  on  parameterized
+problems. In particular, we investigate  how difficult it is to decide
+whether  small solutions  exist for  satisfiability  and combinatorial
+problems.
+
+For this  purpose we  develop a Prover-Delayer  game which  models the
+running   time    of   DPLL    procedures   and   we    establish   an
+information-theoretic  method to  obtain lower  bounds to  the running
+time of parameterized DPLL procedures.
+
+
+We  illustrate   this  technique  by  showing  lower   bounds  to  the
+parameterized pigeonhole principle and to the ordering principle.
+
+As our main application we study the DPLL procedure for the problem of
+deciding whether a graph has a small clique.  We show that proving the
+absence  of  a  $k$-clique   requires  $n^{\Omega(k)}$  steps  for  a
+non-trivial distribution of graphs close to the critical threshold.
+
+For the  restricted case  of tree-like Parameterized  Resolution, this
+result  answers a  question  asked  in Beyersdorff  et  al. (2012)  of
+understanding the Resolution complexity of this family of formulas.
+
+</p>
+
+</div>
+<div class="bibentry">
+<table style="border:0; width:100%;" cellspacing="3" cellpadding="0">
+
+<tr>
+<td class="biblinks" valign="top" align="left">
+
+<span class="space"><br/></span>
+<a href="documents/treelikesize.pdf"><img src="images/pdf.png" alt="[PDF]" /></a>
+<a href="http://dx.doi.org/10.1016/j.ipl.2013.06.002"><img src="images/ee.png" alt="[URL]" /></a>
+
+</td>
+<td class="bibinfo" valign="baseline" align="left">
+
+<span class='bibtitle'>A Characterization of Tree-Like Resolution Size</span> (2013).<br />
+<span class='bibauthor'>Olaf Beyersdorff, Nicola Galesi and Massimo Lauria</span>.<br />
+In: Information Processing Letters. 113(18):666--671.<br />
+
+<div class="abstract-button" onclick="toggleAbstract('bgl12');">
+Show/Hide abstract
+</div>
+</td></tr></table>
+</div>
+<div class="abstract" id="abs-bgl12" >
+<div class="abstract-header">
+Abstract
+</div>
+<p>
+We  explain   an  asymmetric   Prover-Delayer  game   which  precisely
+characterizes  proof  size  in  tree-like Resolution.  This  game  was
+previously  described in  a parameterized  complexity context  to show
+lower  bounds  for  parameterized   formulas  and  for  the  classical
+pigeonhole principle. The main point of  this note is to show that the
+asymmetric game in fact characterizes tree-like Resolution proof size,
+i.e.  in principle  our  proof  method allows  to  always achieve  the
+optimal lower  bounds. This  is in  contrast with  previous techniques
+described  in  the  literature.  We  also  provide  a  very  intuitive
+information-theoretic interpretation of the game.
+</p>
+
+</div>
+<div class="bibentry">
+<table style="border:0; width:100%;" cellspacing="3" cellpadding="0">
+
+<tr>
+<td class="biblinks" valign="top" align="left">
+
+<span class="space"><br/></span>
+<a href="documents/para-bdfrege.pdf"><img src="images/pdf.png" alt="[PDF]" /></a>
+<a href="http://doi.acm.org/10.1145/2355580.2355582"><img src="images/ee.png" alt="[URL]" /></a>
+
+</td>
+<td class="bibinfo" valign="baseline" align="left">
+
+<span class='bibtitle'>Parameterized Bounded-Depth Frege Is not Optimal</span> (2012).<br />
+<span class='bibauthor'>Olaf Beyersdorff, Nicola Galesi, Massimo Lauria and Alexander Razborov</span>.<br />
+In: ACM Trans. Comput. Theory. 4(3):7:1--7:16.<br />
+Conference version appeared at ICALP, 2011 <br /><a href="http://computingreviews.com/recommend/bestof/notableitems_2012.cfm#list"> <img src="images/thinkloud2012.gif" alt="Computing Reviews' Notable Books and Articles 2012" /> </a> <br /> Selected in Computing Reviews' Notable Books and Articles 2012 list.<br />
+<div class="abstract-button" onclick="toggleAbstract('bglr12');">
+Show/Hide abstract
+</div>
+</td></tr></table>
+</div>
+<div class="abstract" id="abs-bglr12" >
+<div class="abstract-header">
+Abstract
+</div>
+<p>  A  general  framework  for  parameterized  proof  complexity  was
+introduced  by Dantchev, Martin,  and Szeider  [FOCS, 2007].   In that
+framework  the  parameterized  version  of  any proof  system  is  not
+fpt-bounded  for  some technical  reasons,  but  we  remark that  this
+question  becomes much more  interesting if  we restrict  ourselves to
+those parameterized  contradictions $(F,k)$ in  which $F$ itself  is a
+contradiction.     We   call    such    parameterized   contradictions
+<i>strong</i>,  and with  one important  exception (vertex  cover) all
+interesting  contradictions we are  aware of  are strong.   It follows
+from the gap complexity theorem of Dantchev, Martin and Szeider [FOCS,
+2007]  that  tree-like  Parameterized  Resolution is  not  fpt-bounded
+w.r.t. strong parameterized contradictions.  </p>
+
+<p>
+The  main result  of this  paper significantly  improves upon  this by
+showing that even the  parameterized version of bounded-depth Frege is
+not  fpt-bounded  w.r.t. strong  contradictions.  More precisely,  we
+prove  that   the  pigeonhole   principle  requires  proofs   of  size
+$n^{\Omega(k)}$  in bounded-depth Frege,  and, as  a special  case, in
+dag-like  Parameterized  Resolution.  This  answers  an open  question
+posed in Dantchev, Martin and Szeider [FOCS, 2007].
+</p>
+
+<p>   In   the  opposite   direction,   we   interpret  a   well-known
+$\mathsf{FPT}$  algorithm for  vertex cover  as a  DPLL  procedure for
+Parameterized Resolution.  Its generalization leads to  a proof search
+algorithm for  Parameterized Resolution that in  particular shows that
+tree-like  Parameterized Resolution  allows short  refutations  of all
+parameterized contradictions given as bounded-width CNF's.</p>
+
+</div>
+<div class="bibentry">
+<table style="border:0; width:100%;" cellspacing="3" cellpadding="0">
+
+<tr>
+<td class="biblinks" valign="top" align="left">
+
+<span class="space"><br/></span>
+<a href="documents/tree-like-php.pdf"><img src="images/pdf.png" alt="[PDF]" /></a>
+<a href="http://dx.doi.org/10.1016/j.ipl.2010.09.007"><img src="images/ee.png" alt="[URL]" /></a>
+
+</td>
+<td class="bibinfo" valign="baseline" align="left">
+
+<span class='bibtitle'>A Lower Bound for the Pigeonhole Principle in Tree-like Resolution by Asymmetric Prover-Delayer Games</span> (2010).<br />
+<span class='bibauthor'>Olaf Beyersdorff, Nicola Galesi and Massimo Lauria</span>.<br />
+In: Information Processing Letters. 110(23):1074-1077.<br />
+
+<div class="abstract-button" onclick="toggleAbstract('bgl10c');">
+Show/Hide abstract
+</div>
+</td></tr></table>
+</div>
+<div class="abstract" id="abs-bgl10c" >
+<div class="abstract-header">
+Abstract
+</div>
+In this note we show that the asymmetric Prover-Delayer game developed in
+Beyersdorff, Galesi, Lauria [2010a] for Parameterized Resolution is also
+applicable to other tree-like proof systems.  In particular, we use this
+asymmetric Prover-Delayer game to show a lower bound of the form
+$2^{\Omega(n\log n)}$ for the pigeonhole principle in tree-like Resolution.
+This gives a new and simpler proof of the same lower bound established by Iwama
+and Miyazaki [1999] and Dantchev and Riis [2001].
+
+</div>
+<div class="bibentry">
+<table style="border:0; width:100%;" cellspacing="3" cellpadding="0">
+
+<tr>
+<td class="biblinks" valign="top" align="left">
+
+<span class="space"><br/></span>
+<a href="documents/sizedegree.pdf"><img src="images/pdf.png" alt="[PDF]" /></a>
+<a href="http://doi.acm.org/10.1145/1838552.1838556"><img src="images/ee.png" alt="[URL]" /></a>
+
+</td>
+<td class="bibinfo" valign="baseline" align="left">
+
+<span class='bibtitle'>Optimality of size-degree tradeoffs for polynomial calculus</span> (2010).<br />
+<span class='bibauthor'>Nicola Galesi and Massimo Lauria</span>.<br />
+In: ACM Transaction on Computational Logic. 12(1):4:1--4:22.<br />
+
+<div class="abstract-button" onclick="toggleAbstract('gl10a');">
+Show/Hide abstract
+</div>
+</td></tr></table>
+</div>
+<div class="abstract" id="abs-gl10a" >
+<div class="abstract-header">
+Abstract
+</div>
+<p>  There are  methods to  turn short  refutations  in <em>Polynomial
+Calculus</em>   ($\mathsf{Pc}$)  and   <em>Polynomial   Calculus  with
+Resolution</em> ($\mathsf{Pcr}$) into refutations of low degree. Bonet
+and Galesi  [Bonet and  Galesi 1999, 2003]  asked if  such size-degree
+trade-offs  for  $\mathsf{Pc}$  [Clegg  et al.  1996;  Impagliazzo  et
+al. 1999]  and $\mathsf{Pcr}$ [Alekhnovich  et al. 2004]  are optimal.
+</p>
+
+<p>  We answer  this  question  by showing  a  polynomial encoding  of
+<em>Graph  Ordering  Principle</em> on  $m$  variables which  requires
+$\mathsf{Pc}$    and     $\mathsf{Pcr}$    refutations    of    degree
+$\Omega(\sqrt{m})$. Trade-offs optimality  follows from our result and
+from the short  refutations of Graph Ordering Principle  in [Bonet and
+Galesi 1999, 2001].  </p>
+
+<p> We  then introduce  the algebraic proof  system $\mathsf{Pcr}_{k}$
+which  combines together <em>Polynomial  Calculus</em> ($\mathsf{Pc}$)
+and <em>$k$-DNF  Resolution</em> ($\mathsf{Res}_{k}$). We  show a size
+hierarchy   theorem  for  $\mathsf{Pcr}_{k}$:   $\mathsf{Pcr}_{k}$  is
+exponentially separated  from $\mathsf{Pcr}_{k+1}$. This  follows from
+the  previous degree  lower bound  and from  techniques  developed for
+$\mathsf{Res}_{k}$.  </p>
+
+<p>Finally  we show that  random formulas  in conjunctive  normal form
+($3$-CNF) are hard to refute in $\mathsf{Pcr}_{k}$.</p>
+
+</div>
+<div class="bibentry">
+<table style="border:0; width:100%;" cellspacing="3" cellpadding="0">
+
+<tr>
+<td class="biblinks" valign="top" align="left">
+
+<span class="space"><br/></span>
+<a href="documents/automatpc.pdf"><img src="images/pdf.png" alt="[PDF]" /></a>
+<a href="http://dx.doi.org/10.1007/s00224-009-9195-5"><img src="images/ee.png" alt="[URL]" /></a>
+
+</td>
+<td class="bibinfo" valign="baseline" align="left">
+
+<span class='bibtitle'>On the Automatizability of Polynomial Calculus</span> (2010).<br />
+<span class='bibauthor'>Nicola Galesi and Massimo Lauria</span>.<br />
+In: Theory of Computing Systems. 47(2):491--506.<br />
+
+<div class="abstract-button" onclick="toggleAbstract('gl10b');">
+Show/Hide abstract
+</div>
+</td></tr></table>
+</div>
+<div class="abstract" id="abs-gl10b" >
+<div class="abstract-header">
+Abstract
+</div>
+<p>
+We prove that Polynomial Calculus and Polynomial Calculus with Resolution are
+not automatizable, unless $W[P]$-hard problems are fixed parameter tractable by
+one-side error randomized algorithms. This extends to Polynomial Calculus the
+analogous result obtained for Resolution by Alekhnovich and Razborov (SIAM
+J. Computing, 38(4), 2008).
+</p>
+
+</div>
+<div class="bibentry">
+<table style="border:0; width:100%;" cellspacing="3" cellpadding="0">
+
+<tr>
+<td class="biblinks" valign="top" align="left">
+
+<span class="space"><br/></span>
+<a href="http://dx.doi.org/10.1016/j.tcs.2008.02.005"><img src="images/ee.png" alt="[URL]" /></a>
+
+</td>
+<td class="bibinfo" valign="baseline" align="left">
+
+<span class='bibtitle'>Minimum-Energy Broadcast and disk cover in grid wireless networks</span> (2008).<br />
+<span class='bibauthor'>Tiziana Calamoneri, Andrea E. F. Clementi, Miriam Di Ianni, Massimo Lauria, Angelo Monti and Riccardo Silvestri</span>.<br />
+In: Theoretical Computer Science. 399(1-2):38--53.<br />
+Conference version appeared at SIROCCO, 2006.<br />
+<div class="abstract-button" onclick="toggleAbstract('ccilms08');">
+Show/Hide abstract
+</div>
+</td></tr></table>
+</div>
+<div class="abstract" id="abs-ccilms08" >
+<div class="abstract-header">
+Abstract
+</div>
+<p>
+The <em>Minimum-Energy Broadcast</em> problem is to assign a transmission range to every
+station of an ad hoc wireless networks so that (i) a given source station is
+allowed to perform broadcast operations and (ii) the overall energy consumption
+of the range assignment is minimized.
+</p>
+<p>
+We prove a nearly tight asymptotical bound on the optimal cost for the
+Minimum-Energy Broadcast problem on square grids. We also derive near-tight
+bounds for the <em>Bounded-Hop</em> version of this problem. Our results imply
+that the best-known heuristic, the MST-based one, for the Minimum-Energy
+Broadcast problem is far to achieve optimal solutions (even) on very regular,
+well-spread instances: its worst-case approximation ratio is about $\pi$ and it
+yields $\Omega(\sqrt{n})$ source hops, where $n$ is the number of stations.
+</p>
+<p>
+As a by product, we get nearly tight bounds for the <em>Minimum-Disk Cover</em>
+problem and for its restriction in which the allowed disks must have
+<em>non-constant</em> radius.
+</p>
+<p>Finally, we emphasize that our upper bounds are obtained via polynomial time constructions.</p>
+
+
+</div>
+<div class="bibentry">
+<table style="border:0; width:100%;" cellspacing="3" cellpadding="0">
+
+<tr>
+<td class="biblinks" valign="top" align="left">
+
+<span class="space"><br/></span>
+<a href="documents/bounded-hop-mst-conference.pdf"><img src="images/pdf.png" alt="[PDF]" /></a>
+<a href="http://dx.doi.org/10.1016/j.tcs.2007.04.039"><img src="images/ee.png" alt="[URL]" /></a>
+
+</td>
+<td class="bibinfo" valign="baseline" align="left">
+
+<span class='bibtitle'>On the bounded-hop MST problem on random Euclidean instances</span> (2007).<br />
+<span class='bibauthor'>Andrea E. F. Clementi, Miriam Di Ianni, Massimo Lauria, Angelo Monti, Gianluca Rossi and Riccardo Silvestri</span>.<br />
+In: Theoretical Computer Science. 384(2-3):161-167.<br />
+Conference version appeared at SIROCCO 2005 with the name "Divide and Conquer Is Almost Optimal for the Bounded-Hop MST Problem on Random Euclidean Instances".<br />
+<div class="abstract-button" onclick="toggleAbstract('cilmrs07');">
+Show/Hide abstract
+</div>
+</td></tr></table>
+</div>
+<div class="abstract" id="abs-cilmrs07" >
+<div class="abstract-header">
+Abstract
+</div>
+<p>
+The $d$-Dim $h$-hops MST problem is defined as follows: Given a set $S$ of points in the $d$-
+dimensional Euclidean space and $s \in S$, find a minimum-cost spanning tree for $S$ rooted at $s$
+with height at most $h$. We investigate the problem for any constants $h$ and $d > 0$. We prove
+the first non trivial lower bound on the solution cost <em>for almost all</em> Euclidean instances (i.e.
+the lower-bound holds with hight probability). Then we introduce an easy-to-implement,
+very fast divide et impera heuristic and we prove that its solution cost matches the lower
+bound.
+</p>
+
+</div>
+</article>
+<article>
+<h2><a id="conference"/>Conference</h2>
+<div class="bibentry">
+<table style="border:0; width:100%;" cellspacing="3" cellpadding="0">
+
+<tr>
+<td class="biblinks" valign="top" align="left">
+
+<span class="space"><br/></span>
+<a href="documents/graphcolouringpc-conf.pdf"><img src="images/pdf.png" alt="[PDF]" /></a>
+
+</td>
+<td class="bibinfo" valign="baseline" align="left">
+
+<span class='bibtitle'>Graph Colouring is Hard for Algorithms Based on Hilbert's Nullstellensatz and Gröbner Bases</span> (2017).<br />
+<span class='bibauthor'>Massimo Lauria and Jakob Nordström</span>.<br />
+In: Conference of Computational Complexity 2017. pp. TBA.<br />
+To appear.<br />
+<div class="abstract-button" onclick="toggleAbstract('LauriaNordstrom2017Coloring');">
+Show/Hide abstract
+</div>
+</td></tr></table>
+</div>
+<div class="abstract" id="abs-LauriaNordstrom2017Coloring" >
+<div class="abstract-header">
+Abstract
+</div>
+<p>
+We consider the natural encoding of the $k$-colouring problem for a
+   given graph as a set of polynomial equations.
+  We prove that there are bounded-degree graphs that do not have legal
+  $k$-colourings but for which the polynomial calculus proof system
+  defined in [Clegg et al '96, Alekhnovich et al '02]
+  requires linear degree, and hence exponential size, to establish
+  this fact. This implies a linear degree lower bound for any algorithms based
+  on Gröbner bases solving $k$-colouring problems using this encoding.
+  The same bound applies also for the algorithm studied in a sequence of papers
+  [De Loera et al '08, '09, '11, '15]
+  based on Hilbert's Nullstellensatz proofs for a slightly
+  different encoding, thus resolving an open problem  mentioned, e.g., in  
+  [De Loera et al '09] and [Li et al '16].
+  <br />
+  We obtain  our results by  combining the polynomial  calculus degree
+  lower bound for functional pigeonhole principle (FPHP) formulas over
+  bounded-degree bipartite graphs in [Mikša and Nordström '15]
+  with a reduction from FPHP  to $k$-colouring derivable by polynomial
+  calculus in constant degree.
+</p>
+
+</div>
+<div class="bibentry">
+<table style="border:0; width:100%;" cellspacing="3" cellpadding="0">
+
+<tr>
+<td class="biblinks" valign="top" align="left">
+
+<span class="space"><br/></span>
+<a href="documents/cdclproofsystems.pdf"><img src="images/pdf.png" alt="[PDF]" /></a>
+<a href="http://dx.doi.org/10.1007/978-3-319-40970-2_11"><img src="images/ee.png" alt="[URL]" /></a>
+
+</td>
+<td class="bibinfo" valign="baseline" align="left">
+
+<span class='bibtitle'>Trade-offs Between Time and Memory in a Tighter Model of CDCL SAT Solvers</span> (2016).<br />
+<span class='bibauthor'>Jan Elffers, Jan Johannsen, Massimo Lauria, Thomas Magnard, Jakob Nordström and Marc Vinyals</span>.<br />
+In: Theory and Applications of Satisfiability Testing - SAT 2016 - 19th International Conference, Bordeaux, France, July 5-8, 2016, Proceedings. pp. 160--176.<br />
+
+<div class="abstract-button" onclick="toggleAbstract('ElffersJLMNV2016TradeOffs');">
+Show/Hide abstract
+</div>
+</td></tr></table>
+</div>
+<div class="abstract" id="abs-ElffersJLMNV2016TradeOffs" >
+<div class="abstract-header">
+Abstract
+</div>
+<p>
+A long line of research has studied the power of conflict-driven clause learning (CDCL) and how it compares to the resolution proof system in which it searches for proofs. It has been shown that CDCL can polynomially simulate resolution, even when the learning scheme is adversarially chosen as long as it is asserting.  However, the simulation only works under the assumption that no learned clauses are ever forgotten, and the polynomial blow-up is significant.  Moreover, the simulation requires very frequent restarts, whereas the power of CDCL with less frequent or entirely without restarts remains poorly understood. With a view towards obtaining results with tighter relations between CDCL and resolution, we introduce a more fine-grained model of CDCL that captures not only time but also memory usage and number of restarts. We show how previously established strong size-space trade-offs for resolution can be transformed into equally strong trade-offs between time and memory usage for CDCL, where the upper bounds hold for CDCL without any restarts using the standard 1UIP clause learning scheme, and the (in some cases tightly matching) lower bounds hold for arbitrarily frequent restarts and arbitrary clause learning schemes.
+</p>
+
+</div>
+<div class="bibentry">
+<table style="border:0; width:100%;" cellspacing="3" cellpadding="0">
+
+<tr>
+<td class="biblinks" valign="top" align="left">
+
+<span class="space"><br/></span>
+<a href="documents/semanticcp.pdf"><img src="images/pdf.png" alt="[PDF]" /></a>
+<a href="http://dx.doi.org/10.4230/LIPIcs.STACS.2016.35"><img src="images/ee.png" alt="[URL]" /></a>
+
+</td>
+<td class="bibinfo" valign="baseline" align="left">
+
+<span class='bibtitle'>Semantic Versus Syntactic Cutting Planes</span> (2016).<br />
+<span class='bibauthor'>Yuval Filmus, Pavel Hrube\vs and Massimo Lauria</span>.<br />
+In: 33rd Symposium on Theoretical Aspects of Computer Science (STACS 2016). pp. 35:1--35:13.<br />
+
+<div class="abstract-button" onclick="toggleAbstract('filmus2016');">
+Show/Hide abstract
+</div>
+</td></tr></table>
+</div>
+<div class="abstract" id="abs-filmus2016" >
+<div class="abstract-header">
+Abstract
+</div>
+<p>
+  In this paper, we compare the strength of the semantic and syntactic
+  version of the <em>cutting planes</em> proof system.
+  <br />
+  First, we show that the lower bound technique of Pudlak applies also
+  to  semantic   cutting  planes:   the  proof  system   has  feasible
+  interpolation via monotone real circuits, which gives an exponential
+  lower bound on lengths of semantic cutting planes refutations.
+  <br />
+  Second,  we  show  that   semantic  refutations  are  stronger  than
+  syntactic  ones. In  particular, we  give  a formula  for which  any
+  refutation in syntactic cutting  planes requires exponential length,
+  while there  is a polynomial  length refutation in  semantic cutting
+  planes. In other words, syntactic cutting planes does not p-simulate
+  semantic  cutting  planes. We  also  give  two incompatible  integer
+  inequalities   which  require   exponential  length   refutation  in
+  syntactic cutting planes.
+  <br />
+  Finally, we pose the following problem, which arises in connection with
+  semantic inference of arity larger than two: can every multivariate
+  non-decreasing real function be expressed as a composition of
+  non-decreasing real functions in two variables?
+</p>
+
+</div>
+<div class="bibentry">
+<table style="border:0; width:100%;" cellspacing="3" cellpadding="0">
+
+<tr>
+<td class="biblinks" valign="top" align="left">
+
+<span class="space"><br/></span>
+<a href="documents/revpebbling-short.pdf"><img src="images/pdf.png" alt="[PDF]" /></a>
+
+</td>
+<td class="bibinfo" valign="baseline" align="left">
+
+<span class='bibtitle'>Hardness of Approximation in PSPACE and Separation Results for Pebble Games</span> (2015).<br />
+<span class='bibauthor'>Siu Man Chan, Massimo Lauria, Jakob Nordström and Marc Vinyals</span>.<br />
+In: Proc. of the 56th IEEE Symposium on Foundations of Computer Science (FOCS), 2015. pp. 466--485.<br />
+
+<div class="abstract-button" onclick="toggleAbstract('clnv2015');">
+Show/Hide abstract
+</div>
+</td></tr></table>
+</div>
+<div class="abstract" id="abs-clnv2015" >
+<div class="abstract-header">
+Abstract
+</div>
+<p>
+We consider the pebble game on  DAGs with bounded fan-in introduced in
+[Paterson and Hewitt  '70] and the reversible version of  this game in
+[Bennett '89],  and study  the question  of how hard  it is  to decide
+exactly or approximately the number of  pebbles needed for a given DAG
+in these games.
+</p>
+
+<p>
+We prove that the problem of deciding whether s pebbles suffice to reversibly pebble a DAG G is PSPACE-complete, as was previously shown for the standard pebble game in [Gilbert, Lengauer and Tarjan '80]. Via two different graph product constructions we then strengthen these results to establish that both standard and reversible pebbling space are PSPACE-hard to approximate to within any additive constant.  To the best of our knowledge, these are the first hardness of approximation results for pebble games in an unrestricted setting (even for polynomial time). Also, since [Chan '13] proved that reversible pebbling is equivalent to the games in [Dymond and Tompa '85] and [Raz and McKenzie '99], our results apply to the Dymond--Tompa and Raz--McKenzie games as well, and from the same paper it follows that resolution depth is PSPACE-hard to determine up to any additive constant.
+</p>
+
+<p>
+We also obtain a multiplicative logarithmic separation between reversible and standard pebbling space. This improves on the additive logarithmic separation previously known and could plausibly be tight, although we are not able to prove this.
+</p>
+
+<p>
+We leave as an interesting open problem whether our additive hardness of approximation result could be strengthened to a multiplicative bound if the computational resources are decreased from polynomial space to the more common setting of polynomial time.
+</p>
+
+</div>
+<div class="bibentry">
+<table style="border:0; width:100%;" cellspacing="3" cellpadding="0">
+
+<tr>
+<td class="biblinks" valign="top" align="left">
+
+<span class="space"><br/></span>
+<a href="documents/towardsunderstandingpc.pdf"><img src="images/pdf.png" alt="[PDF]" /></a>
+<a href="http://dx.doi.org/10.1007/978-3-642-39206-1_37"><img src="images/ee.png" alt="[URL]" /></a>
+
+</td>
+<td class="bibinfo" valign="baseline" align="left">
+
+<span class='bibtitle'>Towards an Understanding of Polynomial Calculus: New Separations and Lower Bounds (Extended Abstract)</span> (2013).<br />
+<span class='bibauthor'>Yuval Filmus, Massimo Lauria, Mladen Mikša, Jakob Nordström and Marc Vinyals</span>.<br />
+In: Proc. of the 40th International Colloquium on Automata, Languages and Programming, ICALP 2013. pp. 437-448.<br />
+
+<div class="abstract-button" onclick="toggleAbstract('flmnv13');">
+Show/Hide abstract
+</div>
+</td></tr></table>
+</div>
+<div class="abstract" id="abs-flmnv13" >
+<div class="abstract-header">
+Abstract
+</div>
+<p>
+  During the last decade, an active line of research in proof
+  complexity has been into the space complexity of proofs and how
+  space is related to other measures. By now these aspects of
+  resolution are fairly well understood, but many open problems remain
+  for the related but stronger polynomial calculus (PC/PCR) proof
+  system.  For instance, the space complexity of many standard
+  “benchmark formulas” is still open, as well as the relation of
+  space to size and degree in PC/PCR.
+  <br />
+  We prove that if a formula requires large resolution width, then
+  making XOR substitution yields a formula requiring large PCR space,
+  providing some circumstantial evidence that degree might be a lower
+  bound for space. More importantly, this immediately yields formulas
+  that are very hard for space but very easy for size, exhibiting a
+  size-space separation similar to what is known for resolution. Using
+  related ideas, we show that if a graph has good expansion and in
+  addition its edge set can be partitioned into short cycles, then the
+  Tseitin formula over this graph requires large PCR space. In
+  particular, Tseitin formulas over random $4$-regular graphs
+  almost surely require space at least $\Omega(\sqrt{n})$.
+  <br />
+  Our proofs use techniques recently introduced in
+  [Bonacina-Galesi~'13].  Our final contribution, however, is to show
+  that these techniques provably cannot yield non-constant space lower
+  bounds for the functional pigeonhole principle, delineating the
+  limitations of this framework and suggesting that we are still far
+  from characterizing PC/PCR space.
+</p>
+
+</div>
+<div class="bibentry">
+<table style="border:0; width:100%;" cellspacing="3" cellpadding="0">
+
+<tr>
+<td class="biblinks" valign="top" align="left">
+
+<span class="space"><br/></span>
+<a href="documents/converge-cast.pdf"><img src="images/pdf.png" alt="[PDF]" /></a>
+<a href="http://dx.doi.org/10.1007/11814764_7"><img src="images/ee.png" alt="[URL]" /></a>
+
+</td>
+<td class="bibinfo" valign="baseline" align="left">
+
+<span class='bibtitle'>A Distributed Protocol for the Bounded-Hops Converge-Cast in Ad-Hoc Networks</span> (2006).<br />
+<span class='bibauthor'>Andrea E. F. Clementi, Miriam Di Ianni, Massimo Lauria, Angelo Monti, Gianluca Rossi and Riccardo Silvestri</span>.<br />
+In: Ad-Hoc, Mobile, and Wireless Networks, 5th International Conference, ADHOC-NOW 2006, Ottawa, Canada, August 17-19, 2006, Proceedings. pp. 60-72.<br />
+
+<div class="abstract-button" onclick="toggleAbstract('cilmrs06');">
+Show/Hide abstract
+</div>
+</td></tr></table>
+</div>
+<div class="abstract" id="abs-cilmrs06" >
+<div class="abstract-header">
+Abstract
+</div>
+<p>
+Given a set $S$ of points (<em>stations</em>) located in the $d$-dim. Euclidean space and a
+<em>root</em> $b \in S$, the $h$-$\mathsf{hops Convergecast}$ problem asks to find for a minimal
+energy-cost range assignment which allows to perform the <em>converge-cast</em> primitive
+(i.e. node accumulation) towards $b$ in at most $h$ hops. For this problem no
+polynomial time algorithm is known even for $h = 2$.
+</p>
+
+<p> The main goal of this work is the design of an efficient <em>distributed</em>
+heuristic (i.e. protocol) and the analysis (both theoretical and experimental)
+of its expected solution cost. In particular, we introduce an efficient
+parameterized randomized protocol for $h$-$\mathsf{hops Convergecast}$ and we analyze it on
+<em>random</em> instances created by placing $n$ points uniformly at random in a $d$-cube
+of side length $L$. We prove that for $h = 2$, its expected approximation ratio
+is bounded by some constant factor. Finally, for $h = 3,..., 8$, we provide a
+wide experimental study showing that our protocol has very good performances
+when compared with previously introduced (centralized) heuristics.  </p>
+
+</div>
+</article>
+<article>
+<h2><a id="short"/>Short Notes (not peer reviewed)</h2>
+<div class="bibentry">
+<table style="border:0; width:100%;" cellspacing="3" cellpadding="0">
+
+<tr>
+<td class="biblinks" valign="top" align="left">
+
+<span class="space"><br/></span>
+<a href="documents/reslog-narrow.pdf"><img src="images/pdf.png" alt="[PDF]" /></a>
+
+</td>
+<td class="bibinfo" valign="baseline" align="left">
+
+<span class='bibtitle'>Short Res*(polylog) Refutations if and only if Narrow Res Refutations</span> (2011).<br />
+<span class='bibauthor'>Massimo Lauria</span>.<br />
+
+<div class="abstract-button" onclick="toggleAbstract('reslognarrow2011');">
+Show/Hide abstract
+</div>
+</td></tr></table>
+</div>
+<div class="abstract" id="abs-reslognarrow2011" >
+<div class="abstract-header">
+Abstract
+</div>
+<p>
+In  this note  we show  that any  $k$-CNF which  can be  refuted  by a
+quasi-polynomial $\mathsf{Res}^{*}(\mathsf{polylog})$ refutation has a
+“narrow”  refutation  in  $\mathsf{Res}$  (i.e.,  of  poly-logarithmic
+width).  Notice  that while $\mathsf{Res}^{*}(\mathsf{polylog})$  is a
+complete proof system,  this is not the case  for $\mathsf{Res}$ if we
+ask for  a narrow refutation.  In  particular is not  even possible to
+express all CNFs with narrow clauses.  But even for constant width CNF
+the former system  is complete and the latter is  not (see for example
+Bonet, Galesi  2001).  We  are going to  show that the  formulas “left
+out”       are      the       ones      which       require      large
+$\mathsf{Res}^{*}(\mathsf{polylog})$  refutations.  We  also  show the
+converse implication:  a narrow Resolution refutation can be simulated
+by a short $\mathsf{Res}^{*}(\mathsf{polylog})$ refutation.
+</p>
+
+</div>
+</article>
+<article>
+<h2><a id="manuscript"/>Manuscripts (not peer reviewed)</h2>
+<div class="bibentry">
+<table style="border:0; width:100%;" cellspacing="3" cellpadding="0">
+
+<tr>
+<td class="biblinks" valign="top" align="left">
+
+<span class="space"><br/></span>
+<a href="documents/ph-games-ub.pdf"><img src="images/pdf.png" alt="[PDF]" /></a>
+
+</td>
+<td class="bibinfo" valign="baseline" align="left">
+
+<span class='bibtitle'>Upper Bounds for Positional Paris-Harrington Games</span> (2012).<br />
+<span class='bibauthor'>Lorenzo Carlucci and Massimo Lauria</span>.<br />
+
+<div class="abstract-button" onclick="toggleAbstract('cl2012');">
+Show/Hide abstract
+</div>
+</td></tr></table>
+</div>
+<div class="abstract" id="abs-cl2012" >
+<div class="abstract-header">
+Abstract
+</div>
+
+We give upper bounds for a positional game — in the sense of Beck
+— based on the Paris-Harrington principle for bi-colorings of graphs
+and  uniform hypergraphs of  arbitrary dimension.   The bounds  show a
+striking difference  with respect to  the bounds of  the combinatorial
+principle itself. Our results confirm a phenomenon already observed by
+Beck  and  others:  the  upper  bounds  for  the  game  version  of  a
+combinatorial principle are drastically  smaller than the upper bounds
+for the  principle itself. In  the case of Paris-Harrington  games the
+difference is qualitatively very striking.
+For example, the bounds for  the game on $3$-uniform hypergraphs are a
+fixed  stack of  exponentials while  the bounds  on  the corresponding
+combinatorial  principle are  known  to be  Ackermannian!  For  higher
+dimensions, the combinatorial Paris-Harrington numbers are known to be
+cofinal   in  the   Schwichtenberg-Wainer  Hiearchy   of  fast-growing
+functions  up  to  $\varepsilon_0$,   while  we  show  that  the  game
+Paris-Harrington numbers are fixed stacks of exponentials.
+
+</div>
+<div class="bibentry">
+<table style="border:0; width:100%;" cellspacing="3" cellpadding="0">
+
+<tr>
+<td class="biblinks" valign="top" align="left">
+
+<span class="space"><br/></span>
+<a href="documents/tree-like-para-strength.pdf"><img src="images/pdf.png" alt="[PDF]" /></a>
+
+</td>
+<td class="bibinfo" valign="baseline" align="left">
+
+<span class='bibtitle'>The Strength of Parameterized Tree-like Resolution</span> (2010).<br />
+<span class='bibauthor'>Olaf Beyersdorff, Nicola Galesi and Massimo Lauria</span>.<br />
+Superseded by the paper <em>Parameterized Complexity of DPLL Search Procedures</em>.<br />
+</td></tr></table>
+</div>
+</article>
+<article>
+<h2><a id="thesis"/>Thesis</h2>
+<div class="bibentry">
+<table style="border:0; width:100%;" cellspacing="3" cellpadding="0">
+
+<tr>
+<td class="biblinks" valign="top" align="left">
+
+<span class="space"><br/></span>
+<a href="documents/lauria-phdthesis.pdf"><img src="images/pdf.png" alt="[PDF]" /></a>
+
+</td>
+<td class="bibinfo" valign="baseline" align="left">
+
+<strong>Ph.D. thesis</strong> <br />
+<span class='bibtitle'>Degree lower bounds for Algebraic Proof System</span> (2008).<br />
+<span class='bibauthor'>Massimo Lauria</span>.<br />
+Sapienza - Universita` di Roma.<br />
+
+<div class="abstract-button" onclick="toggleAbstract('lauria08');">
+Show/Hide abstract
+</div>
+</td></tr></table>
+</div>
+<div class="abstract" id="abs-lauria08" >
+<div class="abstract-header">
+Abstract
+</div>
+<p>
+Given a propositional formula $\phi$ we are interested in studying how difficult
+is to prove that $\phi$ is a tautology. Multivariate polynomials can be
+manipulated in a specific way to obtain such a proof. We study the power of this
+algebraic manipulation. In particular its running time is deeply related with
+the degree of the polynomials involved. We prove that this method behaves very
+badly in some cases, by showing that there are tautologies with very short
+proofs but which require high degree polynomials.
+</p>
+
+<p>
+This does not exclude that another method of polynomial manipulation could lead
+to an efficient algorithm. In this case we are able to prove that if such
+efficient algorithm exists, it could be used to solve problems believed to be
+very hard.
+</p>
+
+<p>
+Algebraic proof systems discussed so far are limited. We define a slightly
+stronger system $\mathsf{Pcr}_{k}$. We give examples of tautologies that are easy for this
+system, but very hard for systems known in literature. Nevertheless we show that
+a random tautology is still very hard to prove for $\mathsf{Pcr}_{k}$.
+</p>
+
+</div>
+</article>
+</div>
+</div>
+</article>
+</main>
+<div id="postamble" class="status">
+<footer>
+This site belongs to <a href="mailto:massimo.lauria@uniroma1.it">Massimo Lauria</a> and the content is published under
+      <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a> license.
+      Icons belong by <a href="http://brsev.com">Evan Brooks</a>.
+    </footer>
+</div>
+</body>
+</html>

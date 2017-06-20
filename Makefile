@@ -39,7 +39,7 @@ DEPLOYHTML=../$(SRC)/htmldeploy.ftp
 WEBPAGES= $(addprefix $(BUILD)/, $(addsuffix .html, $(SITEMAP)))
 DATADIR = $(addprefix $(CONTENT)/,$(DATAMAP))
 
-TEMPFILES=$(SRC)/papers.bib.xml $(SRC)/papers.xml
+TEMPFILES=$(SRC)/papers.bib.xml $(SRC)/papers.html
 
 ########### THE RULES ############################
 TARGET= $(WEBPAGES)
@@ -58,8 +58,8 @@ $(BUILD)/%.html: $(SRC)/%.xml $(SRC)/xsl/$(STYLESHEET).xsl $(SRC)/papers.xml
 $(SRC)/papers.bib.xml: $(SRC)/papers.bib
 	$(BIBTEX2BIBXML) $(SRC)/papers.bib > $(SRC)/papers.bib.xml
 
-$(SRC)/papers.xml: $(SRC)/papers.bib.xml
-	$(BIBXML2XML) $(SRC)/papers.bib.xml > $(SRC)/papers.xml
+$(SRC)/papers.html: $(SRC)/papers.bib.xml
+	$(BIBXML2XML) $(SRC)/papers.bib.xml > $(SRC)/papers.html
 
 pkg:
 	@make clean

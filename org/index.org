@@ -1,0 +1,39 @@
+#+TITLE: Massimo Lauria @ Sapienza, Università di Roma
+
+#+ATTR_HTML: :id profile-pic
+[[file:images/mlauria_pic.png]]
+      
+* About me
+  
+  Hi! My name is *Massimo Lauria*  and I am a Researcher at [[http://www.dss.uniroma1.it/en][Department
+  of Statistical Sciences]] of [[http://www.uniroma1.it/][Sapienza - Università di Roma]]. 
+
+  #+ATTR_HTML: :id email
+  [[mailto:massimo.lauria@uniroma1.it]]
+ 
+  #+ATTR_HTML: :id location
+  [[https://goo.gl/tnanME]]
+
+* News
+  :PROPERTIES:
+  :CUSTOM_ID: news
+  :END:
+
+  - /"CNFgen: A Generator of Crafted Benchmarks"/ accepted at [[http://sat2017.gitlab.io/][SAT 2017]]
+  - /"Graph  colouring  is  hard  for algorithms based on ..."/ accepted at [[http://computationalcomplexity.org/Archive/2017/program.html][CCC 2017]]
+  - July 16th to July 22nd, participating at the [[http://s3cs.csc.kth.se/][Swedish Summer School
+    of Computer Science]].
+    
+* Mail address
+  :PROPERTIES:
+  :CUSTOM_ID: snailmail
+  :END:
+
+  Massimo Lauria\\
+  Sapienza - Università di Roma\\
+  Dipartimento di Scienze Statistiche\\
+  Piazzale Aldo Moro, 5\\
+  00185 Roma\\
+  Italy
+
+

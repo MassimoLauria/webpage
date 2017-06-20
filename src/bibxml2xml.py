@@ -124,7 +124,7 @@ def format_entry(entry):
     return text % tuple([get_value(a) for a in args])
 
 
-def format_bibxml(xmldoc):
+def format_bibhtml(xmldoc):
     """
     Extract the formatted XML (ready for the web) from the document
     """
@@ -141,8 +141,8 @@ def format_bibxml(xmldoc):
     for (key, title, elist) in CATEGORIES:
         if not (PRINT_EMPTY_CATEGORIES or elist):
             continue
-        print "<entry>"
-        print "<entry_title><a id=\"" + key + "\"/>" + title + "</entry_title>"
+        print "<section>"
+        print "<h2><a id=\"" + key + "\">" + title + "</a></h2>"
         for en in elist:
             eid = en.getAttribute("id")
 
@@ -187,7 +187,7 @@ def format_bibxml(xmldoc):
                 print abstract_data.encode("utf8")
                 print "</div>"
 
-        print "</entry>"
+        print "</section>"
 
 
 def extract_utf8data(filename):
@@ -245,10 +245,7 @@ if __name__ == "__main__":
     if len(sys.argv) < 1:
         print "Usage " + sys.argv[0] + " <bibxmlfile>"
     else:
-        print '<?xml version="1.0" encoding="utf-8" ?>'
-        print '<?xml-stylesheet type="text/xsl" href="xsl/base.xsl"?>'
-        print ''
-        print "<papers>"
+        print "<div class=\"papers\">"
         bib = minidom.parse(sys.argv[1])
-        format_bibxml(bib)
-        print "</papers>"
+        format_bibhtml(bib)
+        print "</div>"

@@ -1,0 +1,23 @@
+#+TITLE: Massimo Lauria @ Sapienza - Software
+
+* 
+
+  My work has mostly theoretical nature,  but from time to time it
+  is  useful   to  produce   some  piece   of  software   to  help
+  with research. My software can be found on [[https://github.com/MassimoLauria/][GitHub]]
+
+* CNF formula generator [[https://github.com/MassimoLauria/cnfgen][(here)]]
+
+  Proof complexity  research often  studies benchmark  formulas to
+  prove various  theorems. Furthermore it is  often informative to
+  run SAT solvers on  these formulas. <code>CNFgen</code> software
+  (and the included  library) provides a convenient  way to create
+  and manipulate these formulas.
+  
+* Pebble [[https://github.com/MassimoLauria/pebble][(here)]]
+  
+  This program computes  the black/reversible/black-white pebbling
+  number  of  a  single  sink  directed  acyclic  graph.  This  is
+  a particularly difficult computation, and the program uses a lot
+  of memory and time.
+
