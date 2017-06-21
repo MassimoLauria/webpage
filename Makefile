@@ -34,7 +34,7 @@ TARGET= $(WEBPAGES)
 
 
 all: $(BUILD)
-
+	$(EMACS) --batch -l publish.el --eval '(org-publish-project "main" nil)'
 
 $(BUILD): $(BIBLIO)/papers.html
 	$(EMACS) --batch -l publish.el --eval '(org-publish-project "main" t)'

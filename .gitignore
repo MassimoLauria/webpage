@@ -2,3 +2,4 @@ site-build/
 bibliography/papers.bib.xml
 bibliography/papers.html
 *.pyc
+.DS_Store
