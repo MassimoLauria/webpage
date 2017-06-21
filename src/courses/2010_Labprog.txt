@@ -1,47 +1,28 @@
-<?xml version="1.0" encoding="utf-8" ?>
-<?xml-stylesheet type="text/xsl" href="xsl/base.xsl"?>
-<page>
-    <title>Massimo Lauria @ CS Department - Laboratorio di Fondamenti di Programmazione (2010-2011, Canale I)</title>
-    <page_title>Diario di Laboratorio<br />Fondamenti di Programmazione (2010/11)</page_title>
+#+TITLE: Massimo Lauria @ Sapienza - Fondamenti di Programmazione (2010/11)
 
-    <p>
-      In questa pagina gli studenti possono trovare informazioni ed
-      indicazioni riguardanti le esercitazioni in laboratorio per il
-      Canale I (Anno accademico 2010-2011) per il corso di <a
-      href="http://www.dsi.uniroma1.it/~galesi/fond.html"><strong>Fondamenti
-      di Programmazione</strong></a> a cura del <a
-      href="http://www.dsi.uniroma1.it/~galesi">Prof. Galesi</a>.
-    </p>
+* Diario di Laboratorio 
+
+  In  questa  pagina  gli  studenti possono  trovare  informazioni  ed
+  indicazioni  riguardanti  le  esercitazioni in  laboratorio  per  il
+  Canale  I   (Anno  accademico   2010-2011)  per   il  corso   di  <a
+  href="http://www.dsi.uniroma1.it/~galesi/fond.html"><strong>Fondamenti
+  di      Programmazione</strong></a>      a     cura      del      <a
+  href="http://www.dsi.uniroma1.it/~galesi">Prof. Galesi</a>. </p>
 
 
-    <h3>Informazioni Principali</h3>
+* Informazioni Principali 
 
-    <!-- BEGIN RECEIVE ORGTBL infophys -->
-    <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
-      <caption></caption>
-      <colgroup><col align="left" /><col align="left" /><col align="left" />
-      </colgroup>
-      <tbody>
-        <tr><td><strong>Orario</strong></td><td>Mercoledì, 9.00-12.00</td></tr>
-        <tr><td><strong>Luogo</strong></td><td>Laboratori AST di via Tiburtina</td></tr>
-        <tr><td>Docente</td><td>Nicola Galesi</td></tr>
-        <tr><td>Esercitatori</td><td><a href="mailto:lauria@di.uniroma1.it">Massimo Lauria</a>, Toni Mancini</td></tr>
-        <tr>
-          <td>Avvisi</td>
-          <td><a
-          href="mailto:lab-fondamentiprogrammazione-di-uniroma1-it+subscribe@googlegroups.com">Iscriviti</a>
-          per ricevere gli avvisi!</td>
-        </tr>
-      </tbody>
-    </table>
-    <!-- END RECEIVE ORGTBL infophys -->
+  | Orario       | Mercoledì, 9.00-12.00               |
+  | Luogo        | Laboratori AST di via Tiburtina     |
+  | Docente      | Nicola Galesi                       |
+  | Esercitatori | [[mailto:lauria@di.uniroma1.it][Massimo Lauria]], Toni Mancini        |
+  | Avvisi       | [[mailto:lab-fondamentiprogrammazione-di-uniroma1-it+subscribe@googlegroups.com][Iscriviti]]  per ricevere gli avvisi! |
 
-    <entry>
-      <entry_title>Avvisi</entry_title>
+* Avvisi</entry_title>
 
-      <h4>Il primo esonero è mercoledì 1 Dicembre</h4>
+  *Il primo esonero è mercoledì 1 Dicembre*
 
-      <h4><a
+  <h4><a
       href="http://tmancini.di.uniroma1.it/index.php?page=teaching.fondprog.homeworks">
       Il primo homework è stato pubblicato.</a> La scadenza per la
       consegna è il 10 Dicembre 2010.<br />
