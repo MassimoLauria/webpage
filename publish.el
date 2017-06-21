@@ -1,7 +1,7 @@
 ;; tentative org- conf to publish the site
 
 
-(setq base-directory "~/lavori/webpage/org/"
+(setq base-directory "~/lavori/webpage/src/"
       publishing-directory "~/lavori/webpage/site-build/")
 
 (defun my-file-content (filename)
