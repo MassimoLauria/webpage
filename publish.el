@@ -1,19 +1,23 @@
 ;; tentative org- conf to publish the site
 
 
+(setq base-directory "~/lavori/webpage/org/"
+      publishing-directory "~/lavori/webpage/site-build/")
+
 (defun my-file-content (filename)
   (with-temp-buffer
-    (insert-file-contents filename)
+    (insert-file-contents (concat base-directory filename))
     (buffer-string)))
 
+
 (setq org-publish-project-alist
-      '(
+      `(
 
         ;; ... pages the main website ...
         ("pages"
-         :base-directory "~/lavori/webpage/org/"
+         :base-directory ,base-directory
          :base-extension "org"
-         :publishing-directory "~/lavori/webpage/site-build2/"
+         :publishing-directory ,publishing-directory
          :recursive t
          :publishing-function org-html-publish-to-html
 
@@ -36,7 +40,8 @@
          :html-doctype "html5"
          
          ;; Empty head
-         :html-head-extra "<link rel='stylesheet' href='css/default.css' />\n<script type=\"text/javascript\" charset=\"utf-8\" src=\"js/highlight.js\"></script>"
+         ;;:html-head-extra "<link rel='stylesheet' href='css/default.css' />\n<script type=\"text/javascript\" charset=\"utf-8\" src=\"js/highlight.js\"></script>"
+         :html-head-extra ,(my-file-content "head-extra.inc")
          :html-head-include-default-style t
          :html-head-include-scripts nil
          :html-container "article"
@@ -49,24 +54,8 @@
                      (postamble "div"    "postamble"))
 
          ;; Footer
-         :html-preamble "<header>
-      <nav>
-        <ul id=\"nav\">
-          <li> <a href=\"index.html\"> Home</a></li>
-          <li> <a href=\"research.html\">Research</a></li>
-          <li> <a href=\"writings.html\">Papers</a></li>
-          <li> <a href=\"teaching.html\">Teaching</a></li>
-          <li> <a href=\"downloads.html\">Software</a></li>
-        </ul>
-      </nav>
-    </header>
-
-    <script type=\"text/javascript\">highlightCurrentPage()</script>"
-         :html-postamble "<footer>
-This site belongs to <a href=\"mailto:massimo.lauria@uniroma1.it\">Massimo Lauria</a> and the content is published under
-      <a href=\"http://creativecommons.org/licenses/by-nc-sa/4.0/\">CC BY-NC-SA 4.0</a> license.
-      Icons belong by <a href=\"http://brsev.com\">Evan Brooks</a>.
-    </footer>"
+         :html-preamble  ,(my-file-content "preamble.inc")
+         :html-postamble ,(my-file-content "postamble.inc")
 
          :htmlized-source t ;; this enables htmlize, which means that I can use css for code!
 
@@ -76,23 +65,23 @@ This site belongs to <a href=\"mailto:massimo.lauria@uniroma1.it\">Massimo Lauri
         
         ;; Other stuff that must just be copied
         ("pages-html"
-         :base-directory "~/lavori/webpage/org/"
+         :base-directory ,base-directory
          :base-extension "html"
-         :publishing-directory "~/lavori/webpage/site-build2/"
+         :publishing-directory ,publishing-directory
          :recursive t
          :publishing-function org-publish-attachment
          )
         ("assets"
-         :base-directory "~/lavori/webpage/org/"
+         :base-directory ,base-directory
          :base-extension "css\\|js\\|png\\|jpg\\|gif\\|mp3\\|ogg\\|swf\\|tar.gz"
-         :publishing-directory "~/lavori/webpage/site-build2/"
+         :publishing-directory ,publishing-directory
          :recursive t
          :publishing-function org-publish-attachment
          )
         ("papers"
-         :base-directory "~/lavori/webpage/org/"
+         :base-directory ,base-directory
          :base-extension "pdf\\|ps\\|ps.gz"
-         :publishing-directory "~/lavori/webpage/site-build2/"
+         :publishing-directory ,publishing-directory
          :recursive t
          :publishing-function org-publish-attachment
          )

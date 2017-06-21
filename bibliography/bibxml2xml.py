@@ -142,7 +142,8 @@ def format_bibhtml(xmldoc):
         if not (PRINT_EMPTY_CATEGORIES or elist):
             continue
         print "<section>"
-        print "<h2><a id=\"" + key + "\">" + title + "</a></h2>"
+        #print "<h2><a id=\"" + key + "\">" + title + "</a></h2>"
+        print "<h2>" + title + "</h2>"
         for en in elist:
             eid = en.getAttribute("id")
 

@@ -20,6 +20,16 @@ body {
 
 }
 
+/** Links ---- **/
+a { color: #822433;
+    text-decoration: none; }
+
+main a { font-weight: bold; }
+main a:hover { text-decoration: underline; }
+
+div#postamble a { font-weight: bold; }
+div#postamble a:hover {  text-decoration: underline; }
+
 /** -------- Navigator --------- 
    
    When then width of the page becomes too small, the navigators
@@ -31,7 +41,8 @@ nav {
     overflow: hidden;
 }
 nav .current {
-    background-color: #4CAF50;
+    background-color: #822433;
+    color: white;
 }
 
 nav ul {
