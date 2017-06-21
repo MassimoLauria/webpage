@@ -1,8 +1,17 @@
 ;; tentative org- conf to publish the site
 
 
+;;; Use my packages
+(require 'cask "~/.cask/cask.el")
+(cask-initialize)
+
+(require 'ox-html)
+
+(message (org-version))
+
 (setq base-directory "~/lavori/webpage/src/"
-      publishing-directory "~/lavori/webpage/site-build/")
+      publishing-directory "~/lavori/webpage/site-build/"
+      remote-directory     "massimo@massimolauria.net:/srv/www/massimolauria.net/")
 
 (defun my-file-content (filename)
   (with-temp-buffer
@@ -86,4 +95,4 @@
          :publishing-function org-publish-attachment
          )
         ("main" :components ("pages" "pages-html" "papers" "assets"))
-      ))
+        ))
