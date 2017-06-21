@@ -58,7 +58,7 @@
   Per maggiori informazioni sul corso consiglio di visitare le seguenti pagine web:
   
   - La [[http://www.dsi.uniroma1.it/~galesi/fond.html][pagina principale]] a cura del [[http://www.dsi.uniroma1.it/~galesi][Prof. Galesi]]
-  - Il [[file:2010-Labprog-Uniroma1.html][diario delle esercitazioni]] a cura di Massimo Lauria
+  - Il [[file:courses/2010-Labprog-Uniroma1.html][diario delle esercitazioni]] a cura di Massimo Lauria
      
 
 * 2009-2010 Uniroma1 — Metodi Matematici per L'Informatica (Esercitazioni)
