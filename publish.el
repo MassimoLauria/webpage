@@ -5,7 +5,7 @@
 (require 'cask "~/.cask/cask.el")
 (cask-initialize)
 
-(message (format "Producing the website using org-move version %s"  org-version))
+(message (format "Producing the website using org-move version %s"  (org-version)))
 
 (setq base-directory "~/lavori/webpage/src/"
       publishing-directory "~/lavori/webpage/site-build/")

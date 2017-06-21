@@ -29,8 +29,8 @@ function setActiveMenu(arr, crtPage)
 		{
 			if (arr[i].parentNode.tagName != "DIV")
 			{
-				arr[i].className = "current";
-				arr[i].parentNode.className = "current";
+				arr[i].className = arr[i].className + " current";
+				arr[i].parentNode.className = arr[i].parentNode.className + " current";
 			}
 		}
 	}
