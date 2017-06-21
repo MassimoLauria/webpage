@@ -20,7 +20,7 @@
     +39-06-49910496 </li>
     <li class="contacts">
     <img src="images/office.png" class="contact-pic" />
-    Room n.9 - Floor 4<sup>th</sup> - Dip. Statistical Sciences</li>
+    Room n.9 - Floor 4<sup>th</sup> - Dept. Statistical Sciences</li>
 </ul>
 </div>
 #+end_export
