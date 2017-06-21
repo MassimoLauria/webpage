@@ -1,17 +1,14 @@
 ;; tentative org- conf to publish the site
 
 
-;;; Use my packages
+;;; Use the packages installed in my Emacs
 (require 'cask "~/.cask/cask.el")
 (cask-initialize)
 
-(require 'ox-html)
-
-(message (org-version))
+(message (format "Producing the website using org-move version %s"  org-version))
 
 (setq base-directory "~/lavori/webpage/src/"
-      publishing-directory "~/lavori/webpage/site-build/"
-      remote-directory     "massimo@massimolauria.net:/srv/www/massimolauria.net/")
+      publishing-directory "~/lavori/webpage/site-build/")
 
 (defun my-file-content (filename)
   (with-temp-buffer
@@ -89,7 +86,7 @@
          )
         ("papers"
          :base-directory ,base-directory
-         :base-extension "pdf\\|ps\\|ps.gz"
+         :base-extension "pdf\\|ps\\|ps.gz\\|tex"
          :publishing-directory ,publishing-directory
          :recursive t
          :publishing-function org-publish-attachment
