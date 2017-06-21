@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<!-- 2017-06-20 Tue 16:46 -->
+<!-- 2017-06-21 Mer 12:10 -->
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Massimo Lauria @ Sapienza - Publications</title>
@@ -178,29 +178,92 @@
   /*]]>*/-->
 </style>
 <link rel='stylesheet' href='css/default.css' />
+<script type="text/javascript" charset="utf-8" src="js/highlight.js"></script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="preamble" class="status">
 <header>
       <nav>
-        <ul class="nav">
+        <ul id="nav">
           <li> <a href="index.html"> Home</a></li>
           <li> <a href="research.html">Research</a></li>
           <li> <a href="writings.html">Papers</a></li>
-          <li class="current"> <a href="teaching.html">Teaching</a></li>
+          <li> <a href="teaching.html">Teaching</a></li>
           <li> <a href="downloads.html">Software</a></li>
         </ul>
       </nav>
     </header>
+
+    <script type="text/javascript">highlightCurrentPage()</script>
 </div>
 <main id="content">
+<script type="text/javascript">
+  function toggleAbstract(id) {
 
+  var div    = document.getElementById("abs-" + id);
+  var button = document.getElementById("button-" + id);
+
+  if (div.style.display == 'block') {
+     div.style.display = 'none';
+     button.textContent="Show Abstract";
+  }
+  else {
+     div.style.display = 'block';
+     button.textContent="Hide Abstract";
+  }
+  return(true);
+
+  }
+</script>
+
+<!-- MathJax Configuration (hack! I don't know why i need to reconfigure it)-->
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      showProcessingMessages: false,
+      extensions: ["tex2jax.js","TeX/AMSmath.js","TeX/AMSsymbols.js"],
+      jax: ["input/TeX", "output/HTML-CSS"],
+      tex2jax: {
+        inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+        displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+        processEscapes: true
+        },
+      "HTML-CSS": {
+        availableFonts: ["STIX","TeX"],
+        preferredFont: "TeX",
+        webFont: "TeX",
+        imageFont: null,
+        showMathMenu: false
+        }
+      });
+  </script>
 
 <article id="outline-container-org1901eca" class="outline-1">
 <h1 id="org1901eca">Publications, papers, surveys&#x2026;</h1>
 <div class="outline-text-1" id="text-org1901eca">
 <p>
-Here I  list my papers.  Their copyrights belongs to  the publisher.
+Here I list my papers.  Their copyrights belongs to  the publisher.
 All  papers  locally   stored  on  this  page   are  preprints,  are
 essentially equivalent  to the published  versions, and can  be only
 downloaded for personal or academic  purposes. Some of my papers are
@@ -214,10 +277,15 @@ also indexed and stored at the following locations
 <li><a href="http://www.informatik.uni-trier.de/~ley/db/indices/a-tree/l/Lauria:Massimo.html">Digital Bibliography and Library Project (DBPL)</a></li>
 </ul>
 
+<p>
+With a  modern browser, any  math should render properly:   if \(e^x\)
+shows as <code>$e^x$</code> then your browser does not have enough capabilities
+to render math.
+</p>
 
 <div class="papers">
-<article>
-<h2><a id="journal"/>Journal</h2>
+<section>
+<h2><a id="journal">Journal</a></h2>
 <div class="bibentry">
 <table style="border:0; width:100%;" cellspacing="3" cellpadding="0">
 
@@ -235,11 +303,10 @@ also indexed and stored at the following locations
 <span class='bibauthor'>Massimo Lauria</span>.<br />
 In: ACM Trans. Comput. Theory. 8(4):17:1--17:13.<br />
 Conference version published at SAT, 2013.<br />
-<div class="abstract-button" onclick="toggleAbstract('Lauria2016RankLower');">
+<div class="abstract-button" id="button-Lauria2016RankLower" onclick="toggleAbstract('Lauria2016RankLower');">
 Show/Hide abstract
 </div>
 </td></tr></table>
-</div>
 <div class="abstract" id="abs-Lauria2016RankLower" >
 <div class="abstract-header">
 Abstract
@@ -257,6 +324,7 @@ show a protection lemma which could be of independent interest.
 </p>
 
 </div>
+</div>
 <div class="bibentry">
 <table style="border:0; width:100%;" cellspacing="3" cellpadding="0">
 
@@ -273,11 +341,10 @@ show a protection lemma which could be of independent interest.
 <span class='bibauthor'>Massimo Lauria and Jakob Nordström</span>.<br />
 In: Computationa Complexity. TBA(TBA):1--38.<br />
 Conference version published at CCC, 2015.<br />
-<div class="abstract-button" onclick="toggleAbstract('LauriaNordstrom2017SOS');">
+<div class="abstract-button" id="button-LauriaNordstrom2017SOS" onclick="toggleAbstract('LauriaNordstrom2017SOS');">
 Show/Hide abstract
 </div>
 </td></tr></table>
-</div>
 <div class="abstract" id="abs-LauriaNordstrom2017SOS" >
 <div class="abstract-header">
 Abstract
@@ -304,6 +371,7 @@ rank, respectively.
 </p>
 
 </div>
+</div>
 <div class="bibentry">
 <table style="border:0; width:100%;" cellspacing="3" cellpadding="0">
 
@@ -321,11 +389,10 @@ rank, respectively.
 <span class='bibauthor'>Albert Atserias, Massimo Lauria and Jakob Nordström</span>.<br />
 In: ACM Trans. Comput. Logic. 17(3):19:1--19:30.<br />
 Conference version published at CCC, 2014.<br />
-<div class="abstract-button" onclick="toggleAbstract('aln16');">
+<div class="abstract-button" id="button-aln16" onclick="toggleAbstract('aln16');">
 Show/Hide abstract
 </div>
 </td></tr></table>
-</div>
 <div class="abstract" id="abs-aln16" >
 <div class="abstract-header">
 Abstract
@@ -341,6 +408,7 @@ terms of degree and rank are tight as well.  In contrast, the formulas
 have Lasserre proofs of constant rank  and size polynomial in both $n$
 and $w$.
 
+</div>
 </div>
 <div class="bibentry">
 <table style="border:0; width:100%;" cellspacing="3" cellpadding="0">
@@ -359,11 +427,10 @@ and $w$.
 <span class='bibauthor'>Lorenzo Carlucci, Nicola Galesi and Massimo Lauria</span>.<br />
 In: ACM Trans. Comput. Logic. 17(4):26:1--26:25.<br />
 Part of this work appeared as a conference paper at CCC, 2011.<br />
-<div class="abstract-button" onclick="toggleAbstract('CarlucciGalesiLauria2016ParisHarrington');">
+<div class="abstract-button" id="button-CarlucciGalesiLauria2016ParisHarrington" onclick="toggleAbstract('CarlucciGalesiLauria2016ParisHarrington');">
 Show/Hide abstract
 </div>
 </td></tr></table>
-</div>
 <div class="abstract" id="abs-CarlucciGalesiLauria2016ParisHarrington" >
 <div class="abstract-header">
 Abstract
@@ -386,6 +453,7 @@ Erdös and  Mills. We  prove a non-trivial  Resolution lower  bound for
 a family of such off-diagonal Ramsey principles.</p>
 
 </div>
+</div>
 <div class="bibentry">
 <table style="border:0; width:100%;" cellspacing="3" cellpadding="0">
 
@@ -403,11 +471,10 @@ a family of such off-diagonal Ramsey principles.</p>
 <span class='bibauthor'>Massimo Lauria, Pavel Pudlák, Vojtěch Rödl and Neil Thapen</span>.<br />
 In: Combinatorica. 37(2):253--268.<br />
 Conference version published at ICALP, 2013.<br />
-<div class="abstract-button" onclick="toggleAbstract('lprt2016');">
+<div class="abstract-button" id="button-lprt2016" onclick="toggleAbstract('lprt2016');">
 Show/Hide abstract
 </div>
 </td></tr></table>
-</div>
 <div class="abstract" id="abs-lprt2016" >
 <div class="abstract-header">
 Abstract
@@ -422,6 +489,7 @@ makes use  of the fact  that every Ramsey  graph must contain  a large
 subgraph with some of the statistical properties of the random graph.
 </p>
 
+</div>
 </div>
 <div class="bibentry">
 <table style="border:0; width:100%;" cellspacing="3" cellpadding="0">
@@ -440,11 +508,10 @@ subgraph with some of the statistical properties of the random graph.
 <span class='bibauthor'>Yuval Filmus, Massimo Lauria, Jakob Nordström, Neil Thapen and Noga Ron-Zewi</span>.<br />
 In: SIAM Journal on Computing. 44(4):1119--1153.<br />
 Conference version published at CCC, 2012.<br />
-<div class="abstract-button" onclick="toggleAbstract('flntr2015');">
+<div class="abstract-button" id="button-flntr2015" onclick="toggleAbstract('flntr2015');">
 Show/Hide abstract
 </div>
 </td></tr></table>
-</div>
 <div class="abstract" id="abs-flntr2015" >
 <div class="abstract-header">
 Abstract
@@ -504,6 +571,7 @@ For PCR, we prove an $\Omega(n)$ space lower bound for a bitwise
 </p>
 
 </div>
+</div>
 <div class="bibentry">
 <table style="border:0; width:100%;" cellspacing="3" cellpadding="0">
 
@@ -521,11 +589,10 @@ For PCR, we prove an $\Omega(n)$ space lower bound for a bitwise
 <span class='bibauthor'>Yuval Filmus, Massimo Lauria, Mladen Miksa, Jakob Nordström and Marc Vinyals</span>.<br />
 In: ACM Transactions on Computational Logic. 16(4):28:1--28:15.<br />
 Conference version published at STACS, 2014.<br />
-<div class="abstract-button" onclick="toggleAbstract('flmnv15');">
+<div class="abstract-button" id="button-flmnv15" onclick="toggleAbstract('flmnv15');">
 Show/Hide abstract
 </div>
 </td></tr></table>
-</div>
 <div class="abstract" id="abs-flmnv15" >
 <div class="abstract-header">
 Abstract
@@ -545,6 +612,7 @@ conclude by showing that the  related question for polynomial calculus
 resolvable by similar methods.
 
 </div>
+</div>
 <div class="bibentry">
 <table style="border:0; width:100%;" cellspacing="3" cellpadding="0">
 
@@ -562,11 +630,10 @@ resolvable by similar methods.
 <span class='bibauthor'>Olaf Beyersdorff, Nicola Galesi and Massimo Lauria</span>.<br />
 In: ACM Transactions on Computational Logic. 14(3):20.<br />
 Conference version appeared at SAT, 2011.<br />
-<div class="abstract-button" onclick="toggleAbstract('beyersdorff2013parameterized');">
+<div class="abstract-button" id="button-beyersdorff2013parameterized" onclick="toggleAbstract('beyersdorff2013parameterized');">
 Show/Hide abstract
 </div>
 </td></tr></table>
-</div>
 <div class="abstract" id="abs-beyersdorff2013parameterized" >
 <div class="abstract-header">
 Abstract
@@ -599,6 +666,7 @@ understanding the Resolution complexity of this family of formulas.
 </p>
 
 </div>
+</div>
 <div class="bibentry">
 <table style="border:0; width:100%;" cellspacing="3" cellpadding="0">
 
@@ -616,11 +684,10 @@ understanding the Resolution complexity of this family of formulas.
 <span class='bibauthor'>Olaf Beyersdorff, Nicola Galesi and Massimo Lauria</span>.<br />
 In: Information Processing Letters. 113(18):666--671.<br />
 
-<div class="abstract-button" onclick="toggleAbstract('bgl12');">
+<div class="abstract-button" id="button-bgl12" onclick="toggleAbstract('bgl12');">
 Show/Hide abstract
 </div>
 </td></tr></table>
-</div>
 <div class="abstract" id="abs-bgl12" >
 <div class="abstract-header">
 Abstract
@@ -639,6 +706,7 @@ information-theoretic interpretation of the game.
 </p>
 
 </div>
+</div>
 <div class="bibentry">
 <table style="border:0; width:100%;" cellspacing="3" cellpadding="0">
 
@@ -656,11 +724,10 @@ information-theoretic interpretation of the game.
 <span class='bibauthor'>Olaf Beyersdorff, Nicola Galesi, Massimo Lauria and Alexander Razborov</span>.<br />
 In: ACM Trans. Comput. Theory. 4(3):7:1--7:16.<br />
 Conference version appeared at ICALP, 2011 <br /><a href="http://computingreviews.com/recommend/bestof/notableitems_2012.cfm#list"> <img src="images/thinkloud2012.gif" alt="Computing Reviews' Notable Books and Articles 2012" /> </a> <br /> Selected in Computing Reviews' Notable Books and Articles 2012 list.<br />
-<div class="abstract-button" onclick="toggleAbstract('bglr12');">
+<div class="abstract-button" id="button-bglr12" onclick="toggleAbstract('bglr12');">
 Show/Hide abstract
 </div>
 </td></tr></table>
-</div>
 <div class="abstract" id="abs-bglr12" >
 <div class="abstract-header">
 Abstract
@@ -696,6 +763,7 @@ tree-like  Parameterized Resolution  allows short  refutations  of all
 parameterized contradictions given as bounded-width CNF's.</p>
 
 </div>
+</div>
 <div class="bibentry">
 <table style="border:0; width:100%;" cellspacing="3" cellpadding="0">
 
@@ -713,11 +781,10 @@ parameterized contradictions given as bounded-width CNF's.</p>
 <span class='bibauthor'>Olaf Beyersdorff, Nicola Galesi and Massimo Lauria</span>.<br />
 In: Information Processing Letters. 110(23):1074-1077.<br />
 
-<div class="abstract-button" onclick="toggleAbstract('bgl10c');">
+<div class="abstract-button" id="button-bgl10c" onclick="toggleAbstract('bgl10c');">
 Show/Hide abstract
 </div>
 </td></tr></table>
-</div>
 <div class="abstract" id="abs-bgl10c" >
 <div class="abstract-header">
 Abstract
@@ -730,6 +797,7 @@ $2^{\Omega(n\log n)}$ for the pigeonhole principle in tree-like Resolution.
 This gives a new and simpler proof of the same lower bound established by Iwama
 and Miyazaki [1999] and Dantchev and Riis [2001].
 
+</div>
 </div>
 <div class="bibentry">
 <table style="border:0; width:100%;" cellspacing="3" cellpadding="0">
@@ -748,11 +816,10 @@ and Miyazaki [1999] and Dantchev and Riis [2001].
 <span class='bibauthor'>Nicola Galesi and Massimo Lauria</span>.<br />
 In: ACM Transaction on Computational Logic. 12(1):4:1--4:22.<br />
 
-<div class="abstract-button" onclick="toggleAbstract('gl10a');">
+<div class="abstract-button" id="button-gl10a" onclick="toggleAbstract('gl10a');">
 Show/Hide abstract
 </div>
 </td></tr></table>
-</div>
 <div class="abstract" id="abs-gl10a" >
 <div class="abstract-header">
 Abstract
@@ -784,6 +851,7 @@ $\mathsf{Res}_{k}$.  </p>
 ($3$-CNF) are hard to refute in $\mathsf{Pcr}_{k}$.</p>
 
 </div>
+</div>
 <div class="bibentry">
 <table style="border:0; width:100%;" cellspacing="3" cellpadding="0">
 
@@ -801,11 +869,10 @@ $\mathsf{Res}_{k}$.  </p>
 <span class='bibauthor'>Nicola Galesi and Massimo Lauria</span>.<br />
 In: Theory of Computing Systems. 47(2):491--506.<br />
 
-<div class="abstract-button" onclick="toggleAbstract('gl10b');">
+<div class="abstract-button" id="button-gl10b" onclick="toggleAbstract('gl10b');">
 Show/Hide abstract
 </div>
 </td></tr></table>
-</div>
 <div class="abstract" id="abs-gl10b" >
 <div class="abstract-header">
 Abstract
@@ -818,6 +885,7 @@ analogous result obtained for Resolution by Alekhnovich and Razborov (SIAM
 J. Computing, 38(4), 2008).
 </p>
 
+</div>
 </div>
 <div class="bibentry">
 <table style="border:0; width:100%;" cellspacing="3" cellpadding="0">
@@ -835,11 +903,10 @@ J. Computing, 38(4), 2008).
 <span class='bibauthor'>Tiziana Calamoneri, Andrea E. F. Clementi, Miriam Di Ianni, Massimo Lauria, Angelo Monti and Riccardo Silvestri</span>.<br />
 In: Theoretical Computer Science. 399(1-2):38--53.<br />
 Conference version appeared at SIROCCO, 2006.<br />
-<div class="abstract-button" onclick="toggleAbstract('ccilms08');">
+<div class="abstract-button" id="button-ccilms08" onclick="toggleAbstract('ccilms08');">
 Show/Hide abstract
 </div>
 </td></tr></table>
-</div>
 <div class="abstract" id="abs-ccilms08" >
 <div class="abstract-header">
 Abstract
@@ -868,6 +935,7 @@ problem and for its restriction in which the allowed disks must have
 
 
 </div>
+</div>
 <div class="bibentry">
 <table style="border:0; width:100%;" cellspacing="3" cellpadding="0">
 
@@ -885,11 +953,10 @@ problem and for its restriction in which the allowed disks must have
 <span class='bibauthor'>Andrea E. F. Clementi, Miriam Di Ianni, Massimo Lauria, Angelo Monti, Gianluca Rossi and Riccardo Silvestri</span>.<br />
 In: Theoretical Computer Science. 384(2-3):161-167.<br />
 Conference version appeared at SIROCCO 2005 with the name "Divide and Conquer Is Almost Optimal for the Bounded-Hop MST Problem on Random Euclidean Instances".<br />
-<div class="abstract-button" onclick="toggleAbstract('cilmrs07');">
+<div class="abstract-button" id="button-cilmrs07" onclick="toggleAbstract('cilmrs07');">
 Show/Hide abstract
 </div>
 </td></tr></table>
-</div>
 <div class="abstract" id="abs-cilmrs07" >
 <div class="abstract-header">
 Abstract
@@ -905,9 +972,10 @@ bound.
 </p>
 
 </div>
-</article>
-<article>
-<h2><a id="conference"/>Conference</h2>
+</div>
+</section>
+<section>
+<h2><a id="conference">Conference</a></h2>
 <div class="bibentry">
 <table style="border:0; width:100%;" cellspacing="3" cellpadding="0">
 
@@ -924,11 +992,10 @@ bound.
 <span class='bibauthor'>Massimo Lauria and Jakob Nordström</span>.<br />
 In: Conference of Computational Complexity 2017. pp. TBA.<br />
 To appear.<br />
-<div class="abstract-button" onclick="toggleAbstract('LauriaNordstrom2017Coloring');">
+<div class="abstract-button" id="button-LauriaNordstrom2017Coloring" onclick="toggleAbstract('LauriaNordstrom2017Coloring');">
 Show/Hide abstract
 </div>
 </td></tr></table>
-</div>
 <div class="abstract" id="abs-LauriaNordstrom2017Coloring" >
 <div class="abstract-header">
 Abstract
@@ -956,6 +1023,7 @@ We consider the natural encoding of the $k$-colouring problem for a
 </p>
 
 </div>
+</div>
 <div class="bibentry">
 <table style="border:0; width:100%;" cellspacing="3" cellpadding="0">
 
@@ -973,11 +1041,10 @@ We consider the natural encoding of the $k$-colouring problem for a
 <span class='bibauthor'>Jan Elffers, Jan Johannsen, Massimo Lauria, Thomas Magnard, Jakob Nordström and Marc Vinyals</span>.<br />
 In: Theory and Applications of Satisfiability Testing - SAT 2016 - 19th International Conference, Bordeaux, France, July 5-8, 2016, Proceedings. pp. 160--176.<br />
 
-<div class="abstract-button" onclick="toggleAbstract('ElffersJLMNV2016TradeOffs');">
+<div class="abstract-button" id="button-ElffersJLMNV2016TradeOffs" onclick="toggleAbstract('ElffersJLMNV2016TradeOffs');">
 Show/Hide abstract
 </div>
 </td></tr></table>
-</div>
 <div class="abstract" id="abs-ElffersJLMNV2016TradeOffs" >
 <div class="abstract-header">
 Abstract
@@ -986,6 +1053,7 @@ Abstract
 A long line of research has studied the power of conflict-driven clause learning (CDCL) and how it compares to the resolution proof system in which it searches for proofs. It has been shown that CDCL can polynomially simulate resolution, even when the learning scheme is adversarially chosen as long as it is asserting.  However, the simulation only works under the assumption that no learned clauses are ever forgotten, and the polynomial blow-up is significant.  Moreover, the simulation requires very frequent restarts, whereas the power of CDCL with less frequent or entirely without restarts remains poorly understood. With a view towards obtaining results with tighter relations between CDCL and resolution, we introduce a more fine-grained model of CDCL that captures not only time but also memory usage and number of restarts. We show how previously established strong size-space trade-offs for resolution can be transformed into equally strong trade-offs between time and memory usage for CDCL, where the upper bounds hold for CDCL without any restarts using the standard 1UIP clause learning scheme, and the (in some cases tightly matching) lower bounds hold for arbitrarily frequent restarts and arbitrary clause learning schemes.
 </p>
 
+</div>
 </div>
 <div class="bibentry">
 <table style="border:0; width:100%;" cellspacing="3" cellpadding="0">
@@ -1004,11 +1072,10 @@ A long line of research has studied the power of conflict-driven clause learning
 <span class='bibauthor'>Yuval Filmus, Pavel Hrube\vs and Massimo Lauria</span>.<br />
 In: 33rd Symposium on Theoretical Aspects of Computer Science (STACS 2016). pp. 35:1--35:13.<br />
 
-<div class="abstract-button" onclick="toggleAbstract('filmus2016');">
+<div class="abstract-button" id="button-filmus2016" onclick="toggleAbstract('filmus2016');">
 Show/Hide abstract
 </div>
 </td></tr></table>
-</div>
 <div class="abstract" id="abs-filmus2016" >
 <div class="abstract-header">
 Abstract
@@ -1038,6 +1105,7 @@ Abstract
 </p>
 
 </div>
+</div>
 <div class="bibentry">
 <table style="border:0; width:100%;" cellspacing="3" cellpadding="0">
 
@@ -1054,11 +1122,10 @@ Abstract
 <span class='bibauthor'>Siu Man Chan, Massimo Lauria, Jakob Nordström and Marc Vinyals</span>.<br />
 In: Proc. of the 56th IEEE Symposium on Foundations of Computer Science (FOCS), 2015. pp. 466--485.<br />
 
-<div class="abstract-button" onclick="toggleAbstract('clnv2015');">
+<div class="abstract-button" id="button-clnv2015" onclick="toggleAbstract('clnv2015');">
 Show/Hide abstract
 </div>
 </td></tr></table>
-</div>
 <div class="abstract" id="abs-clnv2015" >
 <div class="abstract-header">
 Abstract
@@ -1084,6 +1151,7 @@ We leave as an interesting open problem whether our additive hardness of approxi
 </p>
 
 </div>
+</div>
 <div class="bibentry">
 <table style="border:0; width:100%;" cellspacing="3" cellpadding="0">
 
@@ -1101,11 +1169,10 @@ We leave as an interesting open problem whether our additive hardness of approxi
 <span class='bibauthor'>Yuval Filmus, Massimo Lauria, Mladen Mikša, Jakob Nordström and Marc Vinyals</span>.<br />
 In: Proc. of the 40th International Colloquium on Automata, Languages and Programming, ICALP 2013. pp. 437-448.<br />
 
-<div class="abstract-button" onclick="toggleAbstract('flmnv13');">
+<div class="abstract-button" id="button-flmnv13" onclick="toggleAbstract('flmnv13');">
 Show/Hide abstract
 </div>
 </td></tr></table>
-</div>
 <div class="abstract" id="abs-flmnv13" >
 <div class="abstract-header">
 Abstract
@@ -1141,6 +1208,7 @@ Abstract
 </p>
 
 </div>
+</div>
 <div class="bibentry">
 <table style="border:0; width:100%;" cellspacing="3" cellpadding="0">
 
@@ -1158,11 +1226,10 @@ Abstract
 <span class='bibauthor'>Andrea E. F. Clementi, Miriam Di Ianni, Massimo Lauria, Angelo Monti, Gianluca Rossi and Riccardo Silvestri</span>.<br />
 In: Ad-Hoc, Mobile, and Wireless Networks, 5th International Conference, ADHOC-NOW 2006, Ottawa, Canada, August 17-19, 2006, Proceedings. pp. 60-72.<br />
 
-<div class="abstract-button" onclick="toggleAbstract('cilmrs06');">
+<div class="abstract-button" id="button-cilmrs06" onclick="toggleAbstract('cilmrs06');">
 Show/Hide abstract
 </div>
 </td></tr></table>
-</div>
 <div class="abstract" id="abs-cilmrs06" >
 <div class="abstract-header">
 Abstract
@@ -1186,9 +1253,10 @@ wide experimental study showing that our protocol has very good performances
 when compared with previously introduced (centralized) heuristics.  </p>
 
 </div>
-</article>
-<article>
-<h2><a id="short"/>Short Notes (not peer reviewed)</h2>
+</div>
+</section>
+<section>
+<h2><a id="short">Short Notes (not peer reviewed)</a></h2>
 <div class="bibentry">
 <table style="border:0; width:100%;" cellspacing="3" cellpadding="0">
 
@@ -1204,11 +1272,10 @@ when compared with previously introduced (centralized) heuristics.  </p>
 <span class='bibtitle'>Short Res*(polylog) Refutations if and only if Narrow Res Refutations</span> (2011).<br />
 <span class='bibauthor'>Massimo Lauria</span>.<br />
 
-<div class="abstract-button" onclick="toggleAbstract('reslognarrow2011');">
+<div class="abstract-button" id="button-reslognarrow2011" onclick="toggleAbstract('reslognarrow2011');">
 Show/Hide abstract
 </div>
 </td></tr></table>
-</div>
 <div class="abstract" id="abs-reslognarrow2011" >
 <div class="abstract-header">
 Abstract
@@ -1230,9 +1297,10 @@ by a short $\mathsf{Res}^{*}(\mathsf{polylog})$ refutation.
 </p>
 
 </div>
-</article>
-<article>
-<h2><a id="manuscript"/>Manuscripts (not peer reviewed)</h2>
+</div>
+</section>
+<section>
+<h2><a id="manuscript">Manuscripts (not peer reviewed)</a></h2>
 <div class="bibentry">
 <table style="border:0; width:100%;" cellspacing="3" cellpadding="0">
 
@@ -1248,11 +1316,10 @@ by a short $\mathsf{Res}^{*}(\mathsf{polylog})$ refutation.
 <span class='bibtitle'>Upper Bounds for Positional Paris-Harrington Games</span> (2012).<br />
 <span class='bibauthor'>Lorenzo Carlucci and Massimo Lauria</span>.<br />
 
-<div class="abstract-button" onclick="toggleAbstract('cl2012');">
+<div class="abstract-button" id="button-cl2012" onclick="toggleAbstract('cl2012');">
 Show/Hide abstract
 </div>
 </td></tr></table>
-</div>
 <div class="abstract" id="abs-cl2012" >
 <div class="abstract-header">
 Abstract
@@ -1276,6 +1343,7 @@ functions  up  to  $\varepsilon_0$,   while  we  show  that  the  game
 Paris-Harrington numbers are fixed stacks of exponentials.
 
 </div>
+</div>
 <div class="bibentry">
 <table style="border:0; width:100%;" cellspacing="3" cellpadding="0">
 
@@ -1293,9 +1361,9 @@ Paris-Harrington numbers are fixed stacks of exponentials.
 Superseded by the paper <em>Parameterized Complexity of DPLL Search Procedures</em>.<br />
 </td></tr></table>
 </div>
-</article>
-<article>
-<h2><a id="thesis"/>Thesis</h2>
+</section>
+<section>
+<h2><a id="thesis">Thesis</a></h2>
 <div class="bibentry">
 <table style="border:0; width:100%;" cellspacing="3" cellpadding="0">
 
@@ -1313,11 +1381,10 @@ Superseded by the paper <em>Parameterized Complexity of DPLL Search Procedures</
 <span class='bibauthor'>Massimo Lauria</span>.<br />
 Sapienza - Universita` di Roma.<br />
 
-<div class="abstract-button" onclick="toggleAbstract('lauria08');">
+<div class="abstract-button" id="button-lauria08" onclick="toggleAbstract('lauria08');">
 Show/Hide abstract
 </div>
 </td></tr></table>
-</div>
 <div class="abstract" id="abs-lauria08" >
 <div class="abstract-header">
 Abstract
@@ -1347,7 +1414,8 @@ a random tautology is still very hard to prove for $\mathsf{Pcr}_{k}$.
 </p>
 
 </div>
-</article>
+</div>
+</section>
 </div>
 </div>
 </article>

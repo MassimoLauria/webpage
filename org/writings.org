@@ -1,9 +1,50 @@
 #+TITLE: Massimo Lauria @ Sapienza - Publications
 
+#+begin_export html
+  <script type="text/javascript">
+    function toggleAbstract(id) {
+
+    var div    = document.getElementById("abs-" + id);
+    var button = document.getElementById("button-" + id);
+
+    if (div.style.display == 'block') {
+       div.style.display = 'none';
+       button.textContent="Show Abstract";
+    }
+    else {
+       div.style.display = 'block';
+       button.textContent="Hide Abstract";
+    }
+    return(true);
+
+    }
+  </script>
+
+  <!-- MathJax Configuration (hack! I don't know why i need to reconfigure it)-->
+  <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        showProcessingMessages: false,
+        extensions: ["tex2jax.js","TeX/AMSmath.js","TeX/AMSsymbols.js"],
+        jax: ["input/TeX", "output/HTML-CSS"],
+        tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+          displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+          processEscapes: true
+          },
+        "HTML-CSS": {
+          availableFonts: ["STIX","TeX"],
+          preferredFont: "TeX",
+          webFont: "TeX",
+          imageFont: null,
+          showMathMenu: false
+          }
+        });
+    </script>
+#+end_export
 
 * Publications, papers, surveys...
 
-  Here I  list my papers.  Their copyrights belongs to  the publisher.
+  Here I list my papers.  Their copyrights belongs to  the publisher.
   All  papers  locally   stored  on  this  page   are  preprints,  are
   essentially equivalent  to the published  versions, and can  be only
   downloaded for personal or academic  purposes. Some of my papers are
@@ -14,5 +55,8 @@
   - [[http://scholar.google.se/citations?user=XCR-qNgAAAAJ][Google Scholar]]
   - [[http://www.informatik.uni-trier.de/%7Eley/db/indices/a-tree/l/Lauria:Massimo.html][Digital Bibliography and Library Project (DBPL)]]
  
+  With a  modern browser, any  math should render properly:   if $e^x$
+  shows as =$e^x$= then your browser does not have enough capabilities
+  to render math.
 
-#+INCLUDE: "papers.html" export html
+#+INCLUDE: "../bibliography/papers.html" export html

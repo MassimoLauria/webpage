@@ -169,13 +169,12 @@ def format_bibhtml(xmldoc):
             print format_note(en).encode("utf8")
 
             if len(abstract_data):
-                print "<div class=\"abstract-button\""\
+                print "<div class=\"abstract-button\" id=\"button-" + eid + "\""\
                       " onclick=\"toggleAbstract('" + eid + "');\">"
-                print "Show/Hide abstract"
+                print "Show Abstract"
                 print "</div>"
 
             print "</td></tr></table>"
-            print "</div>"
 
             if len(abstract_data):
                 print "<div class=\"abstract\" id=\"abs-" + eid + "\" >"
@@ -186,6 +185,8 @@ def format_bibhtml(xmldoc):
 
                 print abstract_data.encode("utf8")
                 print "</div>"
+
+            print "</div>"
 
         print "</section>"
 

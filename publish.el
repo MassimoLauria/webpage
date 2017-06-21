@@ -1,9 +1,15 @@
 ;; tentative org- conf to publish the site
 
+
+(defun my-file-content (filename)
+  (with-temp-buffer
+    (insert-file-contents filename)
+    (buffer-string)))
+
 (setq org-publish-project-alist
       '(
 
-        ;; ... pages of the main website ...
+        ;; ... pages the main website ...
         ("pages"
          :base-directory "~/lavori/webpage/org/"
          :base-extension "org"
@@ -24,17 +30,15 @@
          :with-drawers t
          :with-sub-superscript nil      ; important!!
          :headline-levels 3       ; Just the default for this project.
-         :with-latex nil
+         :with-latex t
          
          ;; HTML type of output
          :html-doctype "html5"
          
          ;; Empty head
-         :html-head nil
-         :html-head-extra "<link rel='stylesheet' href='css/default.css' />"
+         :html-head-extra "<link rel='stylesheet' href='css/default.css' />\n<script type=\"text/javascript\" charset=\"utf-8\" src=\"js/highlight.js\"></script>"
          :html-head-include-default-style t
          :html-head-include-scripts nil
-         :html-mathjax ""
          :html-container "article"
          ;; Header
 
@@ -47,15 +51,17 @@
          ;; Footer
          :html-preamble "<header>
       <nav>
-        <ul class=\"nav\">
+        <ul id=\"nav\">
           <li> <a href=\"index.html\"> Home</a></li>
           <li> <a href=\"research.html\">Research</a></li>
           <li> <a href=\"writings.html\">Papers</a></li>
-          <li class=\"current\"> <a href=\"teaching.html\">Teaching</a></li>
+          <li> <a href=\"teaching.html\">Teaching</a></li>
           <li> <a href=\"downloads.html\">Software</a></li>
         </ul>
       </nav>
-    </header>"
+    </header>
+
+    <script type=\"text/javascript\">highlightCurrentPage()</script>"
          :html-postamble "<footer>
 This site belongs to <a href=\"mailto:massimo.lauria@uniroma1.it\">Massimo Lauria</a> and the content is published under
       <a href=\"http://creativecommons.org/licenses/by-nc-sa/4.0/\">CC BY-NC-SA 4.0</a> license.
@@ -85,7 +91,7 @@ This site belongs to <a href=\"mailto:massimo.lauria@uniroma1.it\">Massimo Lauri
          )
         ("papers"
          :base-directory "~/lavori/webpage/org/"
-         :base-extension "pdf\\|ps\\|ps.gz\\|jpg\\|gif\\|mp3\\|ogg\\|swf"
+         :base-extension "pdf\\|ps\\|ps.gz"
          :publishing-directory "~/lavori/webpage/site-build2/"
          :recursive t
          :publishing-function org-publish-attachment

@@ -27,10 +27,11 @@ XSLTPROC=xsltproc
 
 BUILD=site-build
 SRC=src
+BIBLIO=bibliography
 CONTENT=content
 
-BIBTEX2BIBXML=./$(SRC)/bibtex2bibxml.py
-BIBXML2XML=./$(SRC)/bibxml2xml.py
+BIBTEX2BIBXML=./$(BIBLIO)/bibtex2bibxml.py
+BIBXML2XML=./$(BIBLIO)/bibxml2xml.py
 
 DEPLOYFULL=../$(SRC)/fulldeploy.ftp
 DEPLOYHTML=../$(SRC)/htmldeploy.ftp
@@ -39,7 +40,7 @@ DEPLOYHTML=../$(SRC)/htmldeploy.ftp
 WEBPAGES= $(addprefix $(BUILD)/, $(addsuffix .html, $(SITEMAP)))
 DATADIR = $(addprefix $(CONTENT)/,$(DATAMAP))
 
-TEMPFILES=$(SRC)/papers.bib.xml $(SRC)/papers.html
+TEMPFILES=$(BIBLIO)/papers.bib.xml $(BIBLIO)/papers.html
 
 ########### THE RULES ############################
 TARGET= $(WEBPAGES)
@@ -52,14 +53,13 @@ clean:
 	@rm -vfr $(addprefix $(BUILD)/,$(DATAMAP))
 	@rm -vf $(TEMPFILES)
 
-$(BUILD)/%.html: $(SRC)/%.xml $(SRC)/xsl/$(STYLESHEET).xsl $(SRC)/papers.xml
+$(BUILD)/%.html: $(SRC)/%.xml $(SRC)/xsl/$(STYLESHEET).xsl $(BIBLIO)/papers.html
 	$(XSLTPROC) -o $@ $(SRC)/xsl/$(STYLESHEET).xsl $<
 
-$(SRC)/papers.bib.xml: $(SRC)/papers.bib
-	$(BIBTEX2BIBXML) $(SRC)/papers.bib > $(SRC)/papers.bib.xml
-
-$(SRC)/papers.html: $(SRC)/papers.bib.xml
-	$(BIBXML2XML) $(SRC)/papers.bib.xml > $(SRC)/papers.html
+$(BIBLIO)/papers.html: $(BIBLIO)/papers.bib
+	$(BIBTEX2BIBXML) $(BIBLIO)/papers.bib >     $(BIBLIO)/papers.bib.xml
+	$(BIBXML2XML)    $(BIBLIO)/papers.bib.xml > $(BIBLIO)/papers.html
+	@rm -vf $(BIBLIO)/papers.bib.xml
 
 pkg:
 	@make clean

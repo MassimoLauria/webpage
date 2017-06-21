@@ -1,5 +1,5 @@
 #+TITLE: Massimo Lauria @ Sapienza, Università di Roma
-
+ 
 #+begin_export html
 <img src="images/mlauria_pic.png" id="profile-pic" />
 #+end_export
@@ -17,10 +17,10 @@
     <a href="mailto:massimo.lauria@uniroma1.it">massimo.lauria@uniroma1.it</a></li>
     <li class="contacts">
     <img src="images/phone.png" class="contact-pic" />
-    no phone number yet</li>
+    +39-06-49910496 </li>
     <li class="contacts">
     <img src="images/office.png" class="contact-pic" />
-    no office yet</li>
+    Room n.9 - Floor 4<sup>th</sup> - Dip. Statistical Sciences</li>
 </ul>
 </div>
 #+end_export
@@ -52,8 +52,5 @@
   Dipartimento di Scienze Statistiche\\
   Piazzale Aldo Moro, 5\\
   00185 Roma\\
-  Italy\\
+  Italy  \\
   \\
-  \\
-  
-  

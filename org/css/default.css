@@ -109,8 +109,7 @@ footer {
 /** BIBLIOGRAPHY STUFF **/
 
 .bibentry {
-    border-bottom-width: 1px;
-    border-bottom-style: solid;
+    margin-bottom: 1em;
 }
 
 .biblinks {
@@ -201,15 +200,12 @@ img#profile-pic {
 
 #contacts-list {
     list-style-type: none;
-    margin-left: 3em;
     padding: 0;
-    margin-bottom: 30px;
+    float:left;
 }
 .contacts {
     margin: 0;
     padding: 0;
-    float:left;
-    margin-right: 20px;
 }
 
 .contact-pic {
