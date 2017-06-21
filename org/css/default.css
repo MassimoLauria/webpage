@@ -190,33 +190,57 @@ footer {
 
 
 /* Landing page */
-#profile-pic {
+img#profile-pic {
     width: 150px;
     float: left;
     border-radius: 50%;
-    margin: 2em;
+    margin-left: 10%;
+    margin-right: 2em;
 }
 
-p#email{
+
+#contacts-list {
+    list-style-type: none;
+    margin-left: 3em;
+    padding: 0;
+    margin-bottom: 30px;
+}
+.contacts {
+    margin: 0;
+    padding: 0;
     float:left;
     margin-right: 20px;
-    background-image: url("images/ee.png");
 }
 
-p#location{
-    float:left;
-    margin-right: 20px;
-    background-image: url("images/ee.png");
-}
-
-#snailmail {
-    clear:both;
-}
-
-#text-snailmail {
-    font-size: 70%
+.contact-pic {
+    vertical-align: middle;
+    width: 2em;
 }
 
 #news {
+    margin-top: 10%;
     clear:both;
 }
+
+img#location-pic {
+    width: 150px;
+    float: left;
+    border-radius: 50%;
+    margin-left: 0;
+    margin-right: 2em;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    overflow: auto;
+}
+
+#snailmail {
+    clear:right;
+}
+
+@media screen and (max-width: 600px){
+    img#profile-pic {float: none;}
+    img#location-pic {float: none;}
+}
+
+
+

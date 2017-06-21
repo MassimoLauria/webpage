@@ -1,18 +1,29 @@
 #+TITLE: Massimo Lauria @ Sapienza, Università di Roma
 
-#+ATTR_HTML: :id profile-pic
-[[file:images/mlauria_pic.png]]
-      
+#+begin_export html
+<img src="images/mlauria_pic.png" id="profile-pic" />
+#+end_export
+
 * About me
   
   Hi! My name is *Massimo Lauria*  and I am a Researcher at [[http://www.dss.uniroma1.it/en][Department
   of Statistical Sciences]] of [[http://www.uniroma1.it/][Sapienza - Università di Roma]]. 
 
-  #+ATTR_HTML: :id email
-  [[mailto:massimo.lauria@uniroma1.it]]
- 
-  #+ATTR_HTML: :id location
-  [[https://goo.gl/tnanME]]
+#+begin_export html
+<div>
+<ul id="contacts-list">
+    <li class="contacts">
+    <img src="images/email.png" class="contact-pic" />
+    <a href="mailto:massimo.lauria@uniroma1.it">massimo.lauria@uniroma1.it</a></li>
+    <li class="contacts">
+    <img src="images/phone.png" class="contact-pic" />
+    no phone number yet</li>
+    <li class="contacts">
+    <img src="images/office.png" class="contact-pic" />
+    no office yet</li>
+</ul>
+</div>
+#+end_export
 
 * News
   :PROPERTIES:
@@ -23,7 +34,14 @@
   - /"Graph  colouring  is  hard  for algorithms based on ..."/ accepted at [[http://computationalcomplexity.org/Archive/2017/program.html][CCC 2017]]
   - July 16th to July 22nd, participating at the [[http://s3cs.csc.kth.se/][Swedish Summer School
     of Computer Science]].
-    
+  
+
+#+begin_export html
+<img src="images/map.png" id="location-pic" />
+#+end_export
+
+
+  
 * Mail address
   :PROPERTIES:
   :CUSTOM_ID: snailmail
@@ -34,6 +52,8 @@
   Dipartimento di Scienze Statistiche\\
   Piazzale Aldo Moro, 5\\
   00185 Roma\\
-  Italy
-
-
+  Italy\\
+  \\
+  \\
+  
+  
