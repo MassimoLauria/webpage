@@ -8,11 +8,11 @@
 
 * CNF formula generator [[https://github.com/MassimoLauria/cnfgen][(here)]]
 
-  Proof complexity  research often  studies benchmark  formulas to
-  prove various  theorems. Furthermore it is  often informative to
-  run SAT solvers on  these formulas. <code>CNFgen</code> software
-  (and the included  library) provides a convenient  way to create
-  and manipulate these formulas.
+  Proof complexity research often  studies benchmark formulas to prove
+  various theorems.  Furthermore it  is often  informative to  run SAT
+  solvers  on  these formulas.  *CNFgen*  software  (and the  included
+  library)  provides  a  convenient   way  to  create  and  manipulate
+  these formulas.
   
 * Pebble [[https://github.com/MassimoLauria/pebble][(here)]]
   
