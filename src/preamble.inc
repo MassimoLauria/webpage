@@ -3,10 +3,12 @@
   <nav>
     <ul id="nav">
       <li class="left"> <a href="index.html"> Home</a></li>
-      <li class="right"> <a href="downloads.html">Software</a></li>
-      <li class="right"> <a href="teaching.html">Teaching</a></li>
-      <li class="right"> <a href="writings.html">Papers</a></li>
-      <li class="right"> <a href="research.html">Research</a></li>
+      <div class="right">
+      <li class="left"> <a href="research.html">Research</a></li>
+      <li class="left"> <a href="writings.html">Papers</a></li>
+      <li class="left"> <a href="teaching.html">Teaching</a></li>
+      <li class="left"> <a href="downloads.html">Software</a></li>
+      </div>
     </ul>
   </nav>
 </header>

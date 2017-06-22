@@ -61,9 +61,8 @@ nav ul {
     padding: 0;
     }
 
-nav li       {float: left;}
-nav li.left  {float: left;}
-nav li.right {float: right;}
+nav .right {float: right;}
+nav .left  {float: left;}
 
 nav li a {
     display: block;
@@ -84,11 +83,10 @@ nav li a:hover:not(.active) {
 }
 
 @media screen and (max-width: 600px){
-    nav li.right,
-    nav li.left,
-    nav li {float: none;}
+    nav .right,
+    nav .left {float: none;}
     nav li a {padding: 8px 10px;}
-}
+ }
 
 /** ------ Content --------- **/
 
