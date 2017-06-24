@@ -43,3 +43,20 @@ function highlightCurrentPage()
 	if (document.getElementById("nav")!=null)
 		setActiveMenu(document.getElementById("nav").getElementsByTagName("a"), extractPageName(hrefString));
 }
+
+
+/**************************************************************************
+ *                                                                        *
+ * Addition by Massimo Lauria                                             *
+ *                                                                        *
+ **************************************************************************/
+
+function highlightHomeLink()
+{
+	if (document.getElementById("nav")!=null) {
+		el = document.getElementById("homelink");
+        el.className = el.className + " current";
+		el.parentNode.className = el.parentNode.className + " current";
+    }
+}
+

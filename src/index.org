@@ -1,4 +1,14 @@
 #+TITLE: Massimo Lauria @ Sapienza, Università di Roma
+
+
+
+#
+# Force the  link to the  homepage to  be highlighted, to  work around
+# a bug in the manu highlight code
+#
+#+begin_export html
+<script type="text/javascript"> highlightHomeLink()</script>
+#+end_export
  
 #+begin_export html
 <img src="images/mlauria_pic.png" id="profile-pic" />
