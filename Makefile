@@ -25,13 +25,7 @@ BIBTEX2BIBXML=./$(BIBLIO)/bibtex2bibxml.py
 BIBXML2XML=./$(BIBLIO)/bibxml2xml.py
 BIBTEMPFILES=$(BIBLIO)/papers.bib.xml $(BIBLIO)/papers.html
 
-DEPLOYFULL=../$(SRC)/fulldeploy.ftp
-DEPLOYHTML=../$(SRC)/htmldeploy.ftp
-
 ########### THE RULES ############################
-TARGET= $(WEBPAGES)
-
-
 
 all: $(BUILD)
 	$(EMACS) --batch -l publish.el --eval '(org-publish-project "main" nil)'
