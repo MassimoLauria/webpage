@@ -1,0 +1,13 @@
+#+TITLE: Massimo Lauria @ Sapienza - the webpage
+
+This is  the source code  for the  my webpage, currently  published at
+[[http://www.massimolauria.net/]]
+
+The source does not contain:
+    - the individual course pages,  they have separate (maybe private)
+      repositories;
+    - the blog.
+
+The idea  is that the site  is a bunch of  =org-mode= files, converted
+into  a proper  webpage with  some  =org-publish= magic.  The site  is
+uploaded using =rsync=.
