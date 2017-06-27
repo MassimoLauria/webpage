@@ -43,12 +43,12 @@ div#preamble{
 header {
     margin: auto;
     max-width:1000px;
+    padding-left:10%;
+    padding-right:10%;
 }
 
 nav {
     overflow: hidden;
-    margin-left:10%;
-    margin-right:10%;
 }
 nav .current {
     background-color: #822433;
@@ -93,39 +93,35 @@ nav li a:hover:not(.active) {
 main {
     margin: auto;
     max-width:1000px;
+    padding-left:10%;
+    padding-right:10%;
+    text-align: justify;
+    hyphens: auto;
 }
 
 @media screen and (max-width: 600px){
     main { font-size: 90%;}
 }
 
-article {
-    text-align: justify;
-    hyphens: auto;
-    margin-left:10%;
-    margin-right:10%;
-}
+article {}
 
 article h2 {text-align:left;}
 
 
-div#footnotes {
-    margin-left:  10%;
-    margin-right: 10%;
-}
+div#footnotes {}
 
 
 /** ------ Footer --------- **/
 div#postamble {
     margin: auto;
     max-width:1000px;
+    padding-left:10%;
+    padding-right:10%;
 }
 
 footer {
     border-top: 1px solid #000;
     margin-top: 2%;
-    margin-left:  10%;
-    margin-right: 10%;
     padding: 1%;
     font-size:70%;
     text-align: center
@@ -218,7 +214,7 @@ img#profile-pic {
     width: 150px;
     float: left;
     border-radius: 50%;
-    margin-left: 10%;
+    margin-left: 0;
     margin-right: 2em;
     margin-top: 2em;
     margin-bottom: 2em;

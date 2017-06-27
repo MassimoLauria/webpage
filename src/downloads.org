@@ -1,10 +1,8 @@
 #+TITLE: Massimo Lauria @ Sapienza - Software
 
-* 
-
-  My work has mostly theoretical nature,  but from time to time it
-  is  useful   to  produce   some  piece   of  software   to  help
-  with research. My software can be found on [[https://github.com/MassimoLauria/][GitHub]]
+My work  has mostly theoretical  nature, but from  time to time  it is
+useful  to produce  some  piece  of software  to  help with  research.
+My software can be found on [[https://github.com/MassimoLauria/][GitHub]]
 
 * CNF formula generator [[https://github.com/MassimoLauria/cnfgen][(here)]]
 
