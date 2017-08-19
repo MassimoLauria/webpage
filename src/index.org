@@ -40,12 +40,11 @@
   :CUSTOM_ID: news
   :END:
 
-  - /"CNFgen: A Generator of Crafted Benchmarks"/ accepted at [[http://sat2017.gitlab.io/][SAT 2017]]
-  - /"Graph  colouring  is  hard  for algorithms ..."/ accepted at [[http://computationalcomplexity.org/Archive/2017/program.html][CCC 2017]]
+  - August  13th  to August  19th,  participating  at the workshop [[https://www.mfo.de/occasion/1733][Proof Complexity and Beyond]].
   - July 16th to July 22nd, participating at the [[http://s3cs.csc.kth.se/][Swedish Summer School
-    of Computer Science]].
-  
-
+    of Computer Science]].  
+  - /"CNFgen: A Generator of Crafted Benchmarks"/ accepted at [[http://sat2017.gitlab.io/][SAT 2017]]
+ 
 #+begin_export html
 <img src="images/map.png" id="location-pic" />
 #+end_export
