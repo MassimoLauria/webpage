@@ -40,9 +40,9 @@
   :CUSTOM_ID: news
   :END:
 
+  - January 28th to February 2nd, participating to the workshop [[http://www.dagstuhl.de/18051][Proof Complexity]] 
+  - Member of the Program Committee of [[https://www.ijcai-18.org/][IJCAI-ECAI 2018]]
   - Member of the Program Committee of [[http://sat2018.azurewebsites.net/][SAT 2018]]
-  - August  13th  to August  19th,  participating  at the workshop [[https://www.mfo.de/occasion/1733][Proof Complexity and Beyond]].
-  - /"CNFgen: A Generator of Crafted Benchmarks"/ accepted at [[http://sat2017.gitlab.io/][SAT 2017]]
  
 #+begin_export html
 <img src="images/map.png" id="location-pic" />

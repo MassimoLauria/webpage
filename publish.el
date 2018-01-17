@@ -1,6 +1,6 @@
 ;;; publish.el --- Emacs-lisp which produces my webpage
 
-;; Copyright (C) 2010, 2013, 2015  Massimo Lauria
+;; Copyright (C) 2010, 2013, 2015, 2018  Massimo Lauria
 
 ;; Author: Massimo Lauria <lauria.massimo@gmail.com>
 ;; Keywords:
@@ -108,7 +108,7 @@
          )
         ("assets"
          :base-directory ,base-directory
-         :base-extension "css\\|js\\|png\\|jpg\\|gif\\|mp3\\|ogg\\|swf\\|tar.gz"
+         :base-extension "css\\|js\\|png\\|ico\\|jpg\\|gif\\|mp3\\|ogg\\|swf\\|tar.gz"
          :publishing-directory ,publishing-directory
          :recursive t
          :publishing-function org-publish-attachment
