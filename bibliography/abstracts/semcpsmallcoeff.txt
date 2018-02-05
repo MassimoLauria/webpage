@@ -1,0 +1,17 @@
+<p>
+    Cutting planes proofs for integer programs can  naturally be
+    defined both in a syntactic and in a semantic fashion. Filmus et
+    al. (STACS 2016) proved that semantic cutting planes proofs may be
+    exponentially stronger than syntactic ones, even if they use the
+    semantic rule only once.
+
+We show that when semantic cutting planes proofs are restricted to
+    have coefficients bounded by
+    a function growing slowly enough,
+    syntactic cutting planes can simulate them efficiently.
+
+Furthermore if we strengthen the restriction to a constant bound,
+    then the simulating syntactic proof even has polynomially small
+    coefficients.
+
+</p>

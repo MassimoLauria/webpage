@@ -1,0 +1,14 @@
+<p>
+We show  the close  connection between the  enumeration of  cliques in
+a $k$-clique  free graph  $G$ and the  length of  tree-like resolution
+refutations for formula $\mathrm{Clique}(G,k)$, which claims that
+$G$ has a $k$-clique.
+
+The  length  of any  such  tree-like  refutation  is within  a  "fixed
+parameter tractable" factor from the number of cliques in the graph.
+
+We then proceed to drastically simplify the proofs of the lower bounds
+for   the    length   of    tree-like   resolution    refutations   of
+$\mathrm{Clique}(G,k)$ shown in [Beyersdorff  et at. 2013, Lauria
+et al. 2017], which  now reduce to a simple estimate  of the number of
+cliques. </p>

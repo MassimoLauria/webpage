@@ -1,0 +1,10 @@
+<p>
+In this note we show two results about $k$-DNF resolution.
+
+First we prove that resolution extended with parities of size $k$
+is strictly weaker than $k$-DNF resolution.
+
+Then we show  the connection between tree-like  $k$-DNF resolution and
+narrow dag-like resolution. This latter  result is clearly implicit in
+[Krajícek 1994]  but this  direct proof is  focused on  resolution and
+provides information about refutation width. </p>
