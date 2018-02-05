@@ -40,7 +40,7 @@
   :CUSTOM_ID: news
   :END:
 
-  - January 28th to February 2nd, participating to the workshop [[http://www.dagstuhl.de/18051][Proof Complexity]] 
+  - Invited speaker at the special session on SAT solving at [[http://cie2018.uni-kiel.de][CiE 2018]]
   - Member of the Program Committee of [[https://www.ijcai-18.org/][IJCAI-ECAI 2018]]
   - Member of the Program Committee of [[http://sat2018.azurewebsites.net/][SAT 2018]]
  
