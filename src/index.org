@@ -40,6 +40,7 @@
   :CUSTOM_ID: news
   :END:
 
+  - /Clique is hard on Average for Regular Resolution/ accepted at [[http://acm-stoc.org/stoc2018/][STOC 2018]] 
   - Invited speaker at the special session on SAT solving at [[http://cie2018.uni-kiel.de][CiE 2018]]
   - Member of the Program Committee of [[https://www.ijcai-18.org/][IJCAI-ECAI 2018]]
   - Member of the Program Committee of [[http://sat2018.azurewebsites.net/][SAT 2018]]
