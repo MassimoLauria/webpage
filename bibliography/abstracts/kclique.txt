@@ -1,0 +1,10 @@
+<p>
+  We prove that for $k \ll \sqrt[4]{n}$ regular resolution asymptotically
+  almost surely requires length $n^{\Omega(k)}$ to establish that
+  an Erdős-Rényi graph with appropriately chosen edge density
+  does not contain a $k$-clique. This lower bound is optimal up to the
+  multiplicative constant in the exponent, and  also implies
+  unconditional $n^{\Omega(k)}$ lower bounds on running time for
+  several state-of-the-art algorithms for finding maximum cliques in
+  graphs.
+</p>
