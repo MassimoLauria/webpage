@@ -1,5 +1,6 @@
 site-build/
 bibliography/papers.bib.xml
 bibliography/papers.html
+bibliography/auto
 *.pyc
 .DS_Store
