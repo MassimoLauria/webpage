@@ -168,6 +168,7 @@ def format_bibhtml(xmldoc):
             print "<td class=\"bibinfo\" valign=\"baseline\" align=\"left\">"
             print format_entry(en).encode("utf8")
             print format_note(en).encode("utf8")
+            print format_errata(en).encode("utf8")
 
             if len(abstract_data):
                 print "<div class=\"abstract-button\" id=\"button-" + eid + "\""\
@@ -238,6 +239,16 @@ def format_note(entry):
     el = entry.getElementsByTagName(TAG_PREFIX + "note")
     if len(el) == 1:
         return el[0].firstChild.data + ".<br />"
+    else:
+        return ""
+
+def format_errata(entry):
+    """
+    Outputs the errata contained in the entry.
+    """
+    el = entry.getElementsByTagName(TAG_PREFIX + "errata")
+    if len(el) == 1:
+        return "<b>Errata: </b>" + el[0].firstChild.data + ".<br />"
     else:
         return ""
 
