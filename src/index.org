@@ -45,7 +45,9 @@
   - Member of the Program Committees of [[https://www.ijcai-18.org/][IJCAI-ECAI 2018]] and [[http://sat2018.azurewebsites.net/][SAT 2018]]
  
 #+begin_export html
+<a href="https://www.google.com/maps/place/Dipartimento+di+Scienze+Statistiche,+Piazzale+Aldo+Moro,+5,+00185+Roma+RM/@41.904548,12.5146987,15z/data=!4m2!3m1!1s0x132f619d82387a1b:0x4a99cb199c292eb5">
 <img src="images/map.png" id="location-pic" />
+</a>
 #+end_export
 
 
