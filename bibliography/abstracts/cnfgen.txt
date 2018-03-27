@@ -1,0 +1,14 @@
+<p>
+We present CNFgen,  a generator of combinatorial  benchmarks in DIMACS
+and OPB format.  The proof complexity literature is a  rich source not
+only of  hard instances but  also of instances that  are theoretically
+easy  but “extremal”  in different  ways, and  therefore of  potential
+interest in the  context of SAT solving. Since most  of these formulas
+appear not  to be very  well known in  the SAT community,  however, we
+propose CNFgen as a resource to make them readily available for solver
+development and evaluation. Many  formulas studied in proof complexity
+are based on graphs, and CNFgen is also able to generate, parse and do
+basic manipulation of such objects. Furthermore, it includes a library
+cnfformula   giving  access   to  the   functionality  of   CNFgen  to
+Python programs.
+</p>
