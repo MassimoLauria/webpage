@@ -4,7 +4,7 @@ My work  has mostly theoretical  nature, but from  time to time  it is
 useful  to produce  some  piece  of software  to  help with  research.
 My software can be found on [[https://github.com/MassimoLauria/][GitHub]]
 
-* CNF formula generator [[https://github.com/MassimoLauria/cnfgen][(here)]]
+* CNF formula generator [[http://massimolauria.net/cnfgen][(here)]]
 
   Proof complexity research often  studies benchmark formulas to prove
   various theorems.  Furthermore it  is often  informative to  run SAT
