@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python2
 # -*- coding: utf-8 -*-
 """
   Decoder for bibliographic data, BibTeX
@@ -84,9 +84,9 @@ def bibtexauthor(data):
     bibtex = ''
     author_list = author_rex.split(data)
     for author in author_list:
-	    author = author.strip()
-	    bibtex = bibtex + '<bibxml:author>' + removebraces(author) + \
-		     '</bibxml:author>' + '\n'
+            author = author.strip()
+            bibtex = bibtex + '<bibxml:author>' + removebraces(author) + \
+                     '</bibxml:author>' + '\n'
     return bibtex.strip()
 
 
@@ -97,7 +97,7 @@ def bibtextitle(data):
     title = removebraces(data)
     title = title.strip()
     bibtex = '<bibxml:title>' + title + \
-	     '</bibxml:title>'
+             '</bibxml:title>'
     return bibtex
 
 
@@ -107,9 +107,9 @@ def bibtexkeyword(data):
     bibtex = ''
     keyword_list = keywords_rex.split(data)
     for keyword in keyword_list:
-	    keyword = keyword.strip()
-	    bibtex = bibtex + '<bibxml:keywords>' + removebraces(keyword) + \
-		     '</bibxml:keywords>' + '\n'
+            keyword = keyword.strip()
+            bibtex = bibtex + '<bibxml:keywords>' + removebraces(keyword) + \
+                     '</bibxml:keywords>' + '\n'
     return bibtex.strip()
 
 
@@ -122,18 +122,18 @@ def capitalizetitle(data):
     title = ''
     count = 0
     for phrase in title_list:
-	 check = string.lstrip(phrase)
+         check = string.lstrip(phrase)
 
-	 # keep phrase's capitalization the same
-	 if check.find('{') == 0:
-	      title = title + removebraces(phrase)
+         # keep phrase's capitalization the same
+         if check.find('{') == 0:
+              title = title + removebraces(phrase)
          else:
-	 # first word --> capitalize first letter (after spaces)
-	      if count == 0:
-	          title = title + check.capitalize()
-	      else:
-	          title = title + phrase.lower()
-	 count = count + 1
+         # first word --> capitalize first letter (after spaces)
+              if count == 0:
+                  title = title + check.capitalize()
+              else:
+                  title = title + phrase.lower()
+         count = count + 1
 
     return title
 
@@ -160,16 +160,16 @@ def bibtexdecoder(filecontents_source):
         line = line[:-1]
 
         # encode character entities
-	line = string.replace(line, '&', '&amp;')
+        line = string.replace(line, '&', '&amp;')
         line = string.replace(line, '<', '&lt;')
-	line = string.replace(line, '>', '&gt;')
+        line = string.replace(line, '>', '&gt;')
 
         # start item: publication type (store for later use)
-	if pubtype_rex.match(line):
+        if pubtype_rex.match(line):
         # want @<alphanumeric chars><spaces>{<spaces><any chars>,
-	    arttype = pubtype_rex.sub('\g<1>',line)
-	    arttype = string.lower(arttype)
-	    artid   = pubtype_rex.sub('\g<2>', line)
+            arttype = pubtype_rex.sub('\g<1>',line)
+            arttype = string.lower(arttype)
+            artid   = pubtype_rex.sub('\g<2>', line)
             endentry = '</bibxml:' + arttype + '>' + '\n</bibxml:entry>\n'
             line = '<bibxml:entry id="' + artid + '">\n' + \
                    '<bibxml:' + arttype + '>'
@@ -183,7 +183,7 @@ def bibtexdecoder(filecontents_source):
         data = ''
         # field, publication info
         # field = {data} entries
-	if bracedata_rex.match(line):
+        if bracedata_rex.match(line):
             field = bracefield_rex.sub('\g<1>', line)
             field = string.lower(field)
             data =  bracedata_rex.sub('\g<2>', line)
@@ -194,8 +194,8 @@ def bibtexdecoder(filecontents_source):
             field = string.lower(field)
             data =  quotedata_rex.sub('\g<2>', line)
 
-	# field = data entries
-	elif data_rex.match(line):
+        # field = data entries
+        elif data_rex.match(line):
             field = field_rex.sub('\g<1>', line)
             field = string.lower(field)
             data =  data_rex.sub('\g<2>', line)
@@ -213,26 +213,26 @@ def bibtexdecoder(filecontents_source):
                 line = '<bibxml:' + field + '>' + string.strip(data) + \
                        '</bibxml:' + field + '>'
             # get rid of the field={} type stuff
-	    else:
-		    line = ''
+            else:
+                    line = ''
 
-	if line != '':
-		# latex-specific replacements
-		# do this now after braces were removed
-		line = string.replace(line, '~', '&#160;')
-		# line = string.replace(line, '\\\'a', '&#225;')
-		# line = string.replace(line, '\\"a', '&#228;')
-		# line = string.replace(line, '\\\'c', '&#263;')
-		# line = string.replace(line, '\\"o', '&#246;')
-		# line = string.replace(line, '\\"u', '&#252;')
-		line = string.replace(line, '\\\`a', 'à')
-		line = string.replace(line, '\\\'a', 'á')
-		line = string.replace(line, '\\"a', 'ä')
-		line = string.replace(line, '\\\'c', 'ć')
-		line = string.replace(line, '\\"o', 'ö')
-		line = string.replace(line, '\\"u', 'ü')
+        if line != '':
+                # latex-specific replacements
+                # do this now after braces were removed
+                line = string.replace(line, '~', '&#160;')
+                # line = string.replace(line, '\\\'a', '&#225;')
+                # line = string.replace(line, '\\"a', '&#228;')
+                # line = string.replace(line, '\\\'c', '&#263;')
+                # line = string.replace(line, '\\"o', '&#246;')
+                # line = string.replace(line, '\\"u', '&#252;')
+                line = string.replace(line, '\\\`a', 'à')
+                line = string.replace(line, '\\\'a', 'á')
+                line = string.replace(line, '\\"a', 'ä')
+                line = string.replace(line, '\\\'c', 'ć')
+                line = string.replace(line, '\\"o', 'ö')
+                line = string.replace(line, '\\"u', 'ü')
 
-		filecontents.append(line)
+                filecontents.append(line)
 
     return filecontents
 
@@ -319,10 +319,10 @@ def bibtex_replace_abbreviations(filecontents_source):
 
     #  These are defined in bibtex, so we'll define them too
     abbr_list = ['jan','feb','mar','apr','may','jun',
-		 'jul','aug','sep','oct','nov','dec']
+                 'jul','aug','sep','oct','nov','dec']
     value_list = ['January','February','March','April',
-		  'May','June','July','August','September',
-		  'October','November','December']
+                  'May','June','July','August','September',
+                  'October','November','December']
 
     abbr_rex = []
     total_abbr_count = 0
@@ -357,10 +357,10 @@ def bibtex_replace_abbreviations(filecontents_source):
         if abbrdef_rex.search(line):
             abbr = abbrdef_rex.sub('\g<1>', line)
 
-	    if abbr_list.count(abbr) == 0:
+            if abbr_list.count(abbr) == 0:
                 val = abbrdef_rex.sub('\g<2>', line)
-	        abbr_list.append(abbr)
-		value_list.append(string.strip(val))
+                abbr_list.append(abbr)
+                value_list.append(string.strip(val))
                 abbr_rex.append( re.compile( front + abbr_list[total_abbr_count] + back, re.I ) )
                 total_abbr_count = total_abbr_count + 1
             waiting_for_end_string = 1
@@ -429,26 +429,26 @@ def no_outer_parens(filecontents):
     at_rex = re.compile('@\w*')
 
     for phrase in paren_split:
-	if look_next == 1:
-		if phrase == '(':
-			phrase = '{'
-			open_paren_count = open_paren_count + 1
-		else:
-			open_type = 0
-		look_next = 0
+        if look_next == 1:
+                if phrase == '(':
+                        phrase = '{'
+                        open_paren_count = open_paren_count + 1
+                else:
+                        open_type = 0
+                look_next = 0
 
-	if phrase == '(':
-		open_paren_count = open_paren_count + 1
+        if phrase == '(':
+                open_paren_count = open_paren_count + 1
 
-	elif phrase == ')':
-		open_paren_count = open_paren_count - 1
-		if open_type == 1 and open_paren_count == 0:
-			phrase = '}'
-			open_type = 0
+        elif phrase == ')':
+                open_paren_count = open_paren_count - 1
+                if open_type == 1 and open_paren_count == 0:
+                        phrase = '}'
+                        open_type = 0
 
-	elif at_rex.search( phrase ):
-		open_type = 1
-		look_next = 1
+        elif at_rex.search( phrase ):
+                open_type = 1
+                look_next = 1
 
         filecontents = filecontents + phrase
 
@@ -467,11 +467,11 @@ def bibtexwasher(filecontents_source):
     # remove trailing and excessive whitespace
     # ignore comments
     for line in filecontents_source:
-	line = string.strip(line)
-	line = space_rex.sub(' ', line)
-	# ignore comments
-	if not comment_rex.match(line):
-	    filecontents.append(' '+ line)
+        line = string.strip(line)
+        line = space_rex.sub(' ', line)
+        # ignore comments
+        if not comment_rex.match(line):
+            filecontents.append(' '+ line)
 
     filecontents = string.join(filecontents, '')
 
@@ -488,7 +488,7 @@ def bibtexwasher(filecontents_source):
     filecontents = re.sub('"\s*,', '",\n', filecontents)
     filecontents = re.sub('=\s*([\w\d]+)\s*,', '= \g<1>,\n', filecontents)
     filecontents = re.sub('(@\w*)\s*({(\s*)[^,\s]*)\s*,',
-			  '\n\n\g<1>\g<2>,\n', filecontents)
+                          '\n\n\g<1>\g<2>,\n', filecontents)
 
     # add new lines after }
     filecontents = re.sub('"\s*}','"\n}\n', filecontents)

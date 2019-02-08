@@ -1,6 +1,6 @@
 ;;; publish.el --- Emacs-lisp which produces my webpage
 
-;; Copyright (C) 2010, 2013, 2015, 2018  Massimo Lauria
+;; Copyright (C) 2010, 2013, 2015, 2018, 2019  Massimo Lauria
 
 ;; Author: Massimo Lauria <lauria.massimo@gmail.com>
 ;; Keywords:
@@ -28,8 +28,8 @@
 
 
 ;;; Use the packages installed in my Emacs
-(require 'cask "~/.cask/cask.el")
-(cask-initialize)
+(require 'package)
+(package-initialize)
 
 
 (message (format "Producing the website using org-move version %s"  (org-version)))
