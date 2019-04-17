@@ -1,0 +1,56 @@
+==================================================================
+https://keybase.io/massimolauria
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of http://massimolauria.net
+  * I am massimolauria (https://keybase.io/massimolauria) on keybase.
+  * I have a public key ASBriZw50gaa6Yi0lyOEFia2sQG4u0muVBrmpWJ9zGdx5wo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "01206b899c39d2069ae988b49723841626b6b101b8bb49ae541ae6a5627dcc6771e70a",
+      "host": "keybase.io",
+      "kid": "01206b899c39d2069ae988b49723841626b6b101b8bb49ae541ae6a5627dcc6771e70a",
+      "uid": "31ddf5f227cc753644e0543ab965e419",
+      "username": "massimolauria"
+    },
+    "merkle_root": {
+      "ctime": 1555516050,
+      "hash": "9b45ae9f485a5b1c897e7934f6eec840d9c0ec33bebe34b5b20a148616fb8b462f72350f6326c5515350ffdf9dd48d1592871b3513f583392b816573967a6399",
+      "hash_meta": "31604e31b2f3c50ce881bd54a23107793853fe6880c5060110eb9ed91268345a",
+      "seqno": 5192143
+    },
+    "service": {
+      "entropy": "vWhGNal6uExkE7gV2ko5EF8c",
+      "hostname": "massimolauria.net",
+      "protocol": "http:"
+    },
+    "type": "web_service_binding",
+    "version": 2
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "3.2.2"
+  },
+  "ctime": 1555516086,
+  "expire_in": 504576000,
+  "prev": "65ca11e6f2efe2a65801ade91818829c308dbfbb35700732037ecaaea5a6bd57",
+  "seqno": 6,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEga4mcOdIGmumItJcjhBYmtrEBuLtJrlQa5qVifcxncecKp3BheWxvYWTESpcCBsQgZcoR5vLv4qZYAa3pGBiCnDCNv7s1cAcyA37KrqWmvVfEIJSbmDokxgcAYdaa7C/+aMLYf9S3tBfUgOW53CbWZPQzAgHCo3NpZ8RAK+cgqj6OefW3bJYmtvK9zZweOIlcaXP7QQEETug6QFWLDEztOQ1k3yHS7YLzgRsuqBEnjIYOJaWLnTSF4TWODKhzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIG3mk2XKWJvMJhCIbj7S3/OfdFPgmYkXYyf8Kwavghbyo3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/massimolauria
+
+==================================================================
