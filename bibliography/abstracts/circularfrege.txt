@@ -1,21 +1,20 @@
-<p>
-We introduce a new way of composing proofs in rule-based proof systems
-that generalizes tree-like and dag-like proofs. In the new definition,
-proofs are directed graphs of derived formulas, in which cycles are
-allowed as long as every formula is derived at least as many times as
-it is required as a premise. We call such proofs circular. We show
-that, for all sets of standard inference rules, circular proofs are
-sound. For Frege we show that circular proofs can be converted into
-tree-like ones with at most polynomial overhead. For Resolution the
-translation can no longer be a Resolution proof because, as we show,
-the pigeonhole principle has circular Resolution proofs of polynomial
-size.  Surprisingly, as proof systems for deriving clauses from
-clauses, Circular Resolution turns out to be equivalent to
-Sherali-Adams, a proof system for reasoning through polynomial
-inequalities that has linear programming at its base. As corollaries
-we get: 1) polynomial-time (LP-based) algorithms that find circular
+<p> We  introduce a new  way of  composing proofs in  rule-based proof
+systems that  generalizes tree-like  and dag-like  proofs. In  the new
+definition, proofs are  directed graphs of derived  formulas, in which
+cycles are  allowed as long  as every formula  is derived at  least as
+many  times as  it  is required  as  a premise.  We  call such  proofs
+circular.  We show  that, for  all sets  of standard  inference rules,
+circular proofs are  sound. We first focus on the  circular version of
+Resolution, and see  that it is stronger than Resolution  since, as we
+show,  the  pigeonhole principle  has  circular  Resolution proofs  of
+polynomial size.  Surprisingly, as proof systems  for deriving clauses
+from  clauses,  Circular Resolution  turns  out  to be  equivalent  to
+Sherali-Adams,  a  proof  system   for  reasoning  through  polynomial
+inequalities that has  linear programming at its  base. As corollaries
+we get:  1) polynomial-time (LP-based) algorithms that find circular
 Resolution proofs of constant width, 2) examples that separate
-circular from dag-like Resolution, such as the pigeonhole principle
+circular from  dag-like Resolution,  such as the  pigeonhole principle
 and its variants, and 3) exponentially hard cases for circular
-Resolution.
-</p>
+Resolution. Contrary to the case  of circular resolution, for Frege we
+show that circular proofs can be converted into tree-like ones with at
+most polynomial overhead.</p>
