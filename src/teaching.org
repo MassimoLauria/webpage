@@ -14,8 +14,8 @@
   Course page ([[http://www.massimolauria.net/courses/infosefa2018/][Informatica@SEFA 2018/2019]])
 
   This is an  introductory course to computer  science and programming
-  for students of  [[http://corsidilaurea.uniroma1.it/it/corso/2018/statistica-economia-finanza-e-assicurazioni][SEFA 2018]]. The course introduces  basic concepts of
-  computer  science,  of programming  in  Python,  and of  databases 
+  for  students  of SEFA.  The  course  introduces basic  concepts  of
+  computer  science,  of  programming  in  Python,  and  of  databases
   operation using SQL.
 
 * 2017-2018 (1o Sem.) Sapienza - Informatica
@@ -23,7 +23,7 @@
   Course page ([[http://www.massimolauria.net/courses/infosefa2017/][Informatica@SEFA 2017/2018]])
 
   This is an  introductory course to computer  science and programming
-  for students of  [[http://corsidilaurea.uniroma1.it/it/corso/2017/statistica-economia-finanza-e-assicurazioni][SEFA 2017]]. The course introduces  basic concepts of
+  for students of SEFA. The course introduces  basic concepts of
   computer  science,  of programming  in  Python,  and of  databases
   operation using SQL.
 
