@@ -1,8 +1,10 @@
-#!/usr/bin/env python2
+#!/usr/bin/env python
 # -*- coding: utf-8 -*-
-"""
-  Decoder for bibliographic data, BibTeX
-  Usage: python bibtex2xml.py bibfile.bib > bibfile.xml
+"""Decoder for bibliographic data, BibTeX
+  Usage: python bibtex2bibxml.py bibfile.bib > bibfile.xml
+
+  This version has been adapted to python3 by Massimo Lauria, who owns
+  no rights on this program.
 
   v.8
   (c)2002-06-23 Vidar Bronken Gundersen
@@ -47,7 +49,7 @@
 
 """
 
-import string, re
+import re
 
 # set of valid name characters
 valid_name_chars = '[\w\-:]'
@@ -122,7 +124,7 @@ def capitalizetitle(data):
     title = ''
     count = 0
     for phrase in title_list:
-         check = string.lstrip(phrase)
+         check = phrase.lstrip()
 
          # keep phrase's capitalization the same
          if check.find('{') == 0:
@@ -160,15 +162,15 @@ def bibtexdecoder(filecontents_source):
         line = line[:-1]
 
         # encode character entities
-        line = string.replace(line, '&', '&amp;')
-        line = string.replace(line, '<', '&lt;')
-        line = string.replace(line, '>', '&gt;')
+        line = line.replace('&', '&amp;')
+        line = line.replace('<', '&lt;')
+        line = line.replace('>', '&gt;')
 
         # start item: publication type (store for later use)
         if pubtype_rex.match(line):
         # want @<alphanumeric chars><spaces>{<spaces><any chars>,
             arttype = pubtype_rex.sub('\g<1>',line)
-            arttype = string.lower(arttype)
+            arttype = arttype.lower()
             artid   = pubtype_rex.sub('\g<2>', line)
             endentry = '</bibxml:' + arttype + '>' + '\n</bibxml:entry>\n'
             line = '<bibxml:entry id="' + artid + '">\n' + \
@@ -185,19 +187,19 @@ def bibtexdecoder(filecontents_source):
         # field = {data} entries
         if bracedata_rex.match(line):
             field = bracefield_rex.sub('\g<1>', line)
-            field = string.lower(field)
+            field = field.lower()
             data =  bracedata_rex.sub('\g<2>', line)
 
         # field = "data" entries
         elif quotedata_rex.match(line):
             field = quotefield_rex.sub('\g<1>', line)
-            field = string.lower(field)
+            field = field.lower()
             data =  quotedata_rex.sub('\g<2>', line)
 
         # field = data entries
         elif data_rex.match(line):
             field = field_rex.sub('\g<1>', line)
-            field = string.lower(field)
+            field = field.lower()
             data =  data_rex.sub('\g<2>', line)
 
         if field == 'title':
@@ -208,9 +210,9 @@ def bibtexdecoder(filecontents_source):
             line = bibtexkeyword(data)
         elif field != '':
             data = removebraces(data)
-            data = string.strip(data)
+            data = data.strip()
             if data != '':
-                line = '<bibxml:' + field + '>' + string.strip(data) + \
+                line = '<bibxml:' + field + '>' + data.strip() + \
                        '</bibxml:' + field + '>'
             # get rid of the field={} type stuff
             else:
@@ -219,18 +221,18 @@ def bibtexdecoder(filecontents_source):
         if line != '':
                 # latex-specific replacements
                 # do this now after braces were removed
-                line = string.replace(line, '~', '&#160;')
-                # line = string.replace(line, '\\\'a', '&#225;')
-                # line = string.replace(line, '\\"a', '&#228;')
-                # line = string.replace(line, '\\\'c', '&#263;')
-                # line = string.replace(line, '\\"o', '&#246;')
-                # line = string.replace(line, '\\"u', '&#252;')
-                line = string.replace(line, '\\\`a', 'à')
-                line = string.replace(line, '\\\'a', 'á')
-                line = string.replace(line, '\\"a', 'ä')
-                line = string.replace(line, '\\\'c', 'ć')
-                line = string.replace(line, '\\"o', 'ö')
-                line = string.replace(line, '\\"u', 'ü')
+                line = line.replace('~', '&#160;')
+                # line = line.replace('\\\'a', '&#225;')
+                # line = line.replace('\\"a', '&#228;')
+                # line = line.replace('\\\'c', '&#263;')
+                # line = line.replace('\\"o', '&#246;')
+                # line = line.replace('\\"u', '&#252;')
+                line = line.replace('\\\`a', 'à')
+                line = line.replace('\\\'a', 'á')
+                line = line.replace('\\"a', 'ä')
+                line = line.replace('\\\'c', 'ć')
+                line = line.replace('\\"o', 'ö')
+                line = line.replace('\\"u', 'ü')
 
                 filecontents.append(line)
 
@@ -360,7 +362,7 @@ def bibtex_replace_abbreviations(filecontents_source):
             if abbr_list.count(abbr) == 0:
                 val = abbrdef_rex.sub('\g<2>', line)
                 abbr_list.append(abbr)
-                value_list.append(string.strip(val))
+                value_list.append(val.strip())
                 abbr_rex.append( re.compile( front + abbr_list[total_abbr_count] + back, re.I ) )
                 total_abbr_count = total_abbr_count + 1
             waiting_for_end_string = 1
@@ -467,13 +469,13 @@ def bibtexwasher(filecontents_source):
     # remove trailing and excessive whitespace
     # ignore comments
     for line in filecontents_source:
-        line = string.strip(line)
+        line = line.strip()
         line = space_rex.sub(' ', line)
         # ignore comments
         if not comment_rex.match(line):
             filecontents.append(' '+ line)
 
-    filecontents = string.join(filecontents, '')
+    filecontents = ''.join(filecontents)
 
     # the file is in one long string
 
@@ -543,21 +545,21 @@ def bibtexwasher(filecontents_source):
 
 def filehandler(filepath):
     try:
-        fd = open(filepath, 'r')
+        fd = open(filepath, 'r', encoding='utf-8')
         filecontents_source = fd.readlines()
         fd.close()
     except:
-        print 'Could not open file:', filepath
+        print('Could not open file:', filepath)
     washeddata = bibtexwasher(filecontents_source)
     outdata = bibtexdecoder(washeddata)
-    print '<?xml version="1.0" encoding="utf-8"?>'
-    #print '<!DOCTYPE bibxml:file SYSTEM "bibtexml-strict.dtd" >'
-    print '<bibxml:file xmlns:bibxml="http://bibtexml.sf.net/">'
-    print
+    print('<?xml version="1.0" encoding="utf-8"?>')
+    #print('<!DOCTYPE bibxml:file SYSTEM "bibtexml-strict.dtd" >')
+    print('<bibxml:file xmlns:bibxml="http://bibtexml.sf.net/">')
+    print()
     for line in outdata:
-        print line
-    print '  <!-- manual cleanup may be required... -->'
-    print '</bibxml:file>'
+        print(line)
+    print('  <!-- manual cleanup may be required... -->')
+    print('</bibxml:file>')
 
 
 # main program
@@ -567,7 +569,7 @@ def main():
     if sys.argv[1:]:
         filepath = sys.argv[1]
     else:
-        print "No input file"
+        print("No input file")
         sys.exit()
     filehandler(filepath)
 

@@ -1,31 +1,35 @@
-#!/usr/bin/env python2
+#!/usr/bin/env python
 # -*- coding: utf-8 -*-
+
+import sys
+import os
+from xml.dom import minidom
 
 # Setup
 CATEGORIES = [
-    (u'submitted', "Submitted (not yet peer reviewed)", []),
-    (u'conference', "Conference", []),
-    (u'journal', "Journal", []),
-    (u'manuscript', "Manuscripts (not peer reviewed)", []),
-    (u'thesis', "Thesis", []),
-    (u'others', "Misc", [])]
+    ('submitted', "Submitted (not yet peer reviewed)", []),
+    ('conference', "Conference", []),
+    ('journal', "Journal", []),
+    ('manuscript', "Manuscripts (not peer reviewed)", []),
+    ('thesis', "Thesis", []),
+    ('others', "Misc", [])]
 
 PRINT_EMPTY_CATEGORIES = False
 
-SORTBY = u"year"
-AUTHOR_SEP = u', '
-AUTHOR_LAST_SEP = u' and '
-TAG_PREFIX = u"bibxml:"
+SORTBY = "year"
+AUTHOR_SEP = ', '
+AUTHOR_LAST_SEP = ' and '
+TAG_PREFIX = "bibxml:"
 
-#FORMAT TEMPLATES
+
+# FORMAT TEMPLATES
 templates = {
-
 "article": ("""
 <span class='bibtitle'>%s</span> (%s).<br />
 <span class='bibauthor'>%s</span>.<br />
 In: %s. %s(%s):%s.<br />""",
 ("title", "year", "author", "journal", "volume", "number", "pages")),
-
+    
 "inproceedings": ("""
 <span class='bibtitle'>%s</span> (%s).<br />
 <span class='bibauthor'>%s</span>.<br />
@@ -76,16 +80,13 @@ In: %s. pp. %s.<br />""",
 
 
 ################ SOURCE CODE STARTS HERE ######################
-import sys
-import os
-from xml.dom import minidom
 
 
 def author_list(entry):
     """
     Produces the string with the list of authors
     """
-    buf = u''
+    buf = ''
     authors = [a.firstChild.data
                for a in entry.getElementsByTagName(TAG_PREFIX + "author")]
     for a in authors[:-2]:
@@ -117,7 +118,7 @@ def format_entry(entry):
         else:
             el = entry.getElementsByTagName(TAG_PREFIX + tag)
             if len(el) == 1:
-                return u"" + el[0].firstChild.data
+                return "" + el[0].firstChild.data
             else:
                 return "??????"
 
@@ -141,94 +142,80 @@ def format_bibhtml(xmldoc):
     for (key, title, elist) in CATEGORIES:
         if not (PRINT_EMPTY_CATEGORIES or elist):
             continue
-        print "<section>"
-        #print "<h2><a id=\"" + key + "\">" + title + "</a></h2>"
-        print "<h2>" + title + "</h2>"
+        print("<section>")
+        print("<h2>" + title + "</h2>")
         for en in elist:
             eid = en.getAttribute("id")
 
             # {{{ Load abstract ------------------------------------------
-            abstract_data = u""
+            abstract_data = ""
             el = en.getElementsByTagName(TAG_PREFIX + "abstract_file")
             if len(el):
-                abstract_data = extract_utf8data(el[0].firstChild.data)
+                abstract_data = read_abstract(el[0].firstChild.data)
             # }}} ---------------------------------------------------------
 
             # Print initial information
-            print "<div class=\"bibentry\">"
-            print "<table style=\"border:0; width:100%;\"" \
-                  " cellspacing=\"3\" cellpadding=\"0\">"
-            print """
+            print("<div class=\"bibentry\">")
+            print("<table style=\"border:0; width:100%;\"" \
+                  " cellspacing=\"3\" cellpadding=\"0\">")
+            print("""
 <tr>
 <td class="biblinks" valign="top" align="left">
-"""
-            print "<span class=\"space\"><br/></span>"
-            print format_filelinks(en).encode("utf8")
-            print "</td>"
-            print "<td class=\"bibinfo\" valign=\"baseline\" align=\"left\">"
-            print format_entry(en).encode("utf8")
-            print format_note(en).encode("utf8")
-            print format_errata(en).encode("utf8")
+""")
+            print("<span class=\"space\"><br/></span>")
+            print(format_filelinks(en))
+            print("</td>")
+            print("<td class=\"bibinfo\" valign=\"baseline\" align=\"left\">")
+            print(format_entry(en))
+            print(format_note(en))
+            print(format_errata(en))
 
             if len(abstract_data):
-                print "<div class=\"abstract-button\" id=\"button-" + eid + "\""\
-                      " onclick=\"toggleAbstract('" + eid + "');\">"
-                print "Show Abstract"
-                print "</div>"
+                print("<div class=\"abstract-button\" id=\"button-" + eid + "\""\
+                      " onclick=\"toggleAbstract('" + eid + "');\">")
+                print("Show Abstract")
+                print("</div>")
 
-            print "</td></tr></table>"
+            print("</td></tr></table>")
 
             if len(abstract_data):
-                print "<div class=\"abstract\" id=\"abs-" + eid + "\" >"
+                print("<div class=\"abstract\" id=\"abs-" + eid + "\" >")
 
-                print "<div class=\"abstract-header\">"
-                print "Abstract"
-                print "</div>"
+                print("<div class=\"abstract-header\">")
+                print("Abstract")
+                print("</div>")
 
-                print abstract_data.encode("utf8")
-                print "</div>"
+                print(abstract_data)
+                print("</div>")
 
-            print "</div>"
+            print("</div>")
 
-        print "</section>"
+        print("</section>")
 
 
-def extract_utf8data(filename):
+def read_abstract(filename):
     """
     Extract the content of a file and return it as a string
     """
-    import codecs
-    code = u""
-    # Works only on readable files
-    if (not os.access(filename, os.R_OK)):
-        return code
-    # Extract the relevant part from the XHTML code
     try:
-        with codecs.open(filename, "r", "UTF-8") as texfile:
-            code = texfile.read()
+        with open(filename, "r", encoding="utf-8") as texfile:
+            return texfile.read()
     except IOError:
-        code = u""
-    return code
+        return ''
 
 
 def format_filelinks(entry):
     """
     Produces the table of links to files.
     """
-    out = ""
-    for (tag, img, text) in [
-         #("ps", "ps.png", "PS"),
-         #("ps_gz", "ps_gz.png", "PS.GZ"),
-         ("pdf", "pdf.png", "PDF"),
-         ("ee", "ee.png", "URL")
-        ]:
+    out = ''
+    template='<a href="{}"> <img src="images/{}" alt="[{}]" /> </a>\n'
+
+    for (tag, img, text) in [("pdf", "pdf.png", "PDF"), ("ee", "ee.png", "URL")]:
         el = entry.getElementsByTagName(TAG_PREFIX + tag)
         if len(el) != 1:
             continue
-        en = el[0]
-        out += "<a href=\"" + en.firstChild.data + "\">"
-        out += "<img src=\"images/" + img + "\" alt=\"[" + text + "]\" />"
-        out += "</a>\n"
+        out += template.format(el[0].firstChild.data,img,text)
     return out
 
 
@@ -256,9 +243,9 @@ def format_errata(entry):
 # Main Program
 if __name__ == "__main__":
     if len(sys.argv) < 1:
-        print "Usage " + sys.argv[0] + " <bibxmlfile>"
+        print("Usage " + sys.argv[0] + " <bibxmlfile>")
     else:
-        print "<div class=\"papers\">"
+        print("<div class=\"papers\">")
         bib = minidom.parse(sys.argv[1])
         format_bibhtml(bib)
-        print "</div>"
+        print("</div>")
