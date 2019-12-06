@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 
 import sys
-import os
+from string import Formatter
 from xml.dom import minidom
 
 # Setup
@@ -24,60 +24,49 @@ TAG_PREFIX = "bibxml:"
 
 # FORMAT TEMPLATES
 templates = {
-"article": ("""
-<span class='bibtitle'>%s</span> (%s).<br />
-<span class='bibauthor'>%s</span>.<br />
-In: %s. %s(%s):%s.<br />""",
-("title", "year", "author", "journal", "volume", "number", "pages")),
-    
-"inproceedings": ("""
-<span class='bibtitle'>%s</span> (%s).<br />
-<span class='bibauthor'>%s</span>.<br />
-In: %s. pp. %s.<br />""",
-("title", "year", "author", "booktitle", "pages")),
+    "article": """
+    <span class='bibtitle'>{title}</span> ({year}).<br />
+    <span class='bibauthor'>{author}</span>.<br />
+    In: {journal}. {volume}({number}):{pages}.<br />""",
 
-"conference": ("""
-<span class='bibtitle'>%s</span> (%s).<br />
-<span class='bibauthor'>%s</span>.<br />
-In: %s. pp. %s.<br />""",
-("title", "year", "author", "booktitle", "pages")),
+    "inproceedings": """
+    <span class='bibtitle'>{title}</span> ({year}).<br />
+    <span class='bibauthor'>{author}</span>.<br />
+    In: {booktitle}. pp. {pages}.<br />""",
 
+    "conference": """
+    <span class='bibtitle'>{title}</span> ({year}).<br />
+    <span class='bibauthor'>{author}</span>.<br />
+    In: {booktitle}. pp. {pages}.<br />""",
 
-"masterthesis": ("""
-<strong>Master thesis</strong> <br />
-<span class='bibtitle'>%s</span> (%s).<br />
-<span class='bibauthor'>%s</span>.<br />
-%s.<br />""",
-("title", "year", "author", "school")),
+    "masterthesis": """
+    <strong>Master thesis</strong> <br />
+    <span class='bibtitle'>{title}</span> ({year}).<br />
+    <span class='bibauthor'>{author}</span>.<br />
+    {school}.<br />""",
 
-"misc": ("""
-<span class='bibtitle'>%s</span> (%s).<br />
-<span class='bibauthor'>%s</span>.<br />""",
-("title", "year", "author")),
+    "misc": """
+    <span class='bibtitle'>{title}</span> ({year}).<br />
+    <span class='bibauthor'>{author}</span>.<br />""",
 
-"phdthesis": ("""
-<strong>Ph.D. thesis</strong> <br />
-<span class='bibtitle'>%s</span> (%s).<br />
-<span class='bibauthor'>%s</span>.<br />
-%s.<br />""",
-("title", "year", "author", "school")),
+    "phdthesis": """
+    <strong>Ph.D. thesis</strong> <br />
+    <span class='bibtitle'>{title}</span> ({year}).<br />
+    <span class='bibauthor'>{author}</span>.<br />
+    {school}.<br />""",
 
-"techreport": ("""
-<span class='bibtitle'>%s</span> (%s).<br />
-<span class='bibauthor'>%s</span>.<br />
-%s. Report %s of %s.<br />""",
-("title", "year", "author", "institution", "number", "year")),
+    "techreport": """
+    <span class='bibtitle'>{title}</span> ({year}).<br />
+    <span class='bibauthor'>{author}</span>.<br />
+    {institution}. Report {number} of {year}.<br />""",
 
-"unpublished": ("""
-<span class='bibtitle'>%s</span> (%s).<br />
-<span class='bibauthor'>%s</span>.<br />""",
-("title", "year", "author")),
+    "unpublished": """
+    <span class='bibtitle'>{title}</span> ({year}).<br />
+    <span class='bibauthor'>{author}</span>.<br />""",
 
-"backuptemplate": ("""
-<span class='bibtitle'>%s</span> (%s).<br />
-<span class='bibauthor'>%s</span>.<br />""",
-("title", "year", "author"))}
-
+    "backuptemplate": """
+    <span class='bibtitle'>{title}</span> ({year}).<br />
+    <span class='bibauthor'>{author}</span>.<br />""" }
 
 ################ SOURCE CODE STARTS HERE ######################
 
@@ -105,9 +94,12 @@ def format_entry(entry):
     nodetype = [c.nodeName[7:]
                  for c in entry.childNodes if c.nodeName[:7] == TAG_PREFIX][0]
     try:
-        (text, args) = templates[nodetype]
+        text = templates[nodetype]
     except KeyError:
-        (text, args) = templates["backuptemplate"]
+        text = templates["backuptemplate"]
+
+    # Find keyword contained in the template string.
+    args = {fname for _, fname, _, _ in Formatter().parse(text) if fname}
 
     def get_value(tag):
         """
@@ -122,7 +114,8 @@ def format_entry(entry):
             else:
                 return "??????"
 
-    return text % tuple([get_value(a) for a in args])
+    subst = {a: get_value(a) for a in args}
+    return text.format(**subst)
 
 
 def format_bibhtml(xmldoc):
@@ -228,6 +221,7 @@ def format_note(entry):
         return el[0].firstChild.data + ".<br />"
     else:
         return ""
+
 
 def format_errata(entry):
     """
