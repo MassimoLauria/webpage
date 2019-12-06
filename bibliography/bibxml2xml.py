@@ -66,11 +66,10 @@ templates = {
 
     "backuptemplate": """
     <span class='bibtitle'>{title}</span> ({year}).<br />
-    <span class='bibauthor'>{author}</span>.<br />""" }
-
-################ SOURCE CODE STARTS HERE ######################
+    <span class='bibauthor'>{author}</span>.<br />"""}
 
 
+# ############### SOURCE CODE STARTS HERE ######################
 def author_list(entry):
     """
     Produces the string with the list of authors
@@ -92,7 +91,7 @@ def format_entry(entry):
     output the XML string.
     """
     nodetype = [c.nodeName[7:]
-                 for c in entry.childNodes if c.nodeName[:7] == TAG_PREFIX][0]
+                for c in entry.childNodes if c.nodeName[:7] == TAG_PREFIX][0]
     try:
         text = templates[nodetype]
     except KeyError:
@@ -127,7 +126,8 @@ def format_bibhtml(xmldoc):
     # Keywords triage
     for en in entries:
         entry_keys = [a.firstChild.data
-                  for a in en.getElementsByTagName(TAG_PREFIX + "keywords")]
+                      for a in en.getElementsByTagName(TAG_PREFIX + "keywords")
+                      ]
         for (k, _, l) in CATEGORIES:
             if k in entry_keys:
                 l.append(en)
@@ -148,9 +148,9 @@ def format_bibhtml(xmldoc):
             # }}} ---------------------------------------------------------
 
             # Print initial information
-            print("<div class=\"bibentry\">")
-            print("<table style=\"border:0; width:100%;\"" \
-                  " cellspacing=\"3\" cellpadding=\"0\">")
+            print('<div class="bibentry">')
+            print('<table style="border:0; width:100%;"'
+                  ' cellspacing="3" cellpadding="0">')
             print("""
 <tr>
 <td class="biblinks" valign="top" align="left">
@@ -164,8 +164,8 @@ def format_bibhtml(xmldoc):
             print(format_errata(en))
 
             if len(abstract_data):
-                print("<div class=\"abstract-button\" id=\"button-" + eid + "\""\
-                      " onclick=\"toggleAbstract('" + eid + "');\">")
+                print('<div class="abstract-button" id="button-{0}"'
+                      ' onclick=\"toggleAbstract(\'{0}\');\">'.format(eid))
                 print("Show Abstract")
                 print("</div>")
 
@@ -202,13 +202,14 @@ def format_filelinks(entry):
     Produces the table of links to files.
     """
     out = ''
-    template='<a href="{}"> <img src="images/{}" alt="[{}]" /> </a>\n'
+    template = '<a href="{}"> <img src="images/{}" alt="[{}]" /> </a>\n'
 
-    for (tag, img, text) in [("pdf", "pdf.png", "PDF"), ("ee", "ee.png", "URL")]:
+    for (tag, img, text) in [("pdf", "pdf.png", "PDF"),
+                             ("ee", "ee.png", "URL")]:
         el = entry.getElementsByTagName(TAG_PREFIX + tag)
         if len(el) != 1:
             continue
-        out += template.format(el[0].firstChild.data,img,text)
+        out += template.format(el[0].firstChild.data, img, text)
     return out
 
 
