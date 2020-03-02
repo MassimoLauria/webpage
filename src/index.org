@@ -14,10 +14,10 @@
 <img src="images/mlauria_pic.png" id="profile-pic" />
 #+end_export
 
-* About me
+* Massimo Lauria
   
-  Hi! My name is *Massimo Lauria*  and I am a Researcher at [[http://www.dss.uniroma1.it/en][Department
-  of Statistical Sciences]] of [[http://www.uniroma1.it/][Sapienza - Università di Roma]]. 
+  Hi!  I  am  an  Associate Professor  at  [[http://www.dss.uniroma1.it/en][Department  of  Statistical
+  Sciences]] of [[http://www.uniroma1.it/][Sapienza - Università di Roma]].
 
 #+begin_export html
 <div>
@@ -42,8 +42,8 @@
   :CUSTOM_ID: news
   :END:
 
-  - Obtained qualifications as ``Professore II fascia'' (2019-2025)
-  - Member of the Program Committees of [[https://aaai.org/Conferences/AAAI-20/][AAAI 2020]]
+  - Started as Associate Professor at Department of Statistical Science
+  - Member of the Program Committees of [[https://ijcai20.org/][IJCAI-PRICAI 2020]]
   - /Circular (Yet Sound) Resolution/ published at [[http://sat2019.tecnico.ulisboa.pt/][SAT 2019]]
  
 #+begin_export html
