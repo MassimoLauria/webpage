@@ -172,8 +172,9 @@ footer {
     border-width: 1px;
     border-style: solid;
     border-color: black;
+    border-radius: .5rem;
 
-    background: #eee;
+    background: whitesmoke;
 
     text-align: justify;
     font-family: serif;
@@ -187,25 +188,23 @@ footer {
     text-align: center;
     margin-top:    1ex;
     margin-bottom: 1ex;
-
 }
 
 .abstract-button {
-    font-size: 80%;
-    color: white;
-    line-height: 1.5;
+    font-size: 90%;
+    line-height: .5;
     
     text-align: center;
     margin-top:    2ex;
     margin-bottom: 1ex;
 
-    border: 0px;
-    width: 10em;
-    padding: 2px;
+    border: 1pt solid  #822433;
+    width: 8rem;
+    padding: .6rem;
     
-    background-color: #822433;
+    color: #822433;
 
-    border-radius: 	    2em;
+    border-radius: .5rem;
 }
 
 
