@@ -1,5 +1,14 @@
 #+TITLE: Massimo Lauria @ Sapienza - Teaching
 
+* 2020-2021 (1o Sem.) Informatica - Sapienza
+
+  Course page ([[http://www.massimolauria.net/informatica2020/][Informatica@DSS 2020/2021 - 2o e 3o canale]])
+
+  This is an  introductory course to computer  science and programming
+  for part of the students of [[https://www.dss.uniroma1.it][Dept. of Statistical Science]]. The course
+  introduces  basic  concepts  of  computer  science,  programming  in
+  Python, algorithms and complexity.
+
 * 2019-2020 (1o Sem.) Informatica - Sapienza
 
   Course page ([[http://www.massimolauria.net/courses/informatica2019/][Informatica@DSS 2019/2020 - 2o canale]])
