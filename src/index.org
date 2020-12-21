@@ -43,8 +43,9 @@
   :END:
 
   - /Clique Is  Hard on  Average for  Regular Resolution/  accepted at Journal of ACM
+  - /Upper bounds  on positional Paris-Harrington games/  published in
+    Discrete Mathematics
   - Started as Associate Professor at Department of Statistical Science
-  - Member of the Program Committees of [[https://ijcai20.org/][IJCAI-PRICAI 2020]]
  
 #+begin_export html
 <a href="https://www.google.com/maps/place/Dipartimento+di+Scienze+Statistiche,+Piazzale+Aldo+Moro,+5,+00185+Roma+RM/@41.904548,12.5146987,15z/data=!4m2!3m1!1s0x132f619d82387a1b:0x4a99cb199c292eb5">

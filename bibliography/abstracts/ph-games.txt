@@ -1,0 +1,19 @@
+<p>
+We give upper  bounds for a positional  game — in the sense  of Beck —
+based on the  Paris—Harrington Theorem for bi-colorings  of graphs and
+uniform  hypergraphs  of  arbitrary  dimension.  The  bounds  for  the
+positional game show a striking difference when compared to the bounds
+for   the  combinatorial   principle  itself.   Our  results   confirm
+a phenomenon already observed by Beck and others: the upper bounds for
+the game version of a  combinatorial principle are drastically smaller
+than  the upper  bounds  for  the principle  itself.  In  the case  of
+Paris-Harrington games the difference  is qualitatively very striking.
+For example,  the bounds for  the game on $3$-uniform  hypergraphs are
+a fixed stack  of exponentials while the bounds  for the corresponding
+combinatorial  principle  are  known  to  be  at  least  Ackermannian.
+For higher dimensions, the  combinatorial Paris-Harrington numbers are
+known  to   be  cofinal  in  the   Schwichtenberg-Wainer  Hiearchy  of
+fast-growing  functions up  to the  ordinal $\varepsilon_0$,  while we
+show  that the  game  Paris-Harrington numbers  are  bounded by  fixed
+stacks of exponentials.
+</p>
