@@ -42,6 +42,7 @@
   :CUSTOM_ID: news
   :END:
 
+  - /The Power of Negative Reasoning/ accepted in [[https://computationalcomplexity.org/Archive/2021/cfp.php][CCC 2021]].
   - Long-Term Visitor  at Simons Institute for [[https://simons.berkeley.edu/programs/sat2021][Satisfiability: Theory, Practice, and Beyond]] program
   - Member of the Program Committee of [[https://www.iiia.csic.es/sat2021/][SAT 2021]] conference
   - /Clique Is  Hard on  Average for  Regular Resolution/ accepted at Journal of ACM
