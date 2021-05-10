@@ -63,7 +63,7 @@
   :END:
 
   Massimo Lauria\\
-  Sapienza - Università di Roma\\
+  Sapienza Università di Roma\\
   Dipartimento di Scienze Statistiche\\
   Piazzale Aldo Moro, 5\\
   00185 Roma\\
