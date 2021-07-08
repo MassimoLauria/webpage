@@ -1,0 +1,19 @@
+<p>
+  Semialgebraic proof systems have been studied extensively in proof
+  complexity since the late 1990s to understand the power of Gröbner
+  basis computations, linear and semidefinite programming hierarchies,
+  and other methods. 
+  Such proof systems are defined alternately with only the original
+  variables of the problem and with special formal variables for
+  positive and negative literals, but there seems to have been no
+  study how these different definitions affect the power of the proof
+  systems. 
+  We show for Nullstellensatz, polynomial calculus, Sherali-Adams, and
+  sums-of-squares that adding formal variables for negative literals
+  makes the proof systems exponentially stronger, with respect to the 
+  number of terms in the proofs.
+  These separations are witnessed by CNF formulas that are easy for
+  resolution, which establishes that polynomial calculus,
+  Sherali-Adams, and sums-of-squares cannot efficiently simulate
+  resolution without having access to variables for negative literals.
+</p>
