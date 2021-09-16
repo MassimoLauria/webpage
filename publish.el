@@ -1,6 +1,6 @@
 ;;; publish.el --- Emacs-lisp which produces my webpage
 
-;; Copyright (C) 2010, 2013, 2015, 2018, 2019  Massimo Lauria
+;; Copyright (C) 2010, 2013, 2015, 2018, 2019, 2021  Massimo Lauria
 
 ;; Author: Massimo Lauria <lauria.massimo@gmail.com>
 ;; Keywords:
@@ -60,7 +60,7 @@
          :with-author t
          :with-creator nil
          :with-date t
-         
+
          :section-numbers nil
 
          :with-toc nil
@@ -70,10 +70,10 @@
          :with-sub-superscript nil      ; important!!
          :headline-levels 3       ; Just the default for this project.
          :with-latex t
-         
+
          ;; HTML type of output
          :html-doctype "html5"
-         
+
          ;; Empty head
          ;;:html-head-extra "<link rel='stylesheet' href='css/default.css' />\n<script type=\"text/javascript\" charset=\"utf-8\" src=\"js/highlight.js\"></script>"
          :html-head-extra ,(my-file-content "head-extra.inc")
@@ -97,7 +97,7 @@
          ;; Finetune
          )
 
-        
+
         ;; Other stuff that must just be copied
         ("pages-html"
          :base-directory ,base-directory
@@ -108,7 +108,7 @@
          )
         ("assets"
          :base-directory ,base-directory
-         :base-extension "txt\\|css\\|js\\|png\\|ico\\|jpg\\|gif\\|mp3\\|ogg\\|swf\\|tar.gz"
+         :base-extension "txt\\|css\\|js\\|png\\|ico\\|jpg\\|gif\\|mp3\\|ogg\\|swf\\|tar.gz\\|zip\\|ico"
          :publishing-directory ,publishing-directory
          :recursive t
          :publishing-function org-publish-attachment
