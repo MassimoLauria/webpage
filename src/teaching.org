@@ -1,17 +1,8 @@
 #+TITLE: Massimo Lauria @ Sapienza - Teaching
 
-* 2020-2021 (1o Sem.) Informatica - Sapienza
+* 2021-2022 (1o Sem.) Informatica - Sapienza
 
-  Course page ([[http://www.massimolauria.net/informatica2020/][Informatica@DSS 2020/2021 - 2o e 3o canale]])
-
-  This is an  introductory course to computer  science and programming
-  for part of the students of [[https://www.dss.uniroma1.it][Dept. of Statistical Science]]. The course
-  introduces  basic  concepts  of  computer  science,  programming  in
-  Python, algorithms and complexity.
-
-* 2019-2020 (1o Sem.) Informatica - Sapienza
-
-  Course page ([[http://www.massimolauria.net/courses/informatica2019/][Informatica@DSS 2019/2020 - 2o canale]])
+  Course page ([[http://www.massimolauria.net/informatica2021/][Informatica@DSS 2021/2022 - 2o canale]])
 
   This is an  introductory course to computer  science and programming
   for part of the students of [[https://www.dss.uniroma1.it][Dept. of Statistical Science]]. The course
@@ -20,8 +11,10 @@
 
 * Old courses
 
-  - 2018-2019 (Sapienza) — [[http://www.massimolauria.net/courses/infosefa2018/][Informatica@SEFA 2018/2019]]
-  - 2017-2018 (Sapienza) — [[http://www.massimolauria.net/courses/infosefa2017/][Informatica@SEFA 2017/2018]]
+  - 2020-2021 - [[http://www.massimolauria.net/informatica2020/][Informatica@DSS 2020/2021 - 2o e 3o canale]]
+  - 2019-2020 — [[http://www.massimolauria.net/courses/informatica2019/][Informatica@DSS 2019/2020 - 2o canale]]
+  - 2018-2019 — [[http://www.massimolauria.net/courses/infosefa2018/][Informatica@SEFA 2018/2019]]
+  - 2017-2018 — [[http://www.massimolauria.net/courses/infosefa2017/][Informatica@SEFA 2017/2018]]
   - Fall 2015 (TokyoTech, Japan) — [[file:courses/2015.ProofComplexity/][Introduction to Proof Complexity]]
   - Spring 2014 (KTH, Sweden) — [[http://www.csc.kth.se/~lauria/sos14/][SOS and integer programming relaxations]]
   - Fall 2012 (KTH, Sweden) — [[http://www.csc.kth.se/utbildning/kth/kurser/DD2441/semteo12/][Communication Complexity (Co-Lectured)]]
