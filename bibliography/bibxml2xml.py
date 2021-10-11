@@ -8,8 +8,8 @@ from xml.dom import minidom
 # Setup
 CATEGORIES = [
     ('submitted', "Submitted (not yet peer reviewed)", []),
-    ('conference', "Conference", []),
     ('journal', "Journal", []),
+    ('conference', "Conference", []),
     ('manuscript', "Manuscripts (not peer reviewed)", []),
     ('thesis', "Thesis", []),
     ('others', "Misc", [])]

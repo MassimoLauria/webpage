@@ -42,10 +42,11 @@
   :CUSTOM_ID: news
   :END:
 
+  - Member of the Program Committee of [[https://stacs2022.sciencesconf.org/][STACS 2022]] conference
+  - /Clique Is Hard on Average for Regular Resolution/ published in [[https://doi.org/10.1145/3449352][Journal of ACM]]
   - /The Power of Negative Reasoning/ published in [[https://drops.dagstuhl.de/opus/volltexte/2021/14314/][CCC 2021]].
   - Long-Term Visitor  at Simons Institute for [[https://simons.berkeley.edu/programs/sat2021][Satisfiability: Theory, Practice, and Beyond]] program
   - Member of the Program Committee of [[https://www.iiia.csic.es/sat2021/][SAT 2021]] conference
-  - /Clique Is  Hard on  Average for  Regular Resolution/ accepted at Journal of ACM
   
 #+begin_export html
 <a href="https://www.google.com/maps/place/Dipartimento+di+Scienze+Statistiche,+Piazzale+Aldo+Moro,+5,+00185+Roma+RM/@41.904548,12.5146987,15z/data=!4m2!3m1!1s0x132f619d82387a1b:0x4a99cb199c292eb5">
