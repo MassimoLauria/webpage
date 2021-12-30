@@ -1,0 +1,15 @@
+<p>
+A partition into  distinct parts is refinable if one  of its parts $a$
+ can be replaced by two different  integers which do not belong to the
+ partition  and whose  sum is  $a$, and  it is  unrefinable otherwise.
+ Clearly, the condition of being  unrefinable imposes on the partition
+ a non-trivial limitation  on the size of the largest  part and on the
+ possible distributions of  the parts. We prove  a $O(n^{1/2})$-upper bound
+ for the  largest part in an  unrefinable partition of $n$,  and we call
+ maximal   those  which   reach  the   bound.  We   show  a   complete
+ classification  of  maximal  unrefinable  partitions  for  triangular
+ numbers, proving  that if  $n$ is  even there  exists only  one maximal
+ unrefinable partition of $n(n+1)/2$, and that if $n$ is odd the number of
+ such partitions equals the number of partitions of $\lceil n/2\ rceil$ into
+ distinct  parts.  In  the  second  case,  an  explicit  bijection  is
+ provided. </p>

@@ -51,7 +51,7 @@
   also indexed and stored at the following locations
   
   - [[http://eccc.hpi-web.de/author/215/][Electronic Colloquium on Computational Complexity]]
-  - [[http://arxiv.org/find/cs/1/au:+Lauria_M/0/1/0/all/0/1][ArXiv]]
+  - [[https://arxiv.org/search/?searchtype=author&query=Lauria%2C+M][ArXiv]]
   - [[http://scholar.google.se/citations?user=XCR-qNgAAAAJ][Google Scholar]]
   - [[http://www.informatik.uni-trier.de/%7Eley/db/indices/a-tree/l/Lauria:Massimo.html][Digital Bibliography and Library Project (DBPL)]]
  
