@@ -1,0 +1,6 @@
+<p>
+Unrefinable partitions are a subset of partitions into distinct parts which 
+satisfy an additional unrefinability property. More precisely, no parts of such partitions can be written as the sum of different integers which are not parts.
+ We address in this paper the algorithmic aspects related to unrefinable partitions, such as testing whether  a given partition is unrefinable or not and 
+ enumerating all the partitions whose sum is a given number. We design two algorithms to solve the two mentioned problems and we discuss their complexity. 
+</p>
