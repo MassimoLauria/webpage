@@ -1,5 +1,15 @@
 #+TITLE: Massimo Lauria @ Sapienza - Teaching
 
+* 2021-2022 (2o Sem.) Progettazione degli Algoritmi
+
+  Course page ([[https://twiki.di.uniroma1.it/twiki/view/Algoritmi2/WebHome][Progettazione degli Algoritmi 2021/2022 - 1o canale]])
+
+  A standard course  about algorithms, about topics as  such DFS, BFS,
+  maximum  flow,  greedy  algorithms,  and  dynamic  programming  with
+  application   to  shortest   path   computation,  backtracking   for
+  optimization in NP-hard problems. The course is aimed at students of
+  [[https://www.di.uniroma1.it/it][Dept. of Computer Science]]. 
+
 * 2021-2022 (1o Sem.) Informatica - Sapienza
 
   Course page ([[http://www.massimolauria.net/informatica2021/][Informatica@DSS 2021/2022 - 2o canale]])
