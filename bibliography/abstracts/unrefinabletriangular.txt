@@ -10,6 +10,6 @@ A partition into  distinct parts is refinable if one  of its parts $a$
  classification  of  maximal  unrefinable  partitions  for  triangular
  numbers, proving  that if  $n$ is  even there  exists only  one maximal
  unrefinable partition of $n(n+1)/2$, and that if $n$ is odd the number of
- such partitions equals the number of partitions of $\lceil n/2\ rceil$ into
+ such partitions equals the number of partitions of $\lceil n/2 \rceil$ into
  distinct  parts.  In  the  second  case,  an  explicit  bijection  is
  provided. </p>

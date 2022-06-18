@@ -42,11 +42,10 @@
   :CUSTOM_ID: news
   :END:
 
+  - /On the maximal part in unrefinable partitions of triangular numbers/ published in [[https://link.springer.com/article/10.1007/s00010-022-00890-6][Aequationes Mathematicae]]
   - Member of the Program Committee of [[https://www.ac.tuwien.ac.at/mfcs2022/][MFCS 2022]] conference
   - Member of the Program Committee of [[https://stacs2022.sciencesconf.org/][STACS 2022]] conference
   - /Clique Is Hard on Average for Regular Resolution/ published in [[https://doi.org/10.1145/3449352][Journal of ACM]]
-  - /The Power of Negative Reasoning/ published in [[https://drops.dagstuhl.de/opus/volltexte/2021/14314/][CCC 2021]].
-  - Long-Term Visitor  at Simons Institute for [[https://simons.berkeley.edu/programs/sat2021][Satisfiability: Theory, Practice, and Beyond]] program
   
 #+begin_export html
 <a href="https://www.google.com/maps/place/Dipartimento+di+Scienze+Statistiche,+Piazzale+Aldo+Moro,+5,+00185+Roma+RM/@41.904548,12.5146987,15z/data=!4m2!3m1!1s0x132f619d82387a1b:0x4a99cb199c292eb5">
