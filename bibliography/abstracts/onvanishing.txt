@@ -1,0 +1,6 @@
+<p>
+Vanishing  sums of  roots  of  unity can  be  seen  as a  natural
+  generalization  of  knapsack  from Boolean  variables  to  variables
+  taking values over  the roots of unity. We show  that these sums are
+  hard to prove  for polynomial calculus and  for sum-of-squares, both
+  in terms of degree and size. </p>
