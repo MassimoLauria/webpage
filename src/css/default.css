@@ -29,8 +29,8 @@ main a:hover { text-decoration: underline; }
 div#postamble a { font-weight: bold; }
 div#postamble a:hover {  text-decoration: underline; }
 
-/** -------- Navigator --------- 
-   
+/** -------- Navigator ---------
+
    When then width of the page becomes too small, the navigators
    shrinks to a vertical layout.
 */
@@ -70,11 +70,11 @@ nav li a {
     text-decoration: none;
     text-align: center;
 }
- 
+
 nav li a.active {
     background-color: #4CAF50;
     color: white;
-}    
+}
 
 nav li a:hover:not(.active) {
     background-color: #555;
@@ -89,9 +89,12 @@ nav li a:hover:not(.active) {
 
 /** ------ Content --------- **/
 
-main {
+main#content {
     margin: auto;
     max-width: 600px;
+}
+
+main {
     padding-left:10%;
     padding-right:10%;
     text-align: justify;
@@ -193,7 +196,7 @@ footer {
 .abstract-button {
     font-size: 90%;
     line-height: .5;
-    
+
     text-align: center;
     margin-top:    2ex;
     margin-bottom: 1ex;
@@ -201,7 +204,7 @@ footer {
     border: 1pt solid  #822433;
     width: 8rem;
     padding: .6rem;
-    
+
     color: #822433;
 
     border-radius: .5rem;
@@ -256,9 +259,6 @@ img#location-pic {
 }
 
 @media screen and (max-width: 600px){
-    img#profile-pic  {float: none;} 
+    img#profile-pic  {float: none;}
     img#location-pic {float: none;}
 }
-
-
-

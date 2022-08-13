@@ -1,5 +1,14 @@
 #+TITLE: Massimo Lauria @ Sapienza - Teaching
 
+* 2022-2023 (1o Sem.) Informatica
+
+  Course page ([[http://www.massimolauria.net/informatica2022/][Informatica@DSS 2022/2023 - 2o canale]])
+
+  This is an  introductory course to computer  science and programming
+  for part of the students of [[https://www.dss.uniroma1.it][Dept. of Statistical Science]]. The course
+  introduces  basic  concepts  of  computer  science,  programming  in
+  Python, algorithms and complexity.
+
 * 2021-2022 (2o Sem.) Progettazione degli Algoritmi
 
   Course page ([[https://twiki.di.uniroma1.it/twiki/view/Algoritmi2/WebHome][Progettazione degli Algoritmi 2021/2022 - 1o canale]])
@@ -10,7 +19,7 @@
   optimization in NP-hard problems. The course is aimed at students of
   [[https://www.di.uniroma1.it/it][Dept. of Computer Science]]. 
 
-* 2021-2022 (1o Sem.) Informatica - Sapienza
+* 2021-2022 (1o Sem.) Informatica
 
   Course page ([[http://www.massimolauria.net/informatica2021/][Informatica@DSS 2021/2022 - 2o canale]])
 
