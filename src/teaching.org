@@ -1,5 +1,17 @@
 #+TITLE: Massimo Lauria @ Sapienza - Teaching
 
+* 2022-2023 (1o Sem.) Computational Complexity
+
+Course page ([[http://www.massimolauria.net/complexity2022/][Computational Complexity @ DI 2022/2023]])
+
+Computational complexity  studies the intractability and  the inherent
+complexity  of computational  problems. Some  problems have  efficient
+algorithms  and solutions,  while some  others seem  not to  have any.
+In this course for the students  of [[https://www.di.uniroma1.it/it][Dept. of Computer Science]] we study
+several computational  model in  which we  can say  interesting things
+about problems,  in order to  characterize their hardness.  We discuss
+the famouse P vs NP problem.
+
 * 2022-2023 (1o Sem.) Informatica
 
   Course page ([[http://www.massimolauria.net/informatica2022/][Informatica@DSS 2022/2023 - 2o canale]])
