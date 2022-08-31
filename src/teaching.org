@@ -21,28 +21,11 @@ the famouse P vs NP problem.
   introduces  basic  concepts  of  computer  science,  programming  in
   Python, algorithms and complexity.
 
-* 2021-2022 (2o Sem.) Progettazione degli Algoritmi
+* Previous years
 
-  Course page ([[https://twiki.di.uniroma1.it/twiki/view/Algoritmi2/WebHome][Progettazione degli Algoritmi 2021/2022 - 1o canale]])
-
-  A standard course  about algorithms, about topics as  such DFS, BFS,
-  maximum  flow,  greedy  algorithms,  and  dynamic  programming  with
-  application   to  shortest   path   computation,  backtracking   for
-  optimization in NP-hard problems. The course is aimed at students of
-  [[https://www.di.uniroma1.it/it][Dept. of Computer Science]]. 
-
-* 2021-2022 (1o Sem.) Informatica
-
-  Course page ([[http://www.massimolauria.net/informatica2021/][Informatica@DSS 2021/2022 - 2o canale]])
-
-  This is an  introductory course to computer  science and programming
-  for part of the students of [[https://www.dss.uniroma1.it][Dept. of Statistical Science]]. The course
-  introduces  basic  concepts  of  computer  science,  programming  in
-  Python, algorithms and complexity.
-
-* Old courses
-
-  - 2020-2021 - [[http://www.massimolauria.net/informatica2020/][Informatica@DSS 2020/2021 - 2o e 3o canale]]
+  - 2021-2022 — [[https://twiki.di.uniroma1.it/twiki/view/Algoritmi2/PALGdiario2014_1][Progettazione degli Algoritmi 2021/2022 - 1o canale]]
+  - 2021-2022 — [[http://www.massimolauria.net/informatica2021/][Informatica@DSS 2021/2022 - 2o canale]]
+  - 2020-2021 — [[http://www.massimolauria.net/informatica2020/][Informatica@DSS 2020/2021 - 2o e 3o canale]]
   - 2019-2020 — [[http://www.massimolauria.net/courses/informatica2019/][Informatica@DSS 2019/2020 - 2o canale]]
   - 2018-2019 — [[http://www.massimolauria.net/courses/infosefa2018/][Informatica@SEFA 2018/2019]]
   - 2017-2018 — [[http://www.massimolauria.net/courses/infosefa2017/][Informatica@SEFA 2017/2018]]
