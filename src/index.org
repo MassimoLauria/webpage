@@ -14,6 +14,7 @@
 <img src="images/mlauria_pic.png" id="profile-pic" />
 #+end_export
 
+
 * Massimo Lauria
   
   Hi!  I  am  an  Associate Professor  at  [[http://www.dss.uniroma1.it/en][Department  of  Statistical
@@ -42,11 +43,13 @@
   :CUSTOM_ID: news
   :END:
 
+  - /On vanishing  sums of roots  of unity in polynomial  calculus and
+    sum-of-squares/ has been published in [[https://doi.org/10.1007/s00037-023-00242-z][Computational Complexity]]
   - /Circular  (Yet Sound)  Proofs  in Propositional  Logic/ has  been
     published in [[https://doi.org/10.1145/3579997][Transactions on Computational Logic]]
   - /Verification and  generation of unrefinable partitions/  is going
     to be published in [[https://doi.org/10.1016/j.ipl.2023.106361][Information Processing Letters]] 
-  - This  spring   I  will   join  [[https://simons.berkeley.edu/programs/extended-reunion-satisfiability][Extended   Reunion:  Satisfiability]]
+  - In spring 2023  I  joined  [[https://simons.berkeley.edu/programs/extended-reunion-satisfiability][Extended   Reunion:  Satisfiability]]
     at Simons.
   - /On the maximal part in unrefinable partitions of triangular numbers/ published in [[https://link.springer.com/article/10.1007/s00010-022-00890-6][Aequationes Mathematicae]]
   
