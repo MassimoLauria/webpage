@@ -53,8 +53,9 @@
   - [[http://eccc.hpi-web.de/author/215/][Electronic Colloquium on Computational Complexity]]
   - [[https://arxiv.org/search/?searchtype=author&query=Lauria%2C+M][ArXiv]]
   - [[http://scholar.google.se/citations?user=XCR-qNgAAAAJ][Google Scholar]]
-  - [[http://www.informatik.uni-trier.de/%7Eley/db/indices/a-tree/l/Lauria:Massimo.html][Digital Bibliography and Library Project (DBPL)]]
- 
+  - [[https://dblp.org/pid/61/3205.html][Digital Bibliography and Library Project (DBPL)]]
+  - [[https://orcid.org/0000-0003-4003-3168][ORCiD]]
+    
   With a  modern browser, any  math should render properly:   if $e^x$
   shows as =$e^x$= then your browser does not have enough capabilities
   to render math.
