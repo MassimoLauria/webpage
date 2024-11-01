@@ -52,26 +52,26 @@
 import re
 
 # set of valid name characters
-valid_name_chars = '[\w\-:]'
+valid_name_chars = r'[\w\-:]'
 
 #
 # define global regular expression variables
 #
-author_rex = re.compile('\s+and\s+')
-rembraces_rex = re.compile('[{}]')
-capitalize_rex = re.compile('({\w*})')
+author_rex = re.compile(r'\s+and\s+')
+rembraces_rex = re.compile(r'[{}]')
+capitalize_rex = re.compile(r'({\w*})')
 
 # used by bibtexkeywords(data)
-keywords_rex = re.compile('[,;]')
+keywords_rex = re.compile(r'[,;]')
 
 # used by concat_line(line)
-concatsplit_rex = re.compile('\s*#\s*')
+concatsplit_rex = re.compile(r'\s*#\s*')
 
 # split on {, }, or " in verify_out_of_braces
-delimiter_rex = re.compile('([{}"])',re.I)
+delimiter_rex = re.compile(r'([{}"])',re.I)
 
-field_rex = re.compile('\s*(\w*)\s*=\s*(.*)')
-data_rex = re.compile('\s*(\w*)\s*=\s*([^,]*),?')
+field_rex = re.compile(r'\s*(\w*)\s*=\s*(.*)')
+data_rex = re.compile(r'\s*(\w*)\s*=\s*([^,]*),?')
 
 
 #
@@ -148,15 +148,15 @@ def bibtexdecoder(filecontents_source):
     endentry = ''
 
     # want @<alphanumeric chars><spaces>{<spaces><any chars>,
-    pubtype_rex = re.compile('@(\w*)\s*{\s*(.*),')
-    endtype_rex = re.compile('}\s*$')
-    endtag_rex = re.compile('^\s*}\s*$')
+    pubtype_rex = re.compile(r'@(\w*)\s*{\s*(.*),')
+    endtype_rex = re.compile(r'}\s*$')
+    endtag_rex = re.compile(r'^\s*}\s*$')
 
-    bracefield_rex = re.compile('\s*(\w*)\s*=\s*(.*)')
-    bracedata_rex = re.compile('\s*(\w*)\s*=\s*{(.*)},?')
+    bracefield_rex = re.compile(r'\s*(\w*)\s*=\s*(.*)')
+    bracedata_rex = re.compile(r'\s*(\w*)\s*=\s*{(.*)},?')
 
-    quotefield_rex = re.compile('\s*(\w*)\s*=\s*(.*)')
-    quotedata_rex = re.compile('\s*(\w*)\s*=\s*"(.*)",?')
+    quotefield_rex = re.compile(r'\s*(\w*)\s*=\s*(.*)')
+    quotedata_rex = re.compile(r'\s*(\w*)\s*=\s*"(.*)",?')
 
     for line in filecontents_source:
         line = line[:-1]
@@ -169,9 +169,9 @@ def bibtexdecoder(filecontents_source):
         # start item: publication type (store for later use)
         if pubtype_rex.match(line):
         # want @<alphanumeric chars><spaces>{<spaces><any chars>,
-            arttype = pubtype_rex.sub('\g<1>',line)
+            arttype = pubtype_rex.sub(r'\g<1>',line)
             arttype = arttype.lower()
-            artid   = pubtype_rex.sub('\g<2>', line)
+            artid   = pubtype_rex.sub(r'\g<2>', line)
             endentry = '</bibxml:' + arttype + '>' + '\n</bibxml:entry>\n'
             line = '<bibxml:entry id="' + artid + '">\n' + \
                    '<bibxml:' + arttype + '>'
@@ -186,21 +186,21 @@ def bibtexdecoder(filecontents_source):
         # field, publication info
         # field = {data} entries
         if bracedata_rex.match(line):
-            field = bracefield_rex.sub('\g<1>', line)
+            field = bracefield_rex.sub(r'\g<1>', line)
             field = field.lower()
-            data =  bracedata_rex.sub('\g<2>', line)
+            data =  bracedata_rex.sub(r'\g<2>', line)
 
         # field = "data" entries
         elif quotedata_rex.match(line):
-            field = quotefield_rex.sub('\g<1>', line)
+            field = quotefield_rex.sub(r'\g<1>', line)
             field = field.lower()
-            data =  quotedata_rex.sub('\g<2>', line)
+            data =  quotedata_rex.sub(r'\g<2>', line)
 
         # field = data entries
         elif data_rex.match(line):
-            field = field_rex.sub('\g<1>', line)
+            field = field_rex.sub(r'\g<1>', line)
             field = field.lower()
-            data =  data_rex.sub('\g<2>', line)
+            data =  data_rex.sub(r'\g<2>', line)
 
         if field == 'title':
             line = bibtextitle(data)
@@ -227,7 +227,7 @@ def bibtexdecoder(filecontents_source):
                 # line = line.replace('\\\'c', '&#263;')
                 # line = line.replace('\\"o', '&#246;')
                 # line = line.replace('\\"u', '&#252;')
-                line = line.replace('\\\`a', 'à')
+                line = line.replace('\\`a', 'à')
                 line = line.replace('\\\'a', 'á')
                 line = line.replace('\\"a', 'ä')
                 line = line.replace('\\\'c', 'ć')
@@ -276,8 +276,8 @@ def verify_out_of_braces(line, abbr):
 #
 def concat_line(line):
     # only look at part after equals
-    field = field_rex.sub('\g<1>',line)
-    rest = field_rex.sub('\g<2>',line)
+    field = field_rex.sub(r'\g<1>',line)
+    rest = field_rex.sub(r'\g<2>',line)
 
     concat_line = field + ' ='
 
@@ -337,11 +337,11 @@ def bibtex_replace_abbreviations(filecontents_source):
         total_abbr_count = total_abbr_count + 1
 
 
-    abbrdef_rex = re.compile('\s*@string\s*{\s*('+ valid_name_chars +'*)\s*=(.*)',
+    abbrdef_rex = re.compile(r'\s*@string\s*{\s*('+ valid_name_chars +r'*)\s*=(.*)',
                              re.I)
 
-    comment_rex = re.compile('@comment\s*{',re.I)
-    preamble_rex = re.compile('@preamble\s*{',re.I)
+    comment_rex = re.compile(r'@comment\s*{',re.I)
+    preamble_rex = re.compile(r'@preamble\s*{',re.I)
 
     waiting_for_end_string = 0
     i = 0
@@ -357,10 +357,10 @@ def bibtex_replace_abbreviations(filecontents_source):
                 continue
 
         if abbrdef_rex.search(line):
-            abbr = abbrdef_rex.sub('\g<1>', line)
+            abbr = abbrdef_rex.sub(r'\g<1>', line)
 
             if abbr_list.count(abbr) == 0:
-                val = abbrdef_rex.sub('\g<2>', line)
+                val = abbrdef_rex.sub(r'\g<2>', line)
                 abbr_list.append(abbr)
                 value_list.append(val.strip())
                 abbr_rex.append( re.compile( front + abbr_list[total_abbr_count] + back, re.I ) )
@@ -384,7 +384,7 @@ def bibtex_replace_abbreviations(filecontents_source):
 
             if abbr_rex[abbr_count].search(line):
                 if verify_out_of_braces(line,abbr_list[abbr_count]) == 1:
-                    line = abbr_rex[abbr_count].sub( value_list[abbr_count] + '\g<1>', line)
+                    line = abbr_rex[abbr_count].sub( value_list[abbr_count] + r'\g<1>', line)
                 # Check for # concatenations
                 if concatsplit_rex.search(line):
                     line = concat_line(line)
@@ -401,14 +401,14 @@ def bibtex_replace_abbreviations(filecontents_source):
     filecontents2 = filecontents2.replace('{"','{{')
     filecontents2 = filecontents2.replace('"}','}}')
 
-    afterquotevalue_rex = re.compile('"\s*,\s*')
-    afterbrace_rex = re.compile('"\s*}')
-    afterbracevalue_rex = re.compile('(=\s*{[^=]*)},\s*')
+    afterquotevalue_rex = re.compile(r'"\s*,\s*')
+    afterbrace_rex = re.compile(r'"\s*}')
+    afterbracevalue_rex = re.compile(r'(=\s*{[^=]*)},\s*')
 
     # add new lines to data that changed because of abbreviation substitutions
     filecontents2 = afterquotevalue_rex.sub('",\n', filecontents2)
     filecontents2 = afterbrace_rex.sub('"\n}', filecontents2)
-    filecontents2 = afterbracevalue_rex.sub('\g<1>},\n', filecontents2)
+    filecontents2 = afterbracevalue_rex.sub(r'\g<1>},\n', filecontents2)
 
     return filecontents2
 
@@ -428,7 +428,7 @@ def no_outer_parens(filecontents):
     # rebuild filecontents
     filecontents = ''
 
-    at_rex = re.compile('@\w*')
+    at_rex = re.compile(r'@\w*')
 
     for phrase in paren_split:
         if look_next == 1:
@@ -461,8 +461,8 @@ def no_outer_parens(filecontents):
 # format the bibtex file into a usable form.
 def bibtexwasher(filecontents_source):
 
-    space_rex = re.compile('\s+')
-    comment_rex = re.compile('\s*%')
+    space_rex = re.compile(r'\s+')
+    comment_rex = re.compile(r'\s*%')
 
     filecontents = []
 
@@ -484,24 +484,28 @@ def bibtexwasher(filecontents_source):
     #
     # split lines according to preferred syntax scheme
     #
-    filecontents = re.sub('(=\s*{[^=]*)},', '\g<1>},\n', filecontents)
+    filecontents = re.sub(r'(=\s*{[^=]*)},', '\\g<1>},\n', filecontents)
 
     # add new lines after commas that are after values
-    filecontents = re.sub('"\s*,', '",\n', filecontents)
-    filecontents = re.sub('=\s*([\w\d]+)\s*,', '= \g<1>,\n', filecontents)
-    filecontents = re.sub('(@\w*)\s*({(\s*)[^,\s]*)\s*,',
-                          '\n\n\g<1>\g<2>,\n', filecontents)
+    filecontents = re.sub(r'"\s*,', '",\n', filecontents)
+    filecontents = re.sub(r'=\s*([\w\d]+)\s*,',
+                          '= \\g<1>,\n', filecontents)
+    filecontents = re.sub(r'(@\w*)\s*({(\s*)[^,\s]*)\s*,',
+                          '\n\n\\g<1>\\g<2>,\n', filecontents)
 
     # add new lines after }
-    filecontents = re.sub('"\s*}','"\n}\n', filecontents)
-    filecontents = re.sub('}\s*,','},\n', filecontents)
+    filecontents = re.sub(r'"\s*}',
+                          '"\n}\n', filecontents)
+    filecontents = re.sub(r'}\s*,',
+                          '},\n', filecontents)
 
 
-    filecontents = re.sub('@(\w*)', '\n@\g<1>', filecontents)
+    filecontents = re.sub(r'@(\w*)',
+                          '\n@\\g<1>', filecontents)
 
     # character encoding, reserved latex characters
-    filecontents = re.sub('{\\\&}', '&', filecontents)
-    filecontents = re.sub('\\\&', '&', filecontents)
+    filecontents = re.sub(r'{\\\&}', '&', filecontents)
+    filecontents = re.sub(r'\\\&', '&', filecontents)
 
     # do checking for open braces to get format correct
     open_brace_count = 0
