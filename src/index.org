@@ -17,7 +17,7 @@
 
 * Massimo Lauria
   
-  Hi!  I  am  an  Associate Professor  at  [[http://www.dss.uniroma1.it/en][Department  of  Statistical
+  Associate Professor  at  [[http://www.dss.uniroma1.it/en][Department  of  Statistical
   Sciences]] of [[http://www.uniroma1.it/][Sapienza Università di Roma]].
 
 #+begin_export html

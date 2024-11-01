@@ -1,38 +1,22 @@
 #+TITLE: Massimo Lauria @ Sapienza - Teaching
 
-* 2024-2025 (1o Sem.) Computational Complexity
+* 2024-2025 - First semester
 
-Course page ([[http://www.massimolauria.net/complexity2024/][Computational Complexity @ DI 2024/2025]])
-
-Computational complexity  studies the intractability and  the inherent
-complexity  of computational  problems. Some  problems have  efficient
-algorithms  and solutions,  while some  others seem  not to  have any.
-In this course for the students  of [[https://www.di.uniroma1.it/it][Dept. of Computer Science]] we study
-several computational  model in  which we  can say  interesting things
-about problems,  in order to  characterize their hardness.  We discuss
-the famouse P vs NP problem.
-
-* 2024-2025 (1o Sem.) Informatica
-
-  Course page ([[http://www.massimolauria.net/informatica2024/][Informatica@DSS 2024/2025 - 2o canale]])
-
-  This is an  introductory course to computer  science and programming
-  for part of the students of [[https://www.dss.uniroma1.it][Dept. of Statistical Science]]. The course
-  introduces  basic  concepts  of  computer  science,  programming  in
-  Python, algorithms and complexity.
+ - [[http://www.massimolauria.net/complexity2024/][Computational Complexity (Dipartimento di Informatica)]]
+ - [[http://www.massimolauria.net/informatica2024/][Informatica - 2o canale (Dipartimento di Scienze Statistiche)]]
 
 * Previous years
 
-  - 2023-2024 — [[http://www.massimolauria.net/complexity2023/][Computational Complexity @ DI 2023/2024]]
-  - 2023-2024 — [[http://www.massimolauria.net/informatica2023/][Informatica@DSS 2023/2024 - 2o canale]]
-  - 2022-2023 — [[http://www.massimolauria.net/complexity2022/][Computational Complexity @ DI 2022/2023]]
-  - 2022-2023 — [[http://www.massimolauria.net/informatica2022/][Informatica@DSS 2022/2023 - 2o canale]]
-  - 2021-2022 — [[https://twiki.di.uniroma1.it/twiki/view/Algoritmi2/PALGdiario2014_1][Progettazione degli Algoritmi 2021/2022 - 1o canale]]
-  - 2021-2022 — [[http://www.massimolauria.net/informatica2021/][Informatica@DSS 2021/2022 - 2o canale]]
-  - 2020-2021 — [[http://www.massimolauria.net/informatica2020/][Informatica@DSS 2020/2021 - 2o e 3o canale]]
-  - 2019-2020 — [[http://www.massimolauria.net/courses/informatica2019/][Informatica@DSS 2019/2020 - 2o canale]]
-  - 2018-2019 — [[http://www.massimolauria.net/courses/infosefa2018/][Informatica@SEFA 2018/2019]]
-  - 2017-2018 — [[http://www.massimolauria.net/courses/infosefa2017/][Informatica@SEFA 2017/2018]]
+  - 2023-2024 — [[http://www.massimolauria.net/complexity2023/][Computational Complexity]]
+  - 2023-2024 — [[http://www.massimolauria.net/informatica2023/][Informatica - 2o canale]]
+  - 2022-2023 — [[http://www.massimolauria.net/complexity2022/][Computational Complexity]]
+  - 2022-2023 — [[http://www.massimolauria.net/informatica2022/][Informatica - 2o canale]]
+  - 2021-2022 — [[https://twiki.di.uniroma1.it/twiki/view/Algoritmi2/PALGdiario2014_1][Progettazione degli Algoritmi - 1o canale]]
+  - 2021-2022 — [[http://www.massimolauria.net/informatica2021/][Informatica - 2o canale]]
+  - 2020-2021 — [[http://www.massimolauria.net/informatica2020/][Informatica - 2o e 3o canale]]
+  - 2019-2020 — [[http://www.massimolauria.net/courses/informatica2019/][Informatica - 2o canale]]
+  - 2018-2019 — [[http://www.massimolauria.net/courses/infosefa2018/][Informatica - SEFA]]
+  - 2017-2018 — [[http://www.massimolauria.net/courses/infosefa2017/][Informatica - SEFA]]
   - Fall 2015 (TokyoTech, Japan) — [[file:courses/2015.ProofComplexity/][Introduction to Proof Complexity]]
   - Spring 2014 (KTH, Sweden) — [[http://www.csc.kth.se/~lauria/sos14/][SOS and integer programming relaxations]]
   - Fall 2012 (KTH, Sweden) — [[http://www.csc.kth.se/utbildning/kth/kurser/DD2441/semteo12/][Communication Complexity (Co-Lectured)]]

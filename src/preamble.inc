@@ -5,9 +5,8 @@
       <li class="left"> <a id="homelink" href="index.html"> Home</a></li>
       <div class="right">
       <li class="left"> <a href="research.html">Research</a></li>
-      <li class="left"> <a href="writings.html">Papers</a></li>
-      <li class="left"> <a href="teaching.html">Teaching</a></li>
-      <li class="left"> <a href="downloads.html">Software</a></li>
+      <li class="left"> <a href="writings.html">Publications</a></li>
+      <li class="left"> <a href="teaching.html">Courses</a></li>
       </div>
     </ul>
   </nav>

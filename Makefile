@@ -18,7 +18,6 @@ endif
 
 
 BUILD=site-build
-SRC=src
 BIBLIO=bibliography
 
 BIBTEX2BIBXML=./$(BIBLIO)/bibtex2bibxml.py
@@ -30,7 +29,7 @@ BIBTEMPFILES=$(BIBLIO)/papers.bib.xml $(BIBLIO)/papers.html
 all: $(BUILD)
 	$(EMACS) --batch -l publish.el --eval '(org-publish-project "main" nil)'
 
-$(BUILD): $(BIBLIO)/papers.html
+$(BUILD): src/index.org src/teaching.org src/research.org $(BIBLIO)/papers.html
 	$(EMACS) --batch -l publish.el --eval '(org-publish-project "main" t)'
 
 clean:
@@ -47,7 +46,7 @@ pkg:
 	@echo "Building $(NAME).SNAP.$(TIME).tar.gz"
 	@$git archive HEAD | gzip -c > ../$(NAME).SNAP.$(TIME).tar.gz 2> /dev/null
 
-deploy:
+deploy: $(BUILD)
 	rsync -rvz --chmod='u=rwX,go=rX' $(BUILD)/ $(REMOTE)
 
 
